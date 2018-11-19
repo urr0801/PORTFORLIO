@@ -45,10 +45,10 @@ position: relative;}
 .weekly ul {float:left; width:80%; padding-left:10%;} */
 
 .dl_icon {width:80%; max-width:250px;}
-.dl_area {font-size:2em; color:rgb(0, 78, 196); font-weight:bold; margin-top:2em;}
-.dl_date {font-size:1.5em; color:rgb(66, 66, 66);}
-.dl_temp {font-size:2em; color:rgb(8, 52, 102);}
-.dl_desc {font-size:1.5em; color:rgb(177, 177, 177)}
+.dl_area {font-size:2em; color:rgb(0, 78, 196); font-weight:bold; margin-top:2em; margin: 0 auto; padding: 1rem 0;}
+.dl_date {font-size:1.5em; color:#ccc; padding-top: 1rem;}
+.dl_temp {font-size:1.2em; color:#fff;}
+.dl_desc {font-size:1.5em; color:#fff;}
 
 /* 
 .wk_icon {float:left; width:20%;}
@@ -56,8 +56,8 @@ position: relative;}
 .wk_date {font-size:1.25em; color:rgb(66, 66, 66); }
 .wk_temp {font-size:1.5em; color:rgb(8, 52, 102);}
 .wk_desc {font-size:1.25em; color:rgb(177, 177, 177);} */
-
-.selects{width: 20%; margin: 0 auto;}
+.w3-input{padding: 0; background-color: transparent; color: #fff;}
+.selects > select{width: 20%; margin: 0 auto;}
 
 /* .tab_active {background-color:rgb(3, 112, 185); color:#fff;}
 .tab_disable {background-color:rgb(202, 216, 226); color:#666;} */
