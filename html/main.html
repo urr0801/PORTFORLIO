@@ -4,7 +4,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>스노우보드.</title>
+	<title>PORTFOLIO_MAIN</title>
+
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
 	 crossorigin="anonymous">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -12,19 +13,99 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="../css/base.css">
 	<link rel="stylesheet" href="../css/main.css">
-	<script defer src="/__/firebase/init.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
 
+	<div class="main_bg clear">
+		<div class="main_row row">
+			<!-- top_nav 영역 -->
+			<ul class="main_top ">
+				<li class="logo"><img src="../common/logo_w.png" class="logo_img" alt="logo_w"></li>
+				<li class="nav_toggle"><span class="fa fa-bars"></span>
+				</li>
+			</ul>
 
+			<div class="title"><img src="../img/main/title_main.png" class="title_img" alt="tit_img">
+			</div>
+			<div class="weather_icon"><img src="../common/weather_icon.png" class="weather_img" alt="weather_img"></div>
+		</div>
+		<!-- menu div 영역 -->
+		<div class="nav_box">
+			<ul class="menu">
+				<li>HOEM</li>
+				<li>PORTFOLIO</li>
+				<li>ABOUT ME</li>
+				<li>CONTECT</li>
+			</ul>
+			<ul class="info">
+				<li>JEONG MIN WOO</li>
+				<li>O10.2591.0801</li>
+				<li>urr0801@gmail.com</li>
+			</ul>
+			<ul class="sns_icon">
+				<li class="fa fa-instagram"></li>
+				<li class="fa fa-facebook"></li>
+				<li><img src="../img/main/kakao.png"></li>
+			</ul>
+		</div>
+	</div>
 
+	<div class="weather_box clear">
+		<div class="daily">
+			<div>
+				<img src="../img/icon/01d.png" class="img dl_icon">
+				<div class="dl_area">
+					<span></span>
+					<div class="selects">
+							<select id="area" class="w3-input">
+								<option value="서울">서울</option>
+								<option value="대구">대구</option>
+								<option value="대전">대전</option>
+								<option value="부산">부산</option>
+								<option value="인천">인천</option>
+							</select>
+						</div>
+				</div>
+				<div class="dl_date"></div>
+				<div class="dl_temp"></div>
+				<div class="dl_desc"></div>
+			</div>
+			<ul class="weekly"></ul>
+		</div>
 
+		<div id="modal" class="w3-modal">
+			<div class="w3-modal-content">
+				<header class="w3-container w3-transparent">
+					<span id="modal_close" class="w3-button w3-display-topright">&times;</span>
+					<h2>도시선택</h2>
+				</header>
+				<div class="w3-container" style="padding:2rem;">
+					<div class="selects w3-border">
+						<select id="area" class="w3-input"></select>
+					</div>
+				</div>
+			</div>
+		</div>
+	 
 
-
-
+	<!-- <div class="wrap">
+			<div>
+				<img src="../img/icon/01d.png" class="icon">
+				<div class="selects">
+					<select id="area" class="w3-input">
+						<option value="서울">서울</option>
+						<option value="대구">대구</option>
+						<option value="대전">대전</option>
+						<option value="부산">부산</option>
+						<option value="인천">인천</option>
+					</select>
+				</div>
+			</div>
+		</div> -->
+</div>
 	<script src="../js/main.js"></script>
 </body>
 

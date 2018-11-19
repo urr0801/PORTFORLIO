@@ -1,0 +1,69 @@
+.row{width: 1400px; margin: 0 auto;}
+
+.main_bg{width: 100%; height: 100%;
+	background-image: url(../img/main/lighthouse-2225445.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-y: -200px;
+position: relative;}
+.main_row{position: relative;}
+.main_top{margin-top: 4rem; position: relative;}
+.logo_img{max-width: 60%;}
+.logo{float: left;}
+.nav_toggle{float: right; font-size: 1.2rem; color:#fff;}
+.fa-bars{border: 1px solid #fff; padding: 1rem; z-index: 1111; position: absolute; right: 2rem;}
+
+.title{position: absolute; top:41rem; left: 0;}
+.title_img{max-width: 75%;}
+
+
+.nav_box{width: 30%;height: 100%; background-color: rgba(0,0,0,0.4);position: absolute;top: 0; right: 0; padding-left: 8rem; box-sizing: border-box; z-index: 1;}
+
+.menu{padding: 16rem 0 8rem;}
+.menu li{font-size:3rem; line-height: 6rem; color: #fff;}
+
+.info{padding-bottom: 2rem;}
+.info li{font-size:2.5rem; line-height: 4.6rem; color: #fff;}
+
+.sns_icon >li{float: left; width: 15%; font-size: 4.8rem; color: #fff;}
+.sns_icon >li:nth-child(2){margin: 0 5%;}
+.sns_icon li:nth-child(3){display: table;}
+.sns_icon li img{max-width: 80%; display: table-cell; vertical-align: middle;}
+
+
+.weather_box{width: 30%;height: 100%; background-color: rgba(0,0,0,0.4);position: absolute;top: 0; right: 0; padding-left: 8rem; box-sizing: border-box; z-index: 1; margin: 0 auto; text-align: center;}
+
+/* 날씨 */
+
+
+.daily, .weekly {width:100%; height:50%; padding:5%; text-align:center; margin: 0 auto;}
+.daily{position: absolute; top: 0; right:1.2rem;}
+.daily > div {text-align:center; }
+
+/* .weekly {overflow: auto; width:100%; float:none;}
+.weekly > li {padding:3%; border-bottom:1px solid #ccc; text-align:left;}
+.weekly ul {float:left; width:80%; padding-left:10%;} */
+
+.dl_icon {width:80%; max-width:250px;}
+.dl_area {font-size:2em; color:rgb(0, 78, 196); font-weight:bold; margin-top:2em;}
+.dl_date {font-size:1.5em; color:rgb(66, 66, 66);}
+.dl_temp {font-size:2em; color:rgb(8, 52, 102);}
+.dl_desc {font-size:1.5em; color:rgb(177, 177, 177)}
+
+/* 
+.wk_icon {float:left; width:20%;}
+.wk_area {font-size:1.25em; color:rgb(0, 78, 196); font-weight:bold; }
+.wk_date {font-size:1.25em; color:rgb(66, 66, 66); }
+.wk_temp {font-size:1.5em; color:rgb(8, 52, 102);}
+.wk_desc {font-size:1.25em; color:rgb(177, 177, 177);} */
+
+.selects{width: 20%; margin: 0 auto;}
+
+/* .tab_active {background-color:rgb(3, 112, 185); color:#fff;}
+.tab_disable {background-color:rgb(202, 216, 226); color:#666;} */
+
+/* @media screen and (max-width:799px) {
+	.tabs > li {font-size:1.25rem;}
+	.daily, .weekly {width:100%; float:none;}
+	.weekly {display:none;}
+} */
