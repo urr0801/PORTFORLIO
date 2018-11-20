@@ -22,20 +22,21 @@
 	<div class="main_bg clear">
 		<div class="main_row row">
 			<!-- top_nav 영역 -->
-			<ul class="main_top ">
+			<ul class="main_top clear">
 				<li class="logo"><img src="../common/logo_w.png" class="logo_img" alt="logo_w"></li>
-				<li class="nav_toggle"><span class="fa fa-bars"></span>
-				</li>
+
+				<li class="weather_icon"><img src="../common/weather_icon.png" class="weather_img" alt="weather_img"></li>
+				<li class="nav_toggle fa fa-bars" id="tog"></li>
 			</ul>
 
 			<div class="title"><img src="../img/main/title_main.png" class="title_img" alt="tit_img">
 			</div>
-			<div class="weather_icon"><img src="../common/weather_icon.png" class="weather_img" alt="weather_img"></div>
+			
 		</div>
 		<!-- menu div 영역 -->
 		<div class="nav_box">
 			<ul class="menu">
-				<li>HOEM</li>
+				<li>HOME</li>
 				<li>PORTFOLIO</li>
 				<li>ABOUT ME</li>
 				<li>CONTECT</li>
@@ -53,6 +54,8 @@
 		</div>
 	</div>
 
+
+	<!-- 날씨 div 영역 -->
 	<div class="weather_box clear">
 		<div class="daily">
 			<div>
@@ -62,12 +65,6 @@
 					<!-- <span></span> -->
 					<div class="selects">
 						<select id="area" class="w3-input">
-								<!-- <option value="1835848">서울</option>
-								<option value="1843564">인천</option>
-								<option value="1838722">부산</option>
-								<option value="1835235">대전</option>
-								<option value="1835329">대구</option>
-								<option value="1846266">제주</option> -->
 						</select>
 					</div>
 				</div>
@@ -77,22 +74,8 @@
 			<ul class="weekly"></ul>
 		</div>
 
-		<!-- <div id="modal" class="w3-modal">
-			<div class="w3-modal-content">
-				<header class="w3-container w3-transparent">
-					<span id="modal_close" class="w3-button w3-display-topright">&times;</span>
-					<h2>도시선택</h2>
-				</header>
-				<div class="w3-container" style="padding:2rem;">
-					<div class="selects w3-border">
-						<select id="area" class="w3-input"></select>
-					</div>
-				</div>
-			</div>
-		</div> -->
 
 
-	</div>
 	<script src="../js/main.js"></script>
 </body>
 

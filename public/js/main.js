@@ -1,11 +1,26 @@
 // 메뉴 bars toggle
-$(".nav_toggle").click(function () {
-	$(".nav_box").toggle();
+$(".fa-bars").click(function () {
+	$(".nav_box").slideToggle();
+	$(this).stop().animate({'right':'17rem'});
+	$(this).removeClass("fa-bars");
+	$(this).addClass("fa-times");
+	$(".weather_box").hide();
+	$(".weather_icon").hide();
 });
+
+$(".fa-times").click(function () {
+	$(".nav_box").slideToggle();
+	$(this).stop().animate({'right':'2rem'});
+	$(this).removeClass("fa-times");
+	$(this).addClass("fa-bars");
+	$(".weather_box").show();
+	$(".weather_icon").show();
+});
+
 
 // 날씨 toggle
 $(".weather_icon").click(function () {
-	$(".weather_box").toggle();
+	$(".weather_box").slideToggle();
 });
 
 // 메뉴 hover
@@ -20,48 +35,7 @@ $(".menu > li").hover(function () {
 	$(this).stop().css({"color": "#fff", "font-size": "3rem","cursor": "none"});
 });
 
-
-
 // 날씨
-
-// $(".weather_box").resize(function(){
-// 	var wid = $(this).width();
-// 	if(wid < 800) {
-// 		//Mobile
-// 		$(".tabs > li").eq(0).addClass("tab_active");
-// 		$(".tabs > li").eq(1).addClass("tab_disable");
-// 	}
-// 	else {
-// 		//PC
-// 		$(".tabs > li").removeClass("tab_active tab_disable");
-// 		$(".daily").show();
-// 		$(".weekly").show();
-// 	}
-// }).trigger("resize");
-
-// $("#bt_daily").click(function(){
-// 	if($(window).width() < 800) {
-// 		$(".daily").show();
-// 		$(".weekly").hide();
-// 		$("#bt_daily").removeClass("tab_disable").addClass("tab_active");
-// 		$("#bt_weekly").removeClass("tab_active").addClass("tab_disable");
-// 	}
-// });
-// $("#bt_weekly").click(function(){
-// 	if($(window).width() < 800) {
-// 		$(".daily").hide();
-// 		$(".weekly").show();
-// 		$("#bt_daily").removeClass("tab_active").addClass("tab_disable");
-// 		$("#bt_weekly").removeClass("tab_disable").addClass("tab_active");
-// 	}
-// });
-// $("#modal_open").click(function(){
-// 	$("#modal").show();
-// });
-// $("#modal_close").click(function(){
-// 	$("#modal").hide();
-// });
-
 $.ajax({
 	url: "../json/city.json",
 	type: "get",
