@@ -132,6 +132,7 @@ $("#area").change(function () {
 		},
 		error: function (xhr, status, error) {
 			console.log(xhr, status, error);
+			// alert("서버와 통신하는데 문제가 있습니다.\n관리자에게 문의해 주세요.");
 		}
 	});
 });

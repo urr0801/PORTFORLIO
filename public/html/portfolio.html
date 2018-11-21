@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>PORTFOLIO_portfolio</title>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/base.css">
+	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" href="../css/portfolio.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+	<div class="po_bg clear">
+		<div class="top_bg">
+			<!-- top_nav 영역 -->
+			<ul class="main_top row clear">
+				<li class="logo"><img src="../common/logo_w.png" class="logo_img" alt="logo_w"></li>
+
+				<li class="weather_icon"><img src="../common/weather_icon.png" class="weather_img" alt="weather_img">
+				</li>
+				<li class="nav_toggle fa fa-bars" id="tog"></li>
+			</ul>
+		</div>
+
+		<!-- site 영역 -->
+		<div class="site_bg row clear">
+			<div class="site_box">
+				<div class="site_img"><img src="../img/port/site1.png" alt="site_img" class="img"></div>
+				<div class="site_txt">
+					<h3>project Name</h3>
+					<h2>WOODMART</h2>
+					<hr />
+					<p>skills: html & Css, JavaScript, Bootstrap</p>
+					<p>Contribute: 100%</p>
+					<p>Function : 반응형 가능</p>
+					<p>Explantion</p>
+					<p>JavaScript 객채를 활용하여 다양한 기능을 구현.</p>
+					<p>Bootstrap Grid Sistem 을 활용하여 반응형에 대응.</p>
+				</div>
+				<button class="but w3-button w3-round-xxlarge w3-white"> go site </button>
+			</div>
+		</div>
+		<div class="site_bg row clear">
+			<div class="site_box clear">
+				<div class="site_img"><img src="../img/port/site2.png" alt="site_img" class="img"></div>
+				<div class="site_txt">
+					<h3>project Name</h3>
+					<h2>WOODMART</h2>
+					<hr />
+					<p>skills: html & Css, JavaScript, Bootstrap</p>
+					<p>Contribute: 100%</p>
+					<p>Function : 반응형 가능</p>
+					<p>Explantion</p>
+					<p>JavaScript 객채를 활용하여 다양한 기능을 구현.</p>
+					<p>Bootstrap Grid Sistem 을 활용하여 반응형에 대응.</p>
+				</div>
+				<button class="but w3-button w3-round-xxlarge w3-white"> go site </button>
+			</div>
+		</div>
+
+		<!-- menu div 영역 -->
+		<div class="nav_box">
+			<ul class="menu">
+				<li>HOME</li>
+				<li>PORTFOLIO</li>
+				<li>ABOUT ME</li>
+				<li>CONTECT</li>
+			</ul>
+			<ul class="info">
+				<li>JEONG MIN WOO</li>
+				<li>O10.2591.0801</li>
+				<li>urr0801@gmail.com</li>
+			</ul>
+			<ul class="sns_icon">
+				<li class="fa fa-instagram"></li>
+				<li class="fa fa-facebook"></li>
+				<li><img src="../img/main/kakao.png"></li>
+			</ul>
+		</div>
+
+
+		<!-- 날씨 div 영역 -->
+		<div class="weather_box clear">
+			<div class="daily">
+				<div>
+					<img src="../img/icon/01d.png" class="img dl_icon">
+					<div class="dl_date"></div>
+					<div class="dl_area clear">
+						<!-- <span></span> -->
+						<div class="selects">
+							<select id="area" class="w3-input">
+							</select>
+						</div>
+					</div>
+					<div class="dl_temp"></div>
+					<div class="dl_desc"></div>
+				</div>
+				<ul class="weekly"></ul>
+			</div>
+		</div>
+	</div>
+
+	<script src="../js/main.js"></script>
+	<script src="../js/portfolio.js"></script>
+</body>
+
+</html>

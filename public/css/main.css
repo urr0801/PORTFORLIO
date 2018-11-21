@@ -46,14 +46,14 @@ display: none;}
 .weekly > li {padding:3%; border-bottom:1px solid #ccc; text-align:left;}
 .weekly ul {float:left; width:80%; padding-left:10%;} */
 
-.dl_icon {width:60%; max-width:220px;}
+.dl_icon {width:30%; max-width:220px; margin-top: 7rem;}
 .dl_area {font-size:2em; color:rgb(0, 78, 196); font-weight:bold; margin-top:2em; margin: 0 auto; padding: 1rem 0;}
 .dl_date {font-size:1.5em; color:#ccc; padding-top: 1rem;}
 .dl_temp {font-size:1.2em; color:#fff;}
 .dl_desc {font-size:1.5em; color:#fff;}
 
 
-.weekly{height: 530px; overflow:auto; width:80%; text-align:center; float: right;}
+.weekly{height: 420px; overflow:auto; width:80%; text-align:center; float: right; margin-top: 3rem;}
 .weekly ul {float:left; width:60%; padding-left:10%;} 
 .wk_icon {float:left; width:20%;}
 .wk_area {font-size:1.25em; color:#fff; font-weight:bold; }
