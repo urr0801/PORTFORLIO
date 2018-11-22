@@ -31,19 +31,24 @@ function homeAdd(data) {
 	var link = data.val().link;
 	var html = '';
 	html += '<ul class="list clear row" id="' + id + '">';
-	html += '<li class="col-xs-4 col-sm-3 col-md-2 col-lg-2">';
+	html += '<li class="col-md-2">';
 	html += '<div>';
 	html += '<img src="' + src + '">';
 	html += '<input type="text" class="tit_img form-control" placeholder="이미지" value="' + img + '">';
 	html += '</div>';
 	html += '</li>';
-	html += '<li class="col-xs-4 col-sm-6 col-md-7 col-lg-8">';
+	html += '<li class="col-md-8">';
 	html += '<div>';
-	html += '<input type="text" class="title form-control" placeholder="타이틀" value="' + title + '">';
+	html += '<input type="text" class="title form-control" placeholder="project Name" value="' + title + '">';
+	html += '<input type="text" class="skills form-control" placeholder="skills" value="' + title + '">';
+	html += '<input type="text" class="Contribute form-control" placeholder="Contribute" value="' + title + '">';
+	html += '<input type="text" class="Function form-control" placeholder="Function" value="' + title + '">';
+	html += '<input type="text" class="Explantion form-control" placeholder="Explantion (1)" value="' + title + '">';
+	html += '<input type="text" class="Explantion form-control" placeholder="Explantion (2)" value="' + title + '">';
 	html += '<input type="text" class="link form-control" style="margin-top:5px;" placeholder="링크주소" value="' + link + '">';
 	html += '</div>';
 	html += '</li>';
-	html += '<li class="col-xs-4 col-sm-3 col-md-3 col-lg-2">';
+	html += '<li class="col-md-8">';
 	html += '<div>';
 	html += '<button class="btn btn-danger" onclick="homeDel(this);">삭제</button> ';
 	html += '<button class="btn btn-warning" onclick="homeUp(this);">수정</button>';
@@ -110,3 +115,5 @@ function homeDel(obj) {
 		}
 	}
 }
+
+
