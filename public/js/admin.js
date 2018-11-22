@@ -26,8 +26,13 @@ initHome();
 function homeAdd(data) {
 	var id = data.key;
 	var img = data.val().img;
-	var src = '../img/main/' + img;
-	var title = data.val().title;
+	var src = '../img/port/' + img;
+	var adtitle = data.val().adtitle;
+	var skills = data.val().skills;
+	var Contribute = data.val().Contribute;
+	var Functions = data.val().Functions;
+	var Explantion_1 = data.val().Explantion_1;
+	var Explantion_2 = data.val().Explantion_2;
 	var link = data.val().link;
 	var html = '';
 	html += '<ul class="list clear row" id="' + id + '">';
@@ -39,16 +44,16 @@ function homeAdd(data) {
 	html += '</li>';
 	html += '<li class="col-md-8">';
 	html += '<div>';
-	html += '<input type="text" class="title form-control" placeholder="project Name" value="' + title + '">';
-	html += '<input type="text" class="skills form-control" placeholder="skills" value="' + title + '">';
-	html += '<input type="text" class="Contribute form-control" placeholder="Contribute" value="' + title + '">';
-	html += '<input type="text" class="Function form-control" placeholder="Function" value="' + title + '">';
-	html += '<input type="text" class="Explantion form-control" placeholder="Explantion (1)" value="' + title + '">';
-	html += '<input type="text" class="Explantion form-control" placeholder="Explantion (2)" value="' + title + '">';
+	html += '<input type="text" class="adtitle form-control" placeholder="project Name" value="' + adtitle + '">';
+	html += '<input type="text" class="skills form-control" placeholder="skills" value="' + skills + '">';
+	html += '<input type="text" class="Contribute form-control" placeholder="Contribute" value="' + Contribute + '">';
+	html += '<input type="text" class="Functions form-control" placeholder="Functions" value="' + Functions + '">';
+	html += '<input type="text" class="Explantion_1 form-control" placeholder="Explantion (1)" value="' + Explantion_1 + '">';
+	html += '<input type="text" class="Explantion_2 form-control" placeholder="Explantion (2)" value="' + Explantion_2 + '">';
 	html += '<input type="text" class="link form-control" style="margin-top:5px;" placeholder="링크주소" value="' + link + '">';
 	html += '</div>';
 	html += '</li>';
-	html += '<li class="col-md-8">';
+	html += '<li class="col-md-2">';
 	html += '<div>';
 	html += '<button class="btn btn-danger" onclick="homeDel(this);">삭제</button> ';
 	html += '<button class="btn btn-warning" onclick="homeUp(this);">수정</button>';
@@ -66,22 +71,33 @@ function homeRev(data) {
 function homeChg(data) {
 	var id = data.key;
 	var ul = $("#" + id);
-	$("img", ul).attr("src", "../img/main/" + data.val().img);
+	$("img", ul).attr("src", "../img/port/" + data.val().img);
 	alert("수정되었습니다.");
 }
 
 
 $("#home_save").on('click', function () {
 	var img = $("#home_wr .tit_img").val();
-	var title = $("#home_wr .title").val();
+	var adtitle = $("#home_wr .adtitle").val();
+	var skills = $("#home_wr .skills").val();
+	var Contribute = $("#home_wr .Contribute").val();
+	var Functions = $("#home_wr .Functions").val();
+	var Explantion_1 = $("#home_wr .Explantion_1").val();
+	var Explantion_2= $("#home_wr .Explantion_2").val();
 	var link = $("#home_wr .link").val();
-	if (title == '' || link == '' || img == '') {
+	if (img == '' || adtitle == '' || skills == '' || Contribute == '' || Functions == '' || Explantion_1 == '' || link == '') {
 		alert("내용을 적어주세요.");
 	} else {
 		ref = db.ref("root/home");
+		
 		ref.push({
 			img: img,
-			title: title,
+			adtitle: adtitle,
+			skills: skills,
+			Contribute: Contribute,
+			Functions: Functions,
+			Explantion_1: Explantion_1,
+			Explantion_2: Explantion_2,
 			link: link
 		}).key;
 		alert("등록되었습니다.");
@@ -91,16 +107,26 @@ $("#home_save").on('click', function () {
 function homeUp(obj) {
 	var ul = $(obj).parent().parent().parent();
 	var id = ul.attr("id");
-	var img = $(".tit_img", ul).val();
-	var title = $(".title", ul).val();
-	var link = $(".link", ul).val();
-	if (title == '' || link == '' || img == '') {
+	var img = $("#home_wr .tit_img").val();
+	var adtitle = $("#home_wr .adtitle").val();
+	var skills = $("#home_wr .skills").val();
+	var Contribute = $("#home_wr .Contribute").val();
+	var Functions = $("#home_wr .Functions").val();
+	var Explantion_1 = $("#home_wr .Explantion_1").val();
+	var Explantion_2= $("#home_wr .Explantion_2").val();
+	var link = $("#home_wr .link").val();
+	if (img == '' || adtitle == '' || skills == '' || Contribute == '' || Functions == '' || Explantion_1 == '' || link == '') {
 		alert("내용을 적어주세요.");
 	} else {
 		ref = db.ref("root/home/" + id);
 		ref.update({
 			img: img,
-			title: title,
+			adtitle: adtitle,
+			skills: skills,
+			Contribute: Contribute,
+			Functions: Functions,
+			Explantion_1: Explantion_1,
+			Explantion_2: Explantion_2,
 			link: link
 		});
 	}

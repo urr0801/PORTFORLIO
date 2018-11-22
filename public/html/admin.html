@@ -14,6 +14,11 @@
 	<link rel="stylesheet" href="../css/base.css">
 	<link rel="stylesheet" href="../css/main.css">
 	<link rel="stylesheet" href="../css/admin.css">
+	<script defer src="/__/firebase/5.5.5/firebase-app.js"></script>
+	<script defer src="/__/firebase/5.5.5/firebase-auth.js"></script>
+	<script defer src="/__/firebase/5.5.5/firebase-database.js"></script>
+	<script defer src="/__/firebase/5.5.5/firebase-storage.js"></script>
+	<script defer src="/__/firebase/init.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
@@ -33,7 +38,7 @@
 
 				<!-- 페이지 관리 -->
 				<div class="section row clear" id="home">
-						<div class="ad_title">HOME 관리</div>
+						<div class="ad_title">PORTFOLIO page 관리</div>
 						<div class="wrap" id="home_wrap">
 							<!-- ul.list>li>img.img^li>input.title+input.link^li>button.btn.btn-danger+button.btn.btn-warning -->
 							<div class="home_title">신규등록</div>
@@ -45,12 +50,12 @@
 								</li>
 								<li class="col-md-8">
 									<div>
-										<input type="text" class="ad_title form-control" placeholder="project Name">
+										<input type="text" class="adtitle form-control" placeholder="project Name">
 										<input type="text" class="skills form-control" style="margin-top:5px;" placeholder="skills">
-										<input type="text" class="liContributenk form-control" style="margin-top:5px;" placeholder="Contribute">
-										<input type="text" class="Function form-control" style="margin-top:5px;" placeholder="Function">
-										<input type="text" class="Explantion form-control" style="margin-top:5px;" placeholder="Explantion (1)">
-										<input type="text" class="Explantion form-control" style="margin-top:5px;" placeholder="Explantion (2)">
+										<input type="text" class="Contribute form-control" style="margin-top:5px;" placeholder="Contribute">
+										<input type="text" class="Functions form-control" style="margin-top:5px;" placeholder="Functions">
+										<input type="text" class="Explantion_1 form-control" style="margin-top:5px;" placeholder="Explantion (1)">
+										<input type="text" class="Explantion_2 form-control" style="margin-top:5px;" placeholder="Explantion (2)">
 										<input type="text" class="link form-control" style="margin-top:5px;" placeholder="link">
 									</div>
 								</li>
@@ -87,6 +92,11 @@
 			</div>
 		</div>
 
+
+
+
+
+		<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
 		<script src="../js/main.js"></script>
 		<script src="../js/admin.js"></script>
 	</body>

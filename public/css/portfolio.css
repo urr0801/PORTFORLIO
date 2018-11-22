@@ -3,14 +3,14 @@ h2{font-size: 4rem;}
 p{font-size: 1.2rem;}
 html, body{height: 100%;}
 .po_bg{ width: 100%; height: 100%;}
-.top_bg{background-color: rgba(0,0,0,1); padding: 0.1rem 0 2rem;}
+.top_bg{background-color: rgba(0,0,0,1); padding: 0.1rem 0 2rem; width: 100%; position: fixed; z-index: 1111;}
 
-
-.site_bg{height: 100%; background-color: rgba(0,0,0,0.6);}
-.site_box{width: 100%; position: relative;}
-.site_img{width: 45%; max-width: 450px; position: absolute; top: 8rem; left: 16rem;}
-.site_txt{width: 45%; max-width: 500px; position: absolute; top:24rem; right: 24rem; background-color: rgba(0,0,0,0.5); color: #fff; 
+#port_wrap{width: 100%; height: 100%;}
+.site_bg{width: 100%; height: 100%; background-color: rgba(0,0,0,0.6);}
+.site_box{position: relative;}
+.site_img{width: 45%; max-width: 450px; position: absolute; top: 21rem; left: 16rem;}
+.site_txt{width: 45%; max-width: 500px; position: absolute; top:37rem; right: 24rem; background-color: rgba(0,0,0,0.5); color: #fff; 
 padding:2rem 0 2rem 8rem; }
 .site_txt > hr{width: 4rem;}
 
-.but{width: 10rem; position: absolute; top:51rem; left: 20%;}
+.but{width: 10rem; position: absolute; top:63rem; left: 20%;}
