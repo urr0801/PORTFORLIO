@@ -50,16 +50,19 @@ function homeAdd(data) {
 	html += '</div>';
 	html += '</div>';
 	$("#port_wrap").append(html);
+	$(window).trigger("resize");
 }
 function homeRev(data) {
 	var id = data.key;
 	$("#"+id).remove();
+	$(window).trigger("resize");
 }
 function homeChg(data) {
 	var id = data.key;
 	var ul = $("#"+id);
 	$("img", ul).attr("src", "../img/port/"+data.val().img);
 	$("span", ul).html(data.val().title);
+	$(window).trigger("resize");
 }
 
 
