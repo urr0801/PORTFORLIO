@@ -13,7 +13,7 @@ var db = firebase.database();
 var ref;
 var key;
 
-/***** HOME ******/
+/***** PORTFOLIO page ******/
 function initHome() {
 	$(".list:not(#home_wr)").remove();
 	ref = db.ref("root/home");

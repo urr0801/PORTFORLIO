@@ -14,3 +14,4 @@ html, body{height: 100%;}
 #home .list > li:nth-child(2) {text-align:center; border-right:1px solid #ccc;border-left:1px solid #ccc;}
 #home .list > li:last-child {text-align:center; border-right:none;}
 #home .list img {height:180px; margin-bottom:8px; border:1px solid #ccc;}
+.form-control{margin-bottom: 0.3rem;}
