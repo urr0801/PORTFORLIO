@@ -91,10 +91,14 @@ function wheelFn(e) {
 	}
 	if (dir > 0) { if (now > 0) now--; } 
 	else { if (now < gap.length - 1) now++; }
-	$("html, body").stop().animate({"scrollTop": gap[now] + "px"}, 200, function(){
+		$(".site_img").eq(0).addClass("ani_img");
+		$(".site_txt").eq(0).addClass("ani_txt");
+		$("html, body").stop().animate({"scrollTop": gap[now] + "px"}, 200, function(){
 		$(window).on("mousewheel DOMMouseScroll", wheelFn);
-		$(".site_img").addClass("ani_img");
-		$(".site_txt").addClass("ani_txt");
+		
+		$(".site_img").eq(now).addClass("ani_img");
+		$(".site_txt").eq(now).addClass("ani_txt");
+		console.log(now);
 	});
 	}
 
