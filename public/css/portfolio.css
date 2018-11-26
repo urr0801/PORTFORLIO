@@ -11,6 +11,30 @@ html, body{height: 100%;}
 .site_img{width: 45%; max-width: 450px; position: absolute; top: 21rem; left: 16rem;}
 .site_txt{width: 45%; max-width: 500px; position: absolute; top:37rem; right: 24rem; background-color: rgba(0,0,0,0.5); color: #fff; 
 padding:2rem 0 2rem 8rem; }
-.site_txt > hr{width: 4rem;}
+.site_txt > li > hr{width: 4rem;}
 
 .but{width: 10rem; position: absolute; top:63rem; left: 20%;}
+
+
+/* .site_img {animation-name:site_img; animation-duration:0.5s; animation-fill-mode:forwards;}
+.site_txt {animation-name:site_txt; animation-duration:0.5s; animation-fill-mode:forwards; animation-timing-function:ease-out;}
+@keyframes site_img {
+	0% {opacity:0; transform:translateY(10rem);}
+	100% {opacity:1; transform:translateY(0);}
+}
+@keyframes site_txt {
+	0% {opacity: 0; right:10rem;}
+	100% {opacity: 1; right:25rem;}
+} */
+
+
+.ani_img {animation-name:ani_img; animation-duration:0.5s; animation-fill-mode:forwards;}
+.ani_txt {animation-name:ani_txt; animation-duration:0.5s; animation-fill-mode:forwards; animation-timing-function:ease-out;}
+@keyframes ani_img {
+	0% {opacity:0; transform:translateY(10rem);}
+	100% {opacity:1; transform:translateY(0);}
+}
+@keyframes ani_txt {
+	0% {opacity: 0; right:10rem;}
+	100% {opacity: 1; right:25rem;}
+}

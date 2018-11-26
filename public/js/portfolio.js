@@ -35,17 +35,17 @@ function homeAdd(data) {
 	html += '<div class="site_bg clear page" id="'+id+'">';
 	html += '<div class="site_box row">';
 	html += '<div class="site_img"><img src="'+src+'" alt="site_img" class="img"></div>';
-	html += '<div class="site_txt">';
-	html += '<h3>project Name</h3>';
-	html += '<h2>'+adtitle+'</h2>';
-	html += '<hr />';
-	html += '<p>skills: '+skills+'</p>';
-	html += '<p>Contribute:'+Contribute+'</p>';
-	html += '<p>Functions : '+Functions+'</p>';
-	html += '<p>Explantion</p>';
-	html += '<p>'+Explantion_1+'</p>';
-	html += '<p>'+Explantion_2+'</p>';
-	html += '</div>';
+	html += '<ul class="site_txt">';
+	html += '<li><h3>project Name</h3></li>';
+	html += '<li><h2>'+adtitle+'</h2></li>';
+	html += '<li><hr /></li>';
+	html += '<li><p>skills: '+skills+'</p></li>';
+	html += '<li><p>Contribute:'+Contribute+'</p></li>';
+	html += '<li><p>Functions : '+Functions+'</p></li>';
+	html += '<li><p>Explantion</p></li>';
+	html += '<li><p>'+Explantion_1+'</p></li>';
+	html += '<li><p>'+Explantion_2+'</p></li>';
+	html += '</ul>';
 	html += '<button class="but w3-button w3-round-xxlarge w3-white" onclick="goUrl(\''+link+'\');">go site</button>';
 	html += '</div>';
 	html += '</div>';
@@ -93,5 +93,11 @@ function wheelFn(e) {
 	else { if (now < gap.length - 1) now++; }
 	$("html, body").stop().animate({"scrollTop": gap[now] + "px"}, 200, function(){
 		$(window).on("mousewheel DOMMouseScroll", wheelFn);
+		$(".site_img").addClass("ani_img");
+		$(".site_txt").addClass("ani_txt");
 	});
-}
+	}
+
+
+// 높이에따른 애니메이션
+
