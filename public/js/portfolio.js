@@ -1,3 +1,5 @@
+// includeHTML();
+
 
 // admin에서 받아오기
 var config = {
@@ -13,6 +15,7 @@ firebase.initializeApp(config);
 var db = firebase.database();
 var ref;
 var key;
+
 
 (function initHome() {
 	ref = db.ref("root/home");
@@ -32,8 +35,8 @@ function homeAdd(data) {
 	var Explantion_2 = data.val().Explantion_2;
 	var link = data.val().link;
 	var html = '';
-	html += '<div class="site_bg clear page" id="'+id+'">';
-	html += '<div class="site_box row">';
+	html += '<div class="site_bg page" id="'+id+'">';
+	html += '<div class="site_box clear row">';
 	html += '<div class="site_img"><img src="'+src+'" alt="site_img" class="img"></div>';
 	html += '<ul class="site_txt">';
 	html += '<li><h3>project Name</h3></li>';
@@ -53,7 +56,7 @@ function homeAdd(data) {
 	$(window).trigger("resize");
 	$(".site_img").eq(0).addClass("ani_img");
 	$(".site_txt").eq(0).addClass("ani_txt");
-
+	$(".but").eq(0).addClass("ani_but");
 }
 function homeRev(data) {
 	var id = data.key;
@@ -67,7 +70,6 @@ function homeChg(data) {
 	$("span", ul).html(data.val().title);
 	$(window).trigger("resize");
 }
-
 
 
 // scroll 
@@ -100,40 +102,42 @@ function wheelFn(e) {
 	
 	$("html, body").stop().animate({"scrollTop": gap[now] + "px"}, 200, function(){
 		$(window).on("mousewheel DOMMouseScroll", wheelFn);
+		// page ani event
 		$(".site_img").eq(now).addClass("ani_img");
 		$(".site_txt").eq(now).addClass("ani_txt");
-		console.log(now);
+		$(".but").eq(now).addClass("ani_but");
 	});
 }
 
-// 높이에따른 애니메이션
 
-function includeHTML() {
-  var z, i, elmnt, file, xhttp;
-  /*loop through a collection of all HTML elements:*/
-  z = document.getElementsByTagName("*");
-  for (i = 0; i < z.length; i++) {
-    elmnt = z[i];
-    /*search for elements with a certain atrribute:*/
-    file = elmnt.getAttribute("w3-include-html");
-    if (file) {
-      /*make an HTTP request using the attribute value as the file name:*/
-      xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function() {
-        if (this.readyState == 4) {
-          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-          /*remove the attribute, and call this function once more:*/
-          elmnt.removeAttribute("w3-include-html");
-          includeHTML();
-        }
-      } 
-      xhttp.open("GET", file, true);
-      xhttp.send();
-      /*exit the function:*/
-      return;
-    }
-  }
-}
+// function includeHTML() {
+//   var z, i, elmnt, file, xhttp;
+//   /*loop through a collection of all HTML elements:*/
+//   z = document.getElementsByTagName("*");
+//   for (i = 0; i < z.length; i++) {
+//     elmnt = z[i];
+//     /*search for elements with a certain atrribute:*/
+//     file = elmnt.getAttribute("w3-include-html");
+//     if (file) {
+//       /*make an HTTP request using the attribute value as the file name:*/
+//       xhttp = new XMLHttpRequest();
+//       xhttp.onreadystatechange = function() {
+//         if (this.readyState == 4) {
+//           if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+//           if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+//           /*remove the attribute, and call this function once more:*/
+//           elmnt.removeAttribute("w3-include-html");
+//           includeHTML();
+//         }
+//       } 
+//       xhttp.open("GET", file, true);
+//       xhttp.send();
+//       /*exit the function:*/
+//       return;
+//     }
+//   }
+// }
 
-includeHTML();
+
+
+
