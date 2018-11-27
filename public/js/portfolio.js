@@ -37,7 +37,7 @@ function homeAdd(data) {
 	var html = '';
 	html += '<div class="site_bg page" id="'+id+'">';
 	html += '<div class="site_box row">';
-	html += '<div class="site_img"><img src="'+src+'" alt="site_img" class="img"></div>';
+	html += '<div class="site_img"><img src="'+src+'" alt="site_img" class="img mov_img"></div>';
 	html += '<ul class="site_txt">';
 	html += '<li><h3>project Name</h3></li>';
 	html += '<li><h2>'+adtitle+'</h2></li>';
@@ -109,6 +109,17 @@ function wheelFn(e) {
 	});
 }
 
+
+$(".site_img").mousemove(function(evt){
+	var delta = 50;
+	var cX = evt.clientX;
+	var cY = evt.clientY;
+	var iX = $(this).find(".mov_img").width()/2;
+	var iY = $(this).find(".mov_img").height()/2;
+	var mX = (iX - cX)/delta;
+	var mY = (iY - cY)/delta;
+	$(this).find(".mov_img").css("transform", "translate("+mX+"px, "+mY+"px)");
+});
 
 // function includeHTML() {
 //   var z, i, elmnt, file, xhttp;

@@ -7,8 +7,8 @@ p{font-size: 1.2rem;}
 #port_wrap{width: 100%;}
 .site_bg{width: 100%; height: 78.75rem; background-color: rgba(0,0,0,0.6);}
 .site_box{height: 100%; position: relative;}
-.site_img{width: 45%; max-width: 450px; position: absolute; top: 21rem; left: 16rem;}
-.site_txt{width: 45%; max-width: 500px; position: absolute; top:37rem; right: 25rem; background-color: rgba(0,0,0,0.5); color: #fff; padding:2rem 0 2rem 8rem; }
+.site_img{width: 60%; max-width: 700px; position: absolute; top: 21rem; left: 5rem;}
+.site_txt{width: 45%; max-width: 500px; position: absolute; top:37rem; left: 60rem; background-color: rgba(0,0,0,0.5); color: #fff; padding:2rem 0 2rem 8rem; }
 .site_txt > li > hr{width: 4rem;}
 
 .but{width: 10rem; position: absolute; top:63rem; left: 25%;}
@@ -22,8 +22,8 @@ p{font-size: 1.2rem;}
 	100% {opacity:1; transform:translateY(0);}
 }
 @keyframes ani_txt {
-	0% {opacity: 0; right:10rem;}
-	100% {opacity: 1; right:25rem;}
+	0% {opacity: 0; left:80rem;}
+	100% {opacity: 1; left: 60rem;}
 }
 @keyframes ani_but {
 	0% {opacity:0; transform:translateX(-10rem);}

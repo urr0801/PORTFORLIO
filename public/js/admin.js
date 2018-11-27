@@ -36,13 +36,13 @@ function homeAdd(data) {
 	var link = data.val().link;
 	var html = '';
 	html += '<ul class="list clear row" id="' + id + '">';
-	html += '<li class="col-md-2">';
+	html += '<li class="col-md-3">';
 	html += '<div>';
 	html += '<img src="' + src + '">';
 	html += '<input type="text" class="tit_img form-control" placeholder="이미지" value="' + img + '">';
 	html += '</div>';
 	html += '</li>';
-	html += '<li class="col-md-8">';
+	html += '<li class="col-md-6">';
 	html += '<div>';
 	html += '<input type="text" class="adtitle form-control" placeholder="project Name" value="' + adtitle + '">';
 	html += '<input type="text" class="skills form-control" placeholder="skills" value="' + skills + '">';
@@ -53,7 +53,7 @@ function homeAdd(data) {
 	html += '<input type="text" class="link form-control" style="margin-top:5px;" placeholder="링크주소" value="' + link + '">';
 	html += '</div>';
 	html += '</li>';
-	html += '<li class="col-md-2">';
+	html += '<li class="col-md-3">';
 	html += '<div>';
 	html += '<button class="btn btn-danger" onclick="homeDel(this);">삭제</button> ';
 	html += '<button class="btn btn-warning" onclick="homeUp(this);">수정</button>';
