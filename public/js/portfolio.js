@@ -36,7 +36,7 @@ function homeAdd(data) {
 	var link = data.val().link;
 	var html = '';
 	html += '<div class="site_bg page" id="'+id+'">';
-	html += '<div class="site_box clear row">';
+	html += '<div class="site_box row">';
 	html += '<div class="site_img"><img src="'+src+'" alt="site_img" class="img"></div>';
 	html += '<ul class="site_txt">';
 	html += '<li><h3>project Name</h3></li>';
