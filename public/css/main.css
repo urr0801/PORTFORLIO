@@ -32,24 +32,17 @@ display: none;}
 .sns_icon li img{max-width: 80%; display: table-cell; vertical-align: middle;}
 
 /* 날씨 */
-
-
-.weather_box{width: 30%;height: 100%; background-color: rgba(0,0,0,0.6);position: absolute;top: 0; right: 0; padding-left: 8rem; box-sizing: border-box; z-index: 1; margin: 0 auto; text-align: center; display: none;}
+.weather_box{width: 30%;height: 100%; background-color: rgba(0,0,0,0.6);position: 							absolute;top: 0; right: 0; padding-left: 8rem; box-sizing: border-box; z-index: 1; margin: 0 auto; text-align: center; display: none;}
 
 .daily{width:100%; height:50%; padding:5%; text-align:center; margin: 0 auto;}
 .daily{position: absolute; top: 0; right:1.2rem;}
 .daily > div {text-align:center; }
-
-/* .weekly {overflow: auto; width:100%; float:none;}
-.weekly > li {padding:3%; border-bottom:1px solid #ccc; text-align:left;}
-.weekly ul {float:left; width:80%; padding-left:10%;} */
 
 .dl_icon {width:30%; max-width:220px; margin-top: 7rem;}
 .dl_area {font-size:2em; color:rgb(0, 78, 196); font-weight:bold; margin-top:2em; margin: 0 auto; padding: 1rem 0;}
 .dl_date {font-size:1.5em; color:#ccc; padding-top: 1rem;}
 .dl_temp {font-size:1.2em; color:#fff;}
 .dl_desc {font-size:1.5em; color:#fff;}
-
 
 .weekly{height: 420px; overflow:auto; width:80%; text-align:center; float: right; margin-top: 3rem;}
 .weekly ul {float:left; width:60%; padding-left:10%;} 
@@ -61,14 +54,5 @@ display: none;}
 .w3-input{padding: 0; background-color: transparent; color: #fff;
 border: none;}
 .selects > select{width: 20%; margin: 0 auto;}
-
-/* .tab_active {background-color:rgb(3, 112, 185); color:#fff;}
-.tab_disable {background-color:rgb(202, 216, 226); color:#666;} */
-
-/* @media screen and (max-width:799px) {
-	.tabs > li {font-size:1.25rem;}
-	.daily, .weekly {width:100%; float:none;}
-	.weekly {display:none;}
-} */
 
 .ho2{display: none;}
