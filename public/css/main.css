@@ -1,3 +1,4 @@
+
 .main_bg{width: 100%; height: 100%;
 	background-image: url(../img/main/lighthouse-2225445.jpg);
 	background-repeat: no-repeat;
@@ -11,15 +12,15 @@
 .top_tit{width: 75%; float: left; color: #fff; font-size: 4rem; text-align: center;}
 .ad_title{font-size: 2rem;}
 .nav_toggle{float: right; font-size: 1.8rem; color:#fff;}
-.fa-bars{border: 1px solid #fff; padding: 1.3rem; z-index: 1111; position: absolute; right: 2rem;}
-.fa-times{border: 1px solid #fff; padding: 1.3rem; z-index: 1111; position: absolute; right: 2rem; color: #fff; font-size: 1.8rem;}
-.weather_img{max-width: 55px; z-index: 1111; position: absolute; right: 8rem;}
+.fa-bars{border: 1px solid #fff; padding: 1.3rem; z-index: 111111; position: absolute; right: 2rem;}
+.fa-times{border: 1px solid #fff; padding: 1.3rem; z-index: 111111; position: absolute; right: 2rem; color: #fff; font-size: 1.8rem;}
+.weather_img{max-width: 55px; z-index: 111111; position: absolute; right: 8rem;}
 
 .title{position: absolute; top:41rem; left: 0;}
 .title_img{max-width: 75%;}
 
 
-.nav_box{width: 30%;height: 100%; background-color: rgba(0,0,0,0.9);position: absolute;top: 0; right: 0; padding-left: 8rem; box-sizing: border-box; z-index: 1;
+.nav_box{width: 30%;height: 100%; background-color: rgba(0,0,0,0.9);position: absolute;top: 0; right: 0; padding-left: 8rem; box-sizing: border-box; z-index: 11111;
 display: none;}
 
 .menu{padding: 16rem 0 8rem;}
@@ -36,7 +37,7 @@ display: none;}
 .sns_icon li img{max-width: 80%; display: table-cell; vertical-align: middle;}
 
 /* 날씨 */
-.weather_box{width: 30%;height: 100%; background-color: rgba(0,0,0,0.9);position: 							absolute;top: 0; right: 0; padding-left: 8rem; box-sizing: border-box; z-index: 1; margin: 0 auto; text-align: center; display: none;}
+.weather_box{width: 30%;height: 100%; background-color: rgba(0,0,0,0.9);position: 							absolute;top: 0; right: 0; padding-left: 8rem; box-sizing: border-box; z-index: 1; margin: 0 auto; text-align: center; display: none; z-index: 11111;}
 
 .daily{width:100%; height:50%; padding:5%; text-align:center; margin: 0 auto;}
 .daily{position: absolute; top: 0; right:1.2rem;}
@@ -60,3 +61,6 @@ border: none;}
 .selects > select{width: 20%; margin: 0 auto;}
 
 .ho2{display: none;}
+
+.foot_bg{width: 100%; height: 150px; background-color: rgba(0,0,0,1);}
+.footer{color:#ccc; font-size: 0.8rem; text-align: center; line-height: 150px;}

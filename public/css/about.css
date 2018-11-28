@@ -1,0 +1,14 @@
+.ab_wrap{ width: 100%;}
+.top_bg{background-color: rgba(0,0,0,0.5); padding: 0.1rem 0 2rem; width: 100%; position: fixed; z-index: 111;}
+
+.ab_slide_wrap {width:100%; position:relative; margin:0 auto;overflow:hidden; height: 800px;}
+.slides {width:100%; position:relative;}
+.slide > img{transform: translateY(-40rem);}
+.pager_wrap {width:100%; position:absolute; bottom:20px; font-size:0.75em; z-index:111; border:0;}
+
+.w3-padding {background-color: transparent;}
+.poger_in{color: #fff;}
+.poger_out{color: #111;}
+
+#ab_slides .slide {width:100%; position:absolute; left:0; top:0;}
+

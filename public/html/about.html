@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>PORTFOLIO_portfolio</title>
+	<title>PORTFOLIO_about me</title>
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
 	 crossorigin="anonymous">
@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="../css/base.css">
 	<link rel="stylesheet" href="../css/main.css">
-	<link rel="stylesheet" href="../css/portfolio.css">
+	<link rel="stylesheet" href="../css/about.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
@@ -21,21 +21,41 @@
 
 <body>
 
-	<div class="po_bg clear">
+	<div class="ab_wrap clear">
 		<div class="top_bg">
 			<!-- top_nav 영역 -->
 			<ul class="main_top row clear">
 				<li class="logo"><a href="main.html"><img src="../common/logo_w.png" class="logo_img" alt="logo_w"></a></li>
-				<li class="top_tit">PORTFOLIO</li>
+				<li class="top_tit">ABOUT ME</li>
 				<li class="weather_icon"><img src="../common/weather_icon.png" class="weather_img" alt="weather_img">
 				</li>
 				<li class="nav_toggle fa fa-bars" id="tog"></li>
 			</ul>
 		</div>
 
-		<!-- site 영역 -->
-		<div id="port_wrap">
-			
+		<div class="ab_bg">
+			<div class="ab_section01">
+				<div class="ab_slide_wrap clear">
+					<ul class="slides clear" id="ab_slides">
+						<li class="slide" data-link="#">
+							<img src="../img/aboutme/isolate-1209275_1920.jpg" class="img">
+						</li>
+						<li class="slide" data-link="#">
+							<img src="../img/aboutme/person-984282_1920.jpg" class="img">
+						</li>
+						<li class="slide" data-link="#">
+							<img src="../img/aboutme/technology-1283624_1920.jpg" class="img">
+						</li>
+					</ul>
+					<div class="w3-center pager_wrap">
+						<div class="w3-bar pager"></div>
+					</div>
+				</div>
+			</div>
+			<div class="ab_banner01"></div>
+			<div class="ab_section02"></div>
+			<div class="ab_banner02"></div>
+			<div class="ab_section03"></div>
 		</div>
 
 		<!-- menu div 영역 -->
@@ -88,7 +108,7 @@
 
 	<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
 	<script src="../js/main.js"></script>
-	<script src="../js/portfolio.js"></script>
+	<script src="../js/about.js"></script>
 </body>
 
 </html>

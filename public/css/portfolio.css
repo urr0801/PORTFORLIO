@@ -2,7 +2,7 @@ h3{font-size: 2rem;}
 h2{font-size: 4rem;}
 p{font-size: 1.2rem;}
 .po_bg{ width: 100%;}
-.top_bg{background-color: rgba(0,0,0,1); padding: 0.1rem 0 2rem; width: 100%; position: fixed; z-index: 1111;}
+.top_bg{background-color: rgba(0,0,0,1); padding: 0.1rem 0 2rem; width: 100%; position: fixed; z-index: 111;}
 
 #port_wrap{width: 100%;}
 .site_bg{width: 100%; height: 78.75rem; background-color: rgba(0,0,0,0.6);}
@@ -14,23 +14,95 @@ p{font-size: 1.2rem;}
 .but{width: 10rem; position: absolute; top:63rem; left: 25%;}
 
 /* 등장 애니메이션 */
-.ani_img {animation-name:ani_img; animation-duration:1s; animation-fill-mode:forwards;}
-.ani_txt {animation-name:ani_txt; animation-duration:1s; animation-fill-mode:forwards; animation-timing-function:ease-out;}
-.ani_but {animation-name:ani_but; animation-duration:1s; animation-fill-mode:forwards;}
-@keyframes ani_img {
-	0% {opacity:0; transform:translateY(10rem);}
+.ani_img0 {animation-name:ani_img0; animation-duration:1.5s; animation-fill-mode:forwards;}
+.ani_txt0 {animation-name:ani_txt0; animation-duration:1.5s; animation-fill-mode:forwards; animation-timing-function:ease-out;}
+.ani_but0 {animation-name:ani_but0; animation-duration:1.5s; animation-fill-mode:forwards;}
+@keyframes ani_img0 {
+	0% {opacity:0; transform:translateY(-20rem);}
 	100% {opacity:1; transform:translateY(0);}
 }
-@keyframes ani_txt {
+@keyframes ani_txt0 {
 	0% {opacity: 0; left:80rem;}
 	100% {opacity: 1; left: 60rem;}
 }
-@keyframes ani_but {
-	0% {opacity:0; transform:translateX(-10rem);}
+@keyframes ani_but0 {
+	0% {opacity:0; transform:translateX(-20rem);}
 	100% {opacity:1; transform:translateX(0);}
 }
 
+.ani_img1 {animation-name:ani_img1; animation-duration:1.5s; animation-fill-mode:forwards;}
+.ani_txt1 {animation-name:ani_txt1; animation-duration:1.5s; animation-fill-mode:forwards; animation-timing-function:ease-out;}
+.ani_but1 {animation-name:ani_but1; animation-duration:1.5s; animation-fill-mode:forwards;}
+@keyframes ani_img1 {
+	0% {opacity:0; transform:translateX(-20rem);}
+	100% {opacity:1; transform:translateX(0);}
+}
+@keyframes ani_txt1 {
+	0% {opacity: 0; left: 80rem;}
+	100% {opacity: 1; left: 60rem;}
+}
+@keyframes ani_but1 {
+	0% {opacity:0; transform:translateY(-20rem);}
+	100% {opacity:1; transform:translateY(0);}
+}
 
+.ani_img2 {animation-name:ani_img2; animation-duration:1.5s; animation-fill-mode:forwards;}
+.ani_txt2 {animation-name:ani_txt2; animation-duration:1.5s; animation-fill-mode:forwards; animation-timing-function:ease-out;}
+.ani_but2 {animation-name:ani_but2; animation-duration:1.5s; animation-fill-mode:forwards;}
+@keyframes ani_img2 {
+	0% {opacity:0; transform:translateY(20rem);}
+	100% {opacity:1; transform:translateY(0);}
+}
+@keyframes ani_txt2 {
+	0% {opacity: 0; top:17rem;}
+	100% {opacity: 1; top: 37rem;}
+}
+@keyframes ani_but2 {
+	0% {opacity:0; transform:translateX(20rem);}
+	100% {opacity:1; transform:translateX(0);}
+}
 
-.foot_bg{width: 100%; height: 150px; background-color: rgba(0,0,0,1);}
-.footer{color:#ccc; font-size: 0.8rem; text-align: center; line-height: 150px;}
+.ani_img3 {animation-name:ani_img3; animation-duration:1.5s; animation-fill-mode:forwards;}
+.ani_txt3 {animation-name:ani_txt3; animation-duration:1.5s; animation-fill-mode:forwards; animation-timing-function:ease-out;}
+.ani_but3 {animation-name:ani_but3; animation-duration:1.5s; animation-fill-mode:forwards;}
+@keyframes ani_img3 {
+	0% {opacity:0; transform:translateY(20rem);}
+	100% {opacity:1; transform:translateY(0);}
+}
+@keyframes ani_txt3 {
+	0% {opacity: 0; left:80rem;}
+	100% {opacity: 1; left: 60rem;}
+}
+@keyframes ani_but3 {
+	0% {opacity:0; transform:translateX(-20rem);}
+	100% {opacity:1; transform:translateX(0);}
+}
+
+.ani_img4 {animation-name:ani_img4; animation-duration:1.5s; animation-fill-mode:forwards;}
+.ani_txt4 {animation-name:ani_txt4; animation-duration:1.5s; animation-fill-mode:forwards; animation-timing-function:ease-out;}
+.ani_but4 {animation-name:ani_but4; animation-duration:1.5s; animation-fill-mode:forwards;}
+@keyframes ani_img4 {
+	0% {opacity:0; transform:translateX(-20rem);}
+	100% {opacity:1; transform:translateX(0);}
+}
+@keyframes ani_txt4 {
+	0% {opacity: 0; top:57rem;}
+	100% {opacity: 1; top: 37rem;}
+}
+@keyframes ani_but4 {
+	0% {opacity:0; transform:translateX(20rem);}
+	100% {opacity:1; transform:translateX(0);}
+}
+
+/* img 스케일 애니메이션 */
+.site_img > img {animation-duration:0.5s; animation-fill-mode:forwards;}
+
+@keyframes siteAni {
+	0% {transform: scale(1);}
+	100% {transform: scale(1.05);}
+}
+@keyframes siteAniBack {
+	0% {transform: scale(1.05);}
+	100% {transform: scale(1);}
+}
+
