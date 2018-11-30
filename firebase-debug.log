@@ -1,0 +1,87 @@
+[debug] [2018-11-29T05:16:58.509Z] ----------------------------------------------------------------------
+[debug] [2018-11-29T05:16:58.525Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Administrator\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-11-29T05:16:58.525Z] CLI Version:   5.1.1
+[debug] [2018-11-29T05:16:58.525Z] Platform:      win32
+[debug] [2018-11-29T05:16:58.525Z] Node Version:  v8.12.0
+[debug] [2018-11-29T05:16:58.525Z] Time:          Thu Nov 29 2018 14:16:58 GMT+0900 (대한민국 표준시)
+[debug] [2018-11-29T05:16:58.525Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-11-29T05:16:58.572Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-11-29T05:16:58.572Z] > authorizing via signed-in user
+[debug] [2018-11-29T05:16:58.572Z] [iam] checking project uportfoli for permissions ["firebase.projects.get"]
+[debug] [2018-11-29T05:16:58.587Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-11-29T05:16:58.587Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2018-11-29T05:16:58.987Z] <<< HTTP RESPONSE 200
+[debug] [2018-11-29T05:16:59.003Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/uportfoli:testIamPermissions  
+
+[debug] [2018-11-29T05:17:00.205Z] <<< HTTP RESPONSE 200
+[debug] [2018-11-29T05:17:00.221Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/uportfoli  
+ 
+[debug] [2018-11-29T05:17:01.358Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'D:\PORTFORLIO'...
+[info] 
+[debug] [2018-11-29T05:17:01.358Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/260216334544/clients/_:getWebAppConfig  
+ 
+[debug] [2018-11-29T05:17:02.348Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+[debug] [2018-11-29T08:14:55.960Z] ----------------------------------------------------------------------
+[debug] [2018-11-29T08:14:55.964Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Administrator\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-11-29T08:14:55.964Z] CLI Version:   5.1.1
+[debug] [2018-11-29T08:14:55.964Z] Platform:      win32
+[debug] [2018-11-29T08:14:55.964Z] Node Version:  v8.12.0
+[debug] [2018-11-29T08:14:55.966Z] Time:          Thu Nov 29 2018 17:14:55 GMT+0900 (대한민국 표준시)
+[debug] [2018-11-29T08:14:55.966Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-11-29T08:14:55.983Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-11-29T08:14:55.983Z] > authorizing via signed-in user
+[debug] [2018-11-29T08:14:55.983Z] [iam] checking project uportfoli for permissions ["firebase.projects.get"]
+[debug] [2018-11-29T08:14:55.983Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-11-29T08:14:55.983Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2018-11-29T08:14:56.318Z] <<< HTTP RESPONSE 200
+[debug] [2018-11-29T08:14:56.318Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/uportfoli:testIamPermissions  
+
+[debug] [2018-11-29T08:14:57.514Z] <<< HTTP RESPONSE 200
+[debug] [2018-11-29T08:14:57.530Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/uportfoli  
+ 
+[debug] [2018-11-29T08:14:58.694Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'D:\PORTFORLIO'...
+[info] 
+[debug] [2018-11-29T08:14:58.708Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/260216334544/clients/_:getWebAppConfig  
+ 
+[debug] [2018-11-29T08:14:59.523Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+[debug] [2018-11-30T00:42:55.711Z] ----------------------------------------------------------------------
+[debug] [2018-11-30T00:42:55.727Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Administrator\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-11-30T00:42:55.727Z] CLI Version:   5.1.1
+[debug] [2018-11-30T00:42:55.727Z] Platform:      win32
+[debug] [2018-11-30T00:42:55.727Z] Node Version:  v8.12.0
+[debug] [2018-11-30T00:42:55.727Z] Time:          Fri Nov 30 2018 09:42:55 GMT+0900 (대한민국 표준시)
+[debug] [2018-11-30T00:42:55.727Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-11-30T00:42:55.773Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-11-30T00:42:55.773Z] > authorizing via signed-in user
+[debug] [2018-11-30T00:42:55.773Z] [iam] checking project uportfoli for permissions ["firebase.projects.get"]
+[debug] [2018-11-30T00:42:55.773Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-11-30T00:42:55.773Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2018-11-30T00:42:56.197Z] <<< HTTP RESPONSE 200
+[debug] [2018-11-30T00:42:56.212Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/uportfoli:testIamPermissions  
+
+[debug] [2018-11-30T00:42:57.464Z] <<< HTTP RESPONSE 200
+[debug] [2018-11-30T00:42:57.464Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/uportfoli  
+ 
+[debug] [2018-11-30T00:42:58.649Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'D:\PORTFORLIO'...
+[info] 
+[debug] [2018-11-30T00:42:58.664Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/260216334544/clients/_:getWebAppConfig  
+ 
+[debug] [2018-11-30T00:42:59.652Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000

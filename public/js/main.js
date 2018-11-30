@@ -8,7 +8,7 @@ $(".nav_toggle").click(function () {
 		$(".weather_box").hide();
  		$(".weather_icon").hide();
 	} else {
-		$(this).stop().animate({'right': '2rem'});
+		$(this).stop().animate({'right': '0rem'});
 		$(this).removeClass("fa-times");
 		$(this).addClass("fa-bars");
 		$(".weather_icon").show();
@@ -19,15 +19,15 @@ $(".nav_toggle").click(function () {
 $(".weather_icon").click(function () {
 	$(".weather_box").slideToggle();
 	if($(this).hasClass("fa-times")) {
-		$(this).stop().animate({'right': '8rem'});
+		$(this).stop().animate({'right': '6rem'});
 		$(this).removeClass("fa fa-times");
-		$(".weather_icon > img").show();
+		$(".weather_img").show();
 		$(".nav_toggle").show();
 	} 
 	else {
 		$(this).stop().animate({'right': '17rem'});
 		$(this).addClass("fa fa-times");
-		$(".weather_icon > img").hide();
+		$(".weather_img").hide();
 		$(".nav_toggle").hide();
 		$(".nav_box").hide();
 	}

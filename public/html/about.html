@@ -22,29 +22,75 @@
 <body>
 
 	<div class="ab_wrap clear">
-		<div class="top_bg">
-			<!-- top_nav 영역 -->
+			<div class="top_bg">
+					<div class="re">
+							<!-- top_nav 영역 -->
 			<ul class="main_top row clear">
-				<li class="logo"><a href="main.html"><img src="../common/logo_w.png" class="logo_img" alt="logo_w"></a></li>
-				<li class="top_tit">ABOUT ME</li>
-				<li class="weather_icon"><img src="../common/weather_icon.png" class="weather_img" alt="weather_img">
-				</li>
-				<li class="nav_toggle fa fa-bars" id="tog"></li>
-			</ul>
-		</div>
+					<li class="logo col-md-2"><a href="main.html"><img src="../common/logo_w.png" class="logo_img" alt="logo_w"></a></li>
+					<li class="ab_nav col-md-8">
+						<div class="ab_menu ma-ri">CONTECT</div>
+						<div class="ab_menu">MY INFO</div>
+						<div class="ab_menu">SKILLS</div>
+						<div class="ab_menu">ABOUT ME</div>
+					</li>
+					<li class="toggle_box col-md-2">
+						<div class="weather_icon"><img src="../common/weather_icon.png" class="weather_img" alt="weather_img"></div>
+						<!-- 날씨 div 영역 -->
+						<div class="weather_box clear">
+							<div class="daily">
+								<div>
+									<img src="../img/icon/01d.png" class="img dl_icon">
+									<div class="dl_date"></div>
+									<div class="dl_area clear">
+										<!-- <span></span> -->
+										<div class="selects">
+											<select id="area" class="w3-input"></select>
+										</div>
+									</div>
+									<div class="dl_temp"></div>
+									<div class="dl_desc"></div>
+								</div>
+								<ul class="weekly"></ul>
+							</div>
+						</div>
+						<div class="nav_toggle fa fa-bars" id="tog"></div>
+						<!-- menu div 영역 -->
+						<div class="nav_box">
+							<ul class="menu">
+								<li><a href="main.html"><span class="fa fa-dot-circle-o"></span> HOME</a></li>
+								<li><a href="portfolio.html"><span class="fa fa-dot-circle-o"></span> PORTFOLIO</a></li>
+								<li><a href="about.html"><span class="fa fa-dot-circle-o"></span> ABOUT ME</a></li>
+								<li><a href="admin.html"><span class="fa fa-dot-circle-o"></span> admin page</a></li>
+							</ul>
+							<ul class="info">
+								<li>JEONG MIN WOO</li>
+								<li>O10.2591.0801</li>
+								<li>urr0801@gmail.com</li>
+							</ul>
+							<ul class="sns_icon">
+								<li class="fa fa-instagram"></li>
+								<li class="fa fa-facebook"></li>
+								<li><img src="../img/main/kakao.png"></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+					</div>
+				</div>
 
+				<!-- about section -->
 		<div class="ab_bg">
 			<div class="ab_section01">
 				<div class="ab_slide_wrap clear">
 					<ul class="slides clear" id="ab_slides">
 						<li class="slide" data-link="#">
-							<img src="../img/aboutme/isolate-1209275_1920.jpg" class="img">
+							<img src="../img/aboutme/lazy-morning-programming-in-a-bed-picjumbo-com.jpg" class="img">
 						</li>
 						<li class="slide" data-link="#">
-							<img src="../img/aboutme/person-984282_1920.jpg" class="img">
+							<img src="../img/aboutme/lonely-road-in-forest-aerial-view-picjumbo-com.jpg" class="img">
 						</li>
 						<li class="slide" data-link="#">
-							<img src="../img/aboutme/technology-1283624_1920.jpg" class="img">
+							<img src="../img/aboutme/morning-at-lago-di-braies-pragser-wildsee-lake-in-italy-picjumbo-com.jpg" class="img">
 						</li>
 					</ul>
 					<div class="w3-center pager_wrap">
@@ -52,52 +98,32 @@
 					</div>
 				</div>
 			</div>
-			<div class="ab_banner01"></div>
-			<div class="ab_section02"></div>
+			<div class="ab_banner01">
+				<ul class="banner01_box row">
+					<li class="col-md-4"></li>
+					<li class="col-md-4"></li>
+					<li class="col-md-4"></li>
+				</ul>
+			</div>
+			<div class="ab_section02">
+				<div class="section02_box">
+					<div class="skills_txt">
+						<p>PHOTOSHOP</p>
+						<p>ILLUSTRATOR</p>
+						<p>HTML5 & Css</p>
+						<p>JAVASCRIPT</p>
+						<p>JQUERY</p>
+						<p>BOOTSTRAP</p>
+						<p>AJAX</p>
+						<p>FIREBASE</p>
+						<p>PHP</p>
+					</div>
+				</div>
+			</div>
 			<div class="ab_banner02"></div>
 			<div class="ab_section03"></div>
 		</div>
 
-		<!-- menu div 영역 -->
-		<div class="nav_box">
-			<ul class="menu">
-				<li><a href="main.html"><span class="fa fa-dot-circle-o"></span> HOME</a></li>
-				<li><a href="portfolio.html"><span class="fa fa-dot-circle-o"></span> PORTFOLIO</a></li>
-				<li><a href="about.html"><span class="fa fa-dot-circle-o"></span> ABOUT ME</a></li>
-				<li><a href="admin.html"><span class="fa fa-dot-circle-o"></span> admin page</a></li>
-			</ul>
-			<ul class="info">
-				<li>JEONG MIN WOO</li>
-				<li>O10.2591.0801</li>
-				<li>urr0801@gmail.com</li>
-			</ul>
-			<ul class="sns_icon">
-				<li class="fa fa-instagram"></li>
-				<li class="fa fa-facebook"></li>
-				<li><img src="../img/main/kakao.png"></li>
-			</ul>
-		</div>
-
-
-		<!-- 날씨 div 영역 -->
-		<div class="weather_box clear">
-			<div class="daily">
-				<div>
-					<img src="../img/icon/01d.png" class="img dl_icon">
-					<div class="dl_date"></div>
-					<div class="dl_area clear">
-						<!-- <span></span> -->
-						<div class="selects">
-							<select id="area" class="w3-input">
-							</select>
-						</div>
-					</div>
-					<div class="dl_temp"></div>
-					<div class="dl_desc"></div>
-				</div>
-				<ul class="weekly"></ul>
-			</div>
-		</div>
 
 		<div class="foot_bg page">
 			<div class="footer">
