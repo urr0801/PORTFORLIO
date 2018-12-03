@@ -1,10 +1,15 @@
+
+h1{font-size: 2rem;}
+h2{font-size: 1.5rem;}
+h3{font-size: 1.25rem;}
+
 .ab_wrap{ width: 100%;}
-.top_bg{background-color: rgba(0,0,0,0.5); padding: 0.1rem 0 2rem; width: 100%; position: fixed; z-index: 111;}
+.top_bg{background-color: rgba(0,0,0,0.1); padding: 0.1rem 0 2rem; width: 100%; position: fixed; z-index: 111;}
 
 .ab_menu{display: inline-block;  color: #fff; font-size: 1.6rem; padding: 1.75rem 1rem;	float: right;}
 .ma-ri{margin-right:3rem;}
 
-.ab_slide_wrap {width:100%; height: 60rem; position:relative; margin:0 auto;overflow:hidden;}
+.ab_slide_wrap {width:100%; height: 55rem; position:relative; margin:0 auto;overflow:hidden;}
 .slides {width:100%; position:relative;}
 .slide:nth-child(1) > img{transform: translateY(-5rem);}
 .slide:nth-child(2) > img{transform: translateY(-5rem);}
@@ -17,22 +22,20 @@
 
 #ab_slides .slide {width:100%; position:absolute; left:0; top:0;}
 
-.banner01_box>li{height: 300px; border: 2px solid #f00; margin: 20rem 0;}
+.banner01_box>li{margin: 5rem 0; height: 450px; padding-top: 5rem;}
+.banner01_box>li>div{padding-left: 5rem;}
+.banner01_box>li>div>hr{width: 3rem; padding: 1px; background-color: #000040;}
+.edu_box > div, .exp_box > div, .pro_box > div{padding-bottom: 1rem;}
+.exp > span{text-align: center;}
 
-.ab_section02{height: 80rem; background-image: url("../img/aboutme/startup-593329_192023.jpg");
-background-size: cover; background-repeat: no-repeat; background-position-y: -10rem; position: relative;}
-.section02_box{width: 92rem; height: 60rem; position: absolute; top:50%; left: 50%;
--webkit-transform: translate(-50%,-50%);
--moz-transform: translate(-50%,-50%);
--o-transform: translate(-50%,-50%);
-transform: translate(-50%,-50%);}
-.skills_txt p{font-size: 2rem; color: #fff; position: absolute;}
-.skills_txt p:nth-child(1){top: 5rem; left: 72rem;}
-.skills_txt p:nth-child(2){top: 9.5rem; left: 71.5rem;}
-.skills_txt p:nth-child(3){top: 14.5rem; left: 71.3rem;}
-.skills_txt p:nth-child(4){top: 19.5rem; left: 71.1rem;}
-.skills_txt p:nth-child(5){top: 24.5rem; left: 70.9rem;}
-.skills_txt p:nth-child(6){top: 29.5rem; left: 70.7rem;}
-.skills_txt p:nth-child(7){top: 34.5rem; left: 70.5rem;}
-.skills_txt p:nth-child(8){top: 39.5rem; left: 70.4rem;}
-.skills_txt p:nth-child(9){top: 44.5rem; left: 70.3rem;}
+
+
+.ab_section02{background-image: url("../img/aboutme/startup-593329_192023.jpg");
+background-size: cover; background-repeat: no-repeat; background-position-y: -10rem;background-attachment:fixed;}
+.section02_box{display: table; padding: 10rem 0;}
+.skills_txt{display: table-cell; vertical-align: middle;}
+.skills_txt li{width: 23%; height: 20rem; float: left; font-size: 2rem; color: #fff; text-align: center; border: 1px solid #f00; line-height: 20rem; margin-right: 2%;}
+.ri-ma{margin-right: 0;}
+.bo-ma{margin-bottom: 2%; display: table;}
+
+.skills_txt> li:nth-child(1)>span{display: table-cell;}

@@ -21,7 +21,7 @@
 .title_img{max-width: 75%;}
 
 
-.nav_box{width: 570px; height: 80.5rem; top:-4rem; left: -4rem;  background-color: rgba(0,0,0,0.9);position: absolute;bottom: 0; padding-left: 8rem; box-sizing: border-box; z-index: 1111;
+.nav_box{width: 570px; height: 79.5rem; top:-4rem; left: -4rem;  background-color: rgba(0,0,0,0.9);position: absolute;bottom: 0; padding-left: 8rem; box-sizing: border-box; z-index: 1111;
 	display: none;}
 	
 	.menu{margin: 16rem 0 8rem;}
@@ -37,7 +37,7 @@
 	.sns_icon li img{max-width: 80%; display: table-cell; vertical-align: middle;}
 	
 	/* 날씨 */
-	.weather_box{width: 570px;height: 80.5rem; top:-4rem; left: -4rem; background-color: rgba(0,0,0,0.9);position: absolute; padding-left:1rem; box-sizing: border-box; margin: 0 auto; text-align: center; display: none; z-index: 1111;}
+	.weather_box{width: 570px;height: 79.5rem; top:-4rem; left: -4rem; background-color: rgba(0,0,0,0.9);position: absolute; padding-left:1rem; box-sizing: border-box; margin: 0 auto; text-align: center; display: none; z-index: 1111;}
 	
 	.daily{width:100%; height:50%; padding:2%; text-align:center; margin: 0 auto;}
 	.daily{position: absolute; top: 0; right:1.2rem;}
