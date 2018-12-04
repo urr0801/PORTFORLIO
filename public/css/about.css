@@ -14,6 +14,10 @@ h3{font-size: 1.25rem;}
 .slide:nth-child(1) > img{transform: translateY(-5rem);}
 .slide:nth-child(2) > img{transform: translateY(-5rem);}
 .slide:nth-child(3) > img{transform: translateY(-20rem);}
+.ab_tit_box{position: absolute; top:23rem; left: 15rem; z-index: 11111;}
+.ab_tit h2{color:#fff; font-size: 8rem;}
+.ab_tit h4{color:#fff; font-size: 2rem;}
+
 .pager_wrap {width:100%; position:absolute; bottom:20px; font-size:0.75em; z-index:111; border:0;}
 
 .w3-padding {background-color: transparent;}
@@ -34,8 +38,17 @@ h3{font-size: 1.25rem;}
 background-size: cover; background-repeat: no-repeat; background-position-y: -10rem;background-attachment:fixed;}
 .section02_box{display: table; padding: 10rem 0;}
 .skills_txt{display: table-cell; vertical-align: middle;}
-.skills_txt li{width: 23%; height: 20rem; float: left; font-size: 2rem; color: #fff; text-align: center; border: 1px solid #f00; line-height: 20rem; margin-right: 2%;}
+.skills_txt li{width: 23%; height: 20rem; float: left; font-size: 2rem; color: #fff; text-align: center; line-height: 20rem; margin-right: 2%; position: relative;}
 .ri-ma{margin-right: 0;}
 .bo-ma{margin-bottom: 2%; display: table;}
 
-.skills_txt> li:nth-child(1)>span{display: table-cell;}
+.skills_txt> li:nth-child(1)>span{display: table-cell; line-height: 2.5rem; vertical-align: middle;}
+
+.skill_1 > .skill_2{font-size: 1.2rem; color: #fff; background-color: rgba(0,0,0,0.5);  position: absolute; top: 0; left: 0; width: 100%; display: none;}
+
+.ab_banner02{width: 100%;  margin: 5rem 0;}
+.map, .contect{height: 500px; box-sizing: border-box; padding: 3rem 5rem;}
+.contect input{margin-top: 2rem;}
+.contect input.name{margin-top: 2rem;}
+.contect input.memo{height: 12rem;}
+.contect button{margin: 3rem 1rem; float: right; width: 7rem;}
