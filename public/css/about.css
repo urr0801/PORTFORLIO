@@ -32,8 +32,6 @@ h3{font-size: 1.25rem;}
 .edu_box > div, .exp_box > div, .pro_box > div{padding-bottom: 1rem;}
 .exp > span{text-align: center;}
 
-
-
 .ab_section02{background-image: url("../img/aboutme/startup-593329_192023.jpg");
 background-size: cover; background-repeat: no-repeat; background-position-y: -10rem;background-attachment:fixed;}
 .section02_box{display: table; padding: 10rem 0;}
