@@ -23,7 +23,7 @@ div, ul, li, ol, dl, dd, dt {margin: 0; padding: 0; box-sizing: border-box; list
 table {margin:0; padding:0; border-collapse:collapse;}
 th, td {margin:0; padding:0;}
 
-a {text-decoration:none; color: inherit; }
+a {text-decoration:none; color: inherit; cursor: pointer;}
 /* 보통 hover 만 준다 */
 a:link {color:#fff;}			/* 기본색 */
 a:visited {color:#fff;}		/* 방문했던 링크 */
