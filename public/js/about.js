@@ -1,3 +1,14 @@
+$(window).scroll(function () {
+	var gap = $("html, body").scrollTop();
+	if (gap > 150) {
+		$(".top_bg").addClass("moves");
+		$(".main_top").css({"margin-top":"0.5rem"});
+	} else {
+		$(".top_bg").removeClass("moves");
+		$(".main_top").css({"margin-top":"4rem"});
+	}
+});
+
 var n = 1;
 var interval;
 var depth = 2;

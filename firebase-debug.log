@@ -168,3 +168,87 @@
 [debug] [2018-12-05T01:18:59.928Z] <<< HTTP RESPONSE 200
 [info] i  hosting: Serving hosting files from: public
 [info] +  hosting: Local server: http://localhost:5000
+[debug] [2018-12-05T07:43:11.704Z] Error: write after end
+    at write_ (_http_outgoing.js:622:15)
+    at ServerResponse.write (_http_outgoing.js:617:10)
+    at ReadStream.ondata (_stream_readable.js:639:20)
+    at emitOne (events.js:116:13)
+    at ReadStream.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at ReadStream.Readable.push (_stream_readable.js:208:10)
+    at fs.read (fs.js:2059:12)
+    at FSReqWrap.wrapper [as oncomplete] (fs.js:658:17)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2018-12-05T07:43:11.718Z] Error: write after end
+    at write_ (_http_outgoing.js:622:15)
+    at ServerResponse.write (_http_outgoing.js:617:10)
+    at ReadStream.ondata (_stream_readable.js:639:20)
+    at emitOne (events.js:116:13)
+    at ReadStream.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at ReadStream.Readable.push (_stream_readable.js:208:10)
+    at fs.read (fs.js:2059:12)
+    at FSReqWrap.wrapper [as oncomplete] (fs.js:658:17)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2018-12-05T07:45:00.203Z] ----------------------------------------------------------------------
+[debug] [2018-12-05T07:45:00.211Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Administrator\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-12-05T07:45:00.212Z] CLI Version:   5.1.1
+[debug] [2018-12-05T07:45:00.212Z] Platform:      win32
+[debug] [2018-12-05T07:45:00.212Z] Node Version:  v8.12.0
+[debug] [2018-12-05T07:45:00.214Z] Time:          Wed Dec 05 2018 16:45:00 GMT+0900 (대한민국 표준시)
+[debug] [2018-12-05T07:45:00.214Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-12-05T07:45:00.270Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-12-05T07:45:00.272Z] > authorizing via signed-in user
+[debug] [2018-12-05T07:45:00.272Z] [iam] checking project uportfoli for permissions ["firebase.projects.get"]
+[debug] [2018-12-05T07:45:00.279Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-12-05T07:45:00.280Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2018-12-05T07:45:00.714Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-05T07:45:00.725Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/uportfoli:testIamPermissions  
+
+[debug] [2018-12-05T07:45:01.932Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-05T07:45:01.936Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/uportfoli  
+ 
+[debug] [2018-12-05T07:45:03.090Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'D:\PORTFORLIO'...
+[info] 
+[debug] [2018-12-05T07:45:03.097Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/260216334544/clients/_:getWebAppConfig  
+ 
+[debug] [2018-12-05T07:45:03.760Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+[debug] [2018-12-06T00:53:14.055Z] ----------------------------------------------------------------------
+[debug] [2018-12-06T00:53:14.055Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Administrator\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-12-06T00:53:14.055Z] CLI Version:   5.1.1
+[debug] [2018-12-06T00:53:14.055Z] Platform:      win32
+[debug] [2018-12-06T00:53:14.055Z] Node Version:  v8.12.0
+[debug] [2018-12-06T00:53:14.055Z] Time:          Thu Dec 06 2018 09:53:14 GMT+0900 (대한민국 표준시)
+[debug] [2018-12-06T00:53:14.055Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-12-06T00:53:14.086Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-12-06T00:53:14.086Z] > authorizing via signed-in user
+[debug] [2018-12-06T00:53:14.086Z] [iam] checking project uportfoli for permissions ["firebase.projects.get"]
+[debug] [2018-12-06T00:53:14.086Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-12-06T00:53:14.086Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2018-12-06T00:53:14.560Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-06T00:53:14.571Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/uportfoli:testIamPermissions  
+
+[debug] [2018-12-06T00:53:15.798Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-06T00:53:15.801Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/uportfoli  
+ 
+[debug] [2018-12-06T00:53:17.011Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'D:\PORTFORLIO'...
+[info] 
+[debug] [2018-12-06T00:53:17.023Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/260216334544/clients/_:getWebAppConfig  
+ 
+[debug] [2018-12-06T00:53:17.774Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000

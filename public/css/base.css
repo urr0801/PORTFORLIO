@@ -25,10 +25,10 @@ th, td {margin:0; padding:0;}
 
 a {text-decoration:none; color: inherit; cursor: pointer;}
 /* 보통 hover 만 준다 */
-a:link {color:#fff;}			/* 기본색 */
-a:visited {color:#fff;}		/* 방문했던 링크 */
+a:link {color:#fff;text-decoration:none;}			/* 기본색 */
+a:visited {color:#fff;text-decoration:none;}		/* 방문했던 링크 */
 a:hover {color:#222; text-decoration:none;}			/* 마우스를 올렸을때 */
-a:active {color:#222;}		/* 누르고 있는 동안 */
+a:active {color:#222;text-decoration:none;}		/* 누르고 있는 동안 */
 
 .hand {cursor:pointer;}
 .clear {clear:both;}

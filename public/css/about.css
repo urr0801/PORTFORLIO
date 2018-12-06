@@ -4,10 +4,12 @@ h2{font-size: 1.5rem;}
 h3{font-size: 1.25rem;}
 
 .ab_wrap{ width: 100%;}
-.top_bg{background-color: rgba(0,0,0,0.1); padding: 0.1rem 0 2rem; width: 100%; position: fixed; z-index: 111;}
+.top_bg{background-color: rgba(0,0,0,0.2);  width: 100%; position: fixed; z-index: 111111;}
 
 .ab_menu{display: inline-block;  color: #fff; font-size: 1.6rem; padding: 1.75rem 1rem;	float: right;}
 .ma-ri{margin-right:3rem;}
+
+.moves{background-color:rgba(0,0,0,1); color:#fff; padding: 0.2rem 0;}
 
 .ab_slide_wrap {width:100%; height: 55rem; position:relative; margin:0 auto;overflow:hidden;}
 .slides {width:100%; position:relative;}
@@ -32,6 +34,8 @@ h3{font-size: 1.25rem;}
 .edu_box > div, .exp_box > div, .pro_box > div{padding-bottom: 1rem;}
 .exp > span{text-align: center;}
 
+
+
 .ab_section02{background-image: url("../img/aboutme/startup-593329_192023.jpg");
 background-size: cover; background-repeat: no-repeat; background-position-y: -10rem;background-attachment:fixed;}
 .section02_box{display: table; padding: 10rem 0;}
@@ -50,3 +54,4 @@ background-size: cover; background-repeat: no-repeat; background-position-y: -10
 .contect input.name{margin-top: 2rem;}
 .contect input.memo{height: 12rem;}
 .contect button{margin: 3rem 1rem; float: right; width: 7rem;}
+
