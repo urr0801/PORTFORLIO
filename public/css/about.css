@@ -28,7 +28,8 @@ h3{font-size: 1.25rem;}
 
 #ab_slides .slide {width:100%; position:absolute; left:0; top:0;}
 
-.banner01_box>li{margin: 5rem 0 15rem; height: 450px; padding-top: 5rem;}
+.ab_banner01{margin: 5rem 0;}
+.banner01_box>li{margin: 0 0 5rem; height: 450px;}
 .banner01_box>li>div{height: 38rem; padding: 3rem; border: 2px solid #ccc; box-sizing: border-box; }
 .banner01_box>li>div>hr{width: 3rem; padding: 1px; background-color: #000040;}
 .edu_box > div, .exp_box > div, .pro_box > div{padding-bottom: 1rem;}
@@ -37,8 +38,8 @@ h3{font-size: 1.25rem;}
 
 
 .ab_section02{background-image: url("../img/aboutme/startup-593329_192023.jpg");
-background-size: cover; background-repeat: no-repeat; background-position-y: -10rem;background-attachment:fixed;}
-.section02_box{display: table; padding: 10rem 0;}
+background-size: cover; background-repeat: no-repeat; background-position-y: -10rem;background-attachment:fixed; margin: 5rem 0 10rem;}
+.section02_box{display: table; padding-bottom: 3rem;}
 .skills_txt{display: table-cell; vertical-align: middle;}
 .skills_txt li{width: 23%; height: 20rem; float: left; font-size: 2rem; color: #fff; text-align: center; line-height: 20rem; margin-right: 2%; position: relative; background-color: rgba(255,255,255,0.2);}
 .ri-ma{margin-right: 0;}
@@ -48,10 +49,22 @@ background-size: cover; background-repeat: no-repeat; background-position-y: -10
 
 .skill_1 > .skill_2{font-size: 1.2rem; color: #fff; background-color: rgba(0,0,0,0.8);  position: absolute; top: 0; left: 0; width: 100%; display: none;}
 
+.cont_me, .ab_me, .skill_me{padding: 5rem 0 2rem; font-size: 3rem;}
+.skill_me{color: #fff;}
+.skill_me >p {width: 20%; border:1px solid #fff; margin: 0 auto;}
+.cont_me > p ,.ab_me > p{width: 20%; border:1px solid #111; margin: 0 auto;}
+
+.me_bg{width: 100%; background-color:#1b9891; padding: 3rem 0; overflow: hidden;}
+.myimg, .mytext_box{ width: 50%; float: left;}
+.mytext_box{height:468px; display: table; background-color: rgba(255,255,255,0.5);}
+.mytext{box-sizing: border-box; padding: 2rem; display: table-cell; vertical-align: middle;}
+.mytext > p{font-size: 1.5rem;}
+.mytext > p >span{font-weight: bold;}
+.myimg > img {max-width: 100%; scale: 2;}
+
 .ab_banner02{width: 100%;  margin: 5rem 0;}
-.map, .contect{height: 500px; box-sizing: border-box; padding: 3rem 5rem;}
+.map, .contect{height: 500px; box-sizing: border-box; padding:0 5rem;}
 .contect input{margin-top: 2rem;}
 .contect input.name{margin-top: 2rem;}
 .contect input.memo{height: 12rem;}
 .contect button{margin: 3rem 1rem; float: right; width: 7rem;}
-

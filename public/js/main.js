@@ -15,6 +15,22 @@ $(".nav_toggle").click(function () {
 	}
 });
 
+$(".title").click(function () {
+	$(".nav_box").slideToggle();
+	if ($(".nav_toggle").hasClass("fa-bars")) {
+		$(".nav_toggle").stop().animate({'right': '17rem'});
+		$(".nav_toggle").removeClass("fa-bars");
+		$(".nav_toggle").addClass("fa-times");
+		$(".weather_box").hide();
+ 		$(".weather_icon").hide();
+	} else {
+		$(".nav_toggle").stop().animate({'right': '0rem'});
+		$(".nav_toggle").removeClass("fa-times");
+		$(".nav_toggle").addClass("fa-bars");
+		$(".weather_icon").show();
+	}
+});
+
 // 날씨 toggle
 $(".weather_icon").click(function () {
 	$(".weather_box").slideToggle();

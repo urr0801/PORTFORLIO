@@ -252,3 +252,57 @@
 [debug] [2018-12-06T00:53:17.774Z] <<< HTTP RESPONSE 200
 [info] i  hosting: Serving hosting files from: public
 [info] +  hosting: Local server: http://localhost:5000
+[debug] [2018-12-07T11:18:11.178Z] ----------------------------------------------------------------------
+[debug] [2018-12-07T11:18:11.180Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\urr\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2018-12-07T11:18:11.181Z] CLI Version:   6.1.1
+[debug] [2018-12-07T11:18:11.181Z] Platform:      win32
+[debug] [2018-12-07T11:18:11.181Z] Node Version:  v10.13.0
+[debug] [2018-12-07T11:18:11.182Z] Time:          Fri Dec 07 2018 20:18:11 GMT+0900 (GMT+09:00)
+[debug] [2018-12-07T11:18:11.182Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-12-07T11:18:11.199Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-12-07T11:18:11.200Z] > authorizing via signed-in user
+[debug] [2018-12-07T11:18:11.200Z] [iam] checking project uportfoli for permissions ["firebase.projects.get"]
+[debug] [2018-12-07T11:18:11.201Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-12-07T11:18:11.202Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2018-12-07T11:18:11.567Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-07T11:18:11.576Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/uportfoli:testIamPermissions  
+
+[debug] [2018-12-07T11:18:12.902Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-07T11:18:12.905Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/uportfoli  
+ 
+[debug] [2018-12-07T11:18:14.115Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\PORTFORLIO'...
+[info] 
+[debug] [2018-12-07T11:18:14.123Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/260216334544/clients/_:getWebAppConfig  
+ 
+[debug] [2018-12-07T11:18:15.118Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+[debug] [2018-12-07T11:50:45.435Z] ----------------------------------------------------------------------
+[debug] [2018-12-07T11:50:45.437Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\urr\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2018-12-07T11:50:45.437Z] CLI Version:   6.1.1
+[debug] [2018-12-07T11:50:45.437Z] Platform:      win32
+[debug] [2018-12-07T11:50:45.437Z] Node Version:  v10.13.0
+[debug] [2018-12-07T11:50:45.438Z] Time:          Fri Dec 07 2018 20:50:45 GMT+0900 (GMT+09:00)
+[debug] [2018-12-07T11:50:45.438Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-12-07T11:50:45.446Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-12-07T11:50:45.447Z] > authorizing via signed-in user
+[debug] [2018-12-07T11:50:45.447Z] [iam] checking project uportfoli for permissions ["firebase.projects.get"]
+[debug] [2018-12-07T11:50:45.449Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/uportfoli:testIamPermissions  
+
+[debug] [2018-12-07T11:50:46.777Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-07T11:50:46.781Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/uportfoli  
+ 
+[debug] [2018-12-07T11:50:48.023Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\PORTFORLIO'...
+[info] 
+[debug] [2018-12-07T11:50:48.030Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/260216334544/clients/_:getWebAppConfig  
+ 
+[debug] [2018-12-07T11:50:48.861Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000

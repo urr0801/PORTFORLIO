@@ -18,9 +18,10 @@
 .fa-bars, .fa-times,.weather_img {cursor: pointer;}
 .toggle_box{ position: relative; float: right;}
 
-.title{position: absolute; top:41rem; left: 0;}
-.title_img{max-width: 75%;}
-
+.title{position: absolute; top:30rem; left:0; cursor: pointer;}
+.title > h2{font-size: 9rem; color:#fff;}
+.title > h3{font-size: 5rem; color:#fff;}
+.title > h4{font-size: 2rem; color:#fff;}
 
 .nav_box{width: 570px; height: 79.5rem; top:-4rem; left: -4rem;  background-color: rgba(0,0,0,0.9);position: absolute;bottom: 0; padding-left: 8rem; box-sizing: border-box; z-index: 1111;
 	display: none;}

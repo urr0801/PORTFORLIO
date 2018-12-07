@@ -7,7 +7,8 @@ html, body{height: 100%;}
 	position: fixed; z-index: 1111;}
 
 #port_wrap{width: 100%;}
-.site_bg{width: 100%; height: 78.75rem; background-color: rgba(0,0,0,0.6);}
+.site_bg{width: 100%; height: 78.75rem;background-image: url("../img/aboutme/startup-593329_192023.jpg");
+background-size: cover; background-repeat: no-repeat;}
 .site_box{height: 100%; position: relative;}
 .site_img{width: 60%; max-width: 700px; position: absolute; top: 21rem; left: 5rem;}
 .site_txt{width: 45%; max-width: 500px; position: absolute; top:37rem; left: 60rem; background-color: rgba(0,0,0,0.5); color: #fff; padding:2rem 0 2rem 8rem; }
