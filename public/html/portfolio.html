@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="../css/base.css">
-	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" href="../css/newmain.css">
 	<link rel="stylesheet" href="../css/portfolio.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -22,55 +22,61 @@
 <body>
 
 	<div class="po_bg clear">
-		<div class="top_bg">
-			<!-- top_nav 영역 -->
-			<ul class="main_top row clear">
-				<li class="logo col-md-2"><a href="main.html"><img src="../common/logo_w.png" class="logo_img" alt="logo_w"></a></li>
-				<li class="toggle_box col-md-2">
-					<div class="weather_icon"><img src="../common/weather_icon.png" class="weather_img" alt="weather_img"></div>
-					<!-- 날씨 div 영역 -->
-					<div class="weather_box clear">
-						<div class="daily">
+		<div class="top_bg clear row">
+		<!--navbar-fixed-top-->
+	<div class="navbar navi row">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" data-toggle="collapse" data-target="#navi" 
+				class="navbar-toggle">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a href="main.html" class="logo">
+				<img src="../common/logo_w.png" alt="logo" class="img-responsive"/>
+			</a>
+		</div>
+		<div id="navi" class="navbar-collapse collapse navbar-right">
+			<ul class="nav navbar-nav">
+				<li><a href="newmain.html">MAIN</a></li>
+				<li><a href="portfolio.html">PORTFOLIO</a></li>
+				<li><a href="about.html">ABOUT ME</a></li>
+				<li><a href="admin.html">ADMIN</a></li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						WEATHER APP<span class="caret"></span>
+					</a>
+					<div class="dropdown-menu about-cont">
+						<div class="rows">
 							<div>
-								<img src="../img/icon/01d.png" class="img dl_icon">
-								<div class="dl_date"></div>
-								<div class="dl_area clear">
-									<!-- <span></span> -->
-									<div class="selects">
-										<select id="area" class="w3-input"></select>
-									</div>
-								</div>
-								<div class="dl_temp"></div>
-								<div class="dl_desc"></div>
+									<div class="weather_box clear">
+											<div class="daily">
+												<div>
+													<img src="../img/icon/01d.png" class="img dl_icon">
+													<div class="dl_date"></div>
+													<div class="dl_area clear">
+														<!-- <span></span> -->
+														<div class="selects">
+															<select id="area" class="w3-input"></select>
+														</div>
+													</div>
+													<div class="dl_temp"></div>
+													<div class="dl_desc"></div>
+												</div>
+												<ul class="weekly"></ul>
+											</div>
+										</div>
 							</div>
-							<ul class="weekly"></ul>
 						</div>
 					</div>
-					<div class="nav_toggle fa fa-bars" id="tog"></div>
-					<!-- menu div 영역 -->
-					<div class="nav_box">
-						<ul class="menu">
-							<li><a href="main.html"><span class="fa fa-dot-circle-o"></span> HOME</a></li>
-							<li><a href="portfolio.html"><span class="fa fa-dot-circle-o"></span> PORTFOLIO</a></li>
-							<li><a href="about.html"><span class="fa fa-dot-circle-o"></span> ABOUT ME</a></li>
-							<!-- 모달창 버튼 -->
-							<li><a href="" class="ad_modal" data-toggle="modal" data-target="#myModal"><span class="fa fa-dot-circle-o admin"></span>
-								admin page</a></li>
-						</ul>
-						<ul class="info">
-							<li>JEONG MIN WOO</li>
-							<li>010.2591.0801</li>
-							<li>urr0801@gmail.com</li>
-						</ul>
-						<ul class="sns_icon">
-							<li class="fa fa-instagram"></li>
-							<li class="fa fa-facebook"></li>
-							<li><img src="../img/main/kakao.png"></li>
-						</ul>
-					</div>
 				</li>
+								
 			</ul>
 		</div>
+	</div>
+</div>
+</div>
 
 <!-- 모달창 -->
 <div class="modal" id="myModal">
@@ -109,7 +115,8 @@
 				Copyright © 2018 JeongMinWoo Portfolio All Right Reserved.
 			</div>
 		</div>
-	</div>
+	
+</div>
 
 	<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
 	<script src="../js/main.js"></script>
