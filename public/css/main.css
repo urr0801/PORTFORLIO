@@ -1,45 +1,45 @@
-.main_bg{width: 100%; height: 100%;
+.main_bg{height: 100%;
 	background-image: url(../img/main/lighthouse-2225445.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position-y: -200px;
-	position: relative;}
+	background-position: center center;}
+.bg_inner{width: 100%; height: 100%; position: relative;}
+
 .main_row{position: relative;}
-.main_top{margin-top: 4rem; position: relative;}
+.main_top{margin-top: 4rem;}
 .logo_img{max-width: 45%;}
 .logo,.top_tit,.toggle_box{padding:0}
 .top_tit{color: #fff; font-size: 4rem; text-align: center;}
 .ad_title{font-size: 2rem;}
-.nav_toggle{float: right; font-size: 1.8rem; color:#fff;}
-.fa-bars{border: 1px solid #fff; padding: 1.3rem; right: 2rem; position: absolute; right: 0; z-index: 11111;}
+.toggle_box{ position: relative; float: right;}
+.nav_toggle{font-size: 1.8rem; color:#fff;}
+.fa-bars{border: 1px solid #fff; padding: 1.3rem; right:0rem; position: absolute; z-index: 11111;}
 .fa-times{border: 1px solid #fff; padding: 1.3rem; color: #fff; font-size: 1.8rem;position: absolute; z-index: 11111;}
 .weather_icon{max-width: 55px; position: absolute; right: 6rem; z-index: 11111;}
 .weather_img{max-width: 55px;}
 .fa-bars, .fa-times,.weather_img {cursor: pointer;}
-.toggle_box{ position: relative; float: right;}
 
-.title{position: absolute; top:30rem; left:0; cursor: pointer;}
-.title > h2{font-size: 9rem; color:#fff;}
-.title > h3{font-size: 5rem; color:#fff;}
+
+.title{position: absolute; top:23rem; left:0; cursor: pointer;}
+.title > h2{font-size: 6.5rem; color:#fff;}
+.title > h3{font-size: 4rem; color:#fff;}
 .title > h4{font-size: 2rem; color:#fff;}
 
-.nav_box{width: 570px; height: 79.5rem; top:-4rem; left: -4rem;  background-color: rgba(0,0,0,0.9);position: absolute;bottom: 0; padding-left: 8rem; box-sizing: border-box; z-index: 1111;
-	display: none;}
+.nav_box{width: 100%; height: 62rem; top:-4rem; left: 22rem;  background-color: rgba(0,0,0,0.9);position: absolute;
+	padding-left: 8rem; box-sizing: border-box; z-index: 1111; display: none;}
 	
-	.menu{margin: 16rem 0 8rem;}
-	.menu li{font-size:3rem; line-height: 6rem; color: #fff;}
-	.menu li .fa{font-size: 1rem; padding-right: 2rem;}
+	.menu{margin: 10rem 0 4rem;}
+	.menu li{font-size:2.5rem; line-height: 5rem; color: #fff;}
+	.menu li .fa{font-size: 1rem; padding-right: 3rem;}
 	
 	.info{padding-bottom: 2rem;}
-	.info li{font-size:2rem; line-height: 4.2rem; color: #fff;}
+	.info li{font-size:1.5rem; line-height: 3rem; color: #fff;}
 	
-	.sns_icon >li{float: left; width: 15%; font-size: 4.8rem; color: #fff;}
+	.sns_icon >li{float: left; width: 15%; font-size:3rem; color: #fff;}
 	.sns_icon >li:nth-child(2){margin: 0 5%;}
-	.sns_icon li:nth-child(3){display: table;}
-	.sns_icon li img{max-width: 80%; display: table-cell; vertical-align: middle;}
 	
 	/* 날씨 */
-	.weather_box{width: 570px;height: 79.5rem; top:-4rem; left: -4rem; background-color: rgba(0,0,0,0.9);position: absolute; padding-left:1rem; box-sizing: border-box; margin: 0 auto; text-align: center; display: none; z-index: 1111;}
+	.weather_box{width: 100%; height: 62rem; top:-4rem; left: 22rem; background-color: rgba(0,0,0,0.9);position: absolute; padding-left:1rem; box-sizing: border-box; margin: 0 auto; text-align: center; display: none; z-index: 1111;}
 	
 	.daily{width:100%; height:50%; padding:2%; text-align:center; margin: 0 auto;}
 	.daily{position: absolute; top: 0; right:1.2rem;}
@@ -52,7 +52,7 @@
 	.dl_temp {font-size:1.2rem; color:#fff;}
 	.dl_desc {font-size:1.5rem; color:#fff;}
 	
-	.weekly{height: 420px; overflow:auto; width:80%; text-align:center; float: right; margin-top: 3rem;}
+	.weekly{height:330px; overflow:auto; width:80%; text-align:center; float: right; margin-top: 3rem;}
 	.weekly ul {float:left; width:60%; padding-left:10%;} 
 	.wk_icon {float:left; width:20%;}
 	.wk_area {font-size:1.25rem; color:#fff; font-weight:bold; }
@@ -63,7 +63,6 @@
 	border: none;}
 	.selects > select{width: 20%; margin: 0 auto;}
 	
-	.ho2{display: none;}
 	
 	.foot_bg{width: 100%; height: 150px; background-color: rgba(0,0,0,1);}
 	.footer{color:#ccc; font-size: 0.8rem; text-align: center; line-height: 150px;}
@@ -115,3 +114,47 @@
 	text-decoration: none;
 	cursor: pointer;
 }
+
+/* @media screen and (max-width: 1280px) {}
+@media screen and (max-width: 789px) {}
+@media screen and (max-width: 480px) {} */
+
+@media screen and (max-width: 780px) {
+	/* .main_bg{height: 100%;
+			background-position-y: 0;}
+	.main_row{width: 90%; margin: 0 auto;}
+	.main_top{margin-top: 3rem;}
+	.logo_img{max-width: 35%;}
+	.nav_toggle{font-size: 1.8rem; color:#fff;}
+	.fa-bars{right: 20rem;}
+	.weather_icon{right:26rem;}
+
+	.nav_box{width: 100%; height: 61rem; top:-4rem; left: -10rem;}
+	.menu{margin: 12rem 0 5rem;}
+	.menu li{font-size:2.5m; line-height: 5rem; color: #fff;}
+	.menu li .fa{font-size: 1.3rem; padding-right: 1.2rem;}
+	.info{padding-bottom: 3rem;}
+	.info li{font-size:2rem; line-height: 3.3rem; color: #fff;}
+	.sns_icon >li{float: left; width: 15%; font-size: 2.8rem; color: #fff;}
+	.sns_icon >li:nth-child(2){margin: 0 5%;}
+	.sns_icon li:nth-child(3){display: table;}
+	.sns_icon li img{max-width: 50%; display: table-cell; vertical-align: middle;}
+	
+	.weather_box{width: 100%; height: 61rem; top:-4rem; left: -10rem;}
+	.daily{width:90%;}
+	.daily{top: 0; right:4.8rem;}
+	.dl_icon {width:30%; max-width:200px; margin-top: 3.5rem;}
+	.dl_area {font-size:1.8rem;  margin-top:1.5rem; margin: 0 auto; padding: 1rem 0;}
+	.dl_date {font-size:1.3rem;  padding-top: 1rem;}
+	.dl_temp {font-size:1.1rem; }
+	.dl_desc {font-size:1.3rem; }
+	.weekly{height: 335px; }
+
+	.title{position: absolute; top:25rem; left:0; cursor: pointer;}
+	.title > h2{font-size: 7rem; color:#fff;}
+	.title > h3{font-size: 4rem; color:#fff;}
+	.title > h4{font-size: 1.5rem; color:#fff;} */
+	
+}
+
+@media screen and (max-width: 480px) {}

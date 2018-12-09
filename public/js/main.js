@@ -2,7 +2,7 @@
 $(".nav_toggle").click(function () {
 	$(".nav_box").slideToggle();
 	if ($(this).hasClass("fa-bars")) {
-		$(this).stop().animate({'right': '17rem'});
+		$(this).stop().animate({'right': '6rem'});
 		$(this).removeClass("fa-bars");
 		$(this).addClass("fa-times");
 		$(".weather_box").hide();
@@ -18,7 +18,7 @@ $(".nav_toggle").click(function () {
 $(".title").click(function () {
 	$(".nav_box").slideToggle();
 	if ($(".nav_toggle").hasClass("fa-bars")) {
-		$(".nav_toggle").stop().animate({'right': '17rem'});
+		$(".nav_toggle").stop().animate({'right': '6rem'});
 		$(".nav_toggle").removeClass("fa-bars");
 		$(".nav_toggle").addClass("fa-times");
 		$(".weather_box").hide();
@@ -35,13 +35,13 @@ $(".title").click(function () {
 $(".weather_icon").click(function () {
 	$(".weather_box").slideToggle();
 	if($(this).hasClass("fa-times")) {
-		$(this).stop().animate({'right': '6rem'});
+		// $(this).stop().animate({'right': '6rem'});
 		$(this).removeClass("fa fa-times");
 		$(".weather_img").show();
 		$(".nav_toggle").show();
 	} 
 	else {
-		$(this).stop().animate({'right': '17rem'});
+		// $(this).stop().animate({'right': '17rem'});
 		$(this).addClass("fa fa-times");
 		$(".weather_img").hide();
 		$(".nav_toggle").hide();
@@ -55,7 +55,7 @@ $(".menu > li").hover(function () {
 	// $(this).stop().animate({fontSize: '3.5em'});
 	$(this).stop().css({
 		"color": "#222",
-		"font-size": "3.5rem",
+		"font-size": "3rem",
 		"cursor": "pointer"
 	});
 }, function () {
@@ -63,7 +63,7 @@ $(".menu > li").hover(function () {
 	// $(this).stop().animate({fontSize: '3em'})
 	$(this).stop().css({
 		"color": "#fff",
-		"font-size": "3rem",
+		"font-size": "2.5rem",
 		"cursor": "none"
 	});
 });

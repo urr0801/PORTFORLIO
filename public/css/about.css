@@ -38,16 +38,23 @@ h3{font-size: 1.25rem;}
 
 
 .ab_section02{background-image: url("../img/aboutme/startup-593329_192023.jpg");
-background-size: cover; background-repeat: no-repeat; background-position-y: -10rem;background-attachment:fixed; margin: 5rem 0 10rem;}
-.section02_box{display: table; padding-bottom: 3rem;}
-.skills_txt{display: table-cell; vertical-align: middle;}
-.skills_txt li{width: 23%; height: 20rem; float: left; font-size: 2rem; color: #fff; text-align: center; line-height: 20rem; margin-right: 2%; position: relative; background-color: rgba(255,255,255,0.2);}
+background-size: cover; background-repeat: no-repeat; background-position-y: -10rem;
+background-attachment:fixed; margin: 5rem 0 10rem;}
+.section02_box{padding-bottom: 3rem;}
+.skills_txt{width: 100%;}
+.skills_txt li{width: 23%; height: 20rem; float: left; font-size: 2rem; color: #fff; text-align: center;  display: table;
+    margin-right: 2%; position: relative; background-color: rgba(255,255,255,0.2);}
 .ri-ma{margin-right: 0;}
 .bo-ma{margin-bottom: 2%; display: table;}
+.skills_txt li span{display: table-cell; vertical-align: middle;}
 
 .skills_txt> li:nth-child(1)>span{display: table-cell; line-height: 2.5rem; vertical-align: middle;}
 
-.skill_1 > .skill_2{font-size: 1.2rem; color: #fff; background-color: rgba(0,0,0,0.8);  position: absolute; top: 0; left: 0; width: 100%; display: none;}
+.skill_1 > .skill_2{height: 20rem;  background-color: rgba(0,0,0,0.8);  position: absolute; 
+    top: 0; left: 0; width: 100%; display:none;}
+.skill_2 p{font-size: 1.2rem; color: #fff;}
+
+.skill_2 {animation-duration:0.5s; animation-fill-mode:forwards;}
 
 .cont_me, .ab_me, .skill_me{padding: 5rem 0 2rem; font-size: 3rem;}
 .skill_me{color: #fff;}

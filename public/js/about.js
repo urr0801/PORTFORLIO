@@ -42,10 +42,10 @@ $("#ab_slides").hover(function(){
 // skills hover
 $(".skill_1").hover(function(){
 	$(this).find("span").hide();
-	$(this).find(".skill_2").stop().slideDown();
+	$(this).find(".skill_2").stop().fadeIn();
 },function(){
 	$(this).find("span").show();
-	$(this).find(".skill_2").stop().slideUp();
+	$(this).find(".skill_2").stop().fadeOut();
 });
 
 
