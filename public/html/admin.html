@@ -27,25 +27,21 @@
 <body>
 
 	<div class="ad_bg clear">
-				<!-- top_nav 영역 -->
-				<div class="navbar navi">
-					<div class="container row">
+				<!-- 네비게이션 바 부분 -->
+			<nav class="navbar navi">
+					<div class="row">
 						<div class="navbar-header">
-							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navi">
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>                        
+							<button type="button" class="nav-toggle" data-toggle="collapse" data-target="#myNavbar">
+								<span class="fa fa-bars"></span>
 							</button>
-								<a href="main.html" class="logo">
-									<img src="../common/logo_w.png" alt="logo" class="img-responsive"/>
-								</a>
+							<a class="navbar-brand" href="#"><img src="../common/logo_w.png" alt="logo" class="logo" /></a>
 						</div>
-						<div id="navi" class="collapse navbar-collapse navbar-right">
-							<ul class="nav navbar-nav">
-								<li><a href="newmain.html">MAIN</a></li>
-								<li><a href="portfolio.html">PORTFOLIO</a></li>
-								<li><a href="about.html">ABOUT ME</a></li>
-								<li><a href="admin.html">ADMIN</a></li>
+						<div class="collapse navbar-collapse" id="myNavbar">
+							<ul class="nav navbar-nav navbar-right">
+									<li><a href="newmain.html">MAIN</a></li>
+									<li><a href="portfolio.html">PORTFOLIO</a></li>
+									<li><a href="about.html">ABOUT ME</a></li>
+									<li><a href="admin.html">Admin page</a></li>
 								<li class="dropdown">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 										WEATHER APP<span class="caret"></span>
@@ -53,32 +49,31 @@
 									<div class="dropdown-menu about-cont">
 										<div class="rows">
 											<div>
-													<div class="weather_box clear">
-															<div class="daily">
-																<div>
-																	<img src="../img/icon/01d.png" class="img dl_icon">
-																	<div class="dl_date"></div>
-																	<div class="dl_area clear">
-																		<!-- <span></span> -->
-																		<div class="selects">
-																			<select id="area" class="w3-input"></select>
-																		</div>
-																	</div>
-																	<div class="dl_temp"></div>
-																	<div class="dl_desc"></div>
+												<div class="weather_box clear">
+													<div class="daily">
+														<div>
+															<img src="../img/icon/01d.png" class="img dl_icon">
+															<div class="dl_date"></div>
+															<div class="dl_area clear">
+
+																<div class="selects">
+																	<select id="area" class="w3-select"></select>
 																</div>
-																<ul class="weekly"></ul>
 															</div>
+															<div class="dl_temp"></div>
+															<div class="dl_desc"></div>
 														</div>
+														<ul class="weekly"></ul>
+													</div>
+												</div>
 											</div>
 										</div>
 									</div>
 								</li>
-															 
 							</ul>
 						</div>
 					</div>
-				</div>
+				</nav>
 
 		<!-- 페이지 관리 -->
 		<div class="section row clear" id="home">
