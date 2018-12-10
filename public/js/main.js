@@ -138,3 +138,7 @@ $("#area").change(function () {
 		}
 	});
 });
+
+$("#area").click(function(e){
+	e.stopPropagation();
+});

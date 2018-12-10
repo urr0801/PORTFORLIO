@@ -13,6 +13,11 @@
 .main_nav{background-color: transparent !important; width: 83.33333333333333rem !important;}
 .navi{width: 100%;}
 .navi .rows{margin-left:0; margin-right:0;}
+
+.navbar-header {display:none;}
+#navi {display:block;}
+
+
 .dropdown-menu{-webkit-box-shadow:none;box-shadow:none; padding: 0; background-color: transparent;}
 .navi .nav, .navi .collapse, .navi .dropdown{position:static;}
 .navi .container{position:relative;}
@@ -139,7 +144,9 @@
 	
 }
 
-@media screen and (max-width:780px) {
+@media screen and (max-width:768px) {
+	.navbar-header {display:block;}
+	#navi {display:none;}
 	.row{width: 80%;}
 	.main_bg{height: 100%;
 			background-position-y: 0;}
