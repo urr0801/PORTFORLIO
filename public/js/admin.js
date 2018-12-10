@@ -53,7 +53,7 @@ function homeAdd(data) {
 	html += '<input type="text" class="link form-control" style="margin-top:5px;" placeholder="링크주소" value="' + link + '">';
 	html += '</div>';
 	html += '</li>';
-	html += '<li class="col-md-3">';
+	html += '<li class="col-md-2">';
 	html += '<div>';
 	html += '<button class="btn btn-danger" onclick="homeDel(this);">삭제</button> ';
 	html += '<button class="btn btn-warning" onclick="homeUp(this);">수정</button>';

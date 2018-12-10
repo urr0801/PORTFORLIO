@@ -27,39 +27,58 @@
 <body>
 
 	<div class="ad_bg clear">
-		<div class="top_bg">
-			<div class="re">
 				<!-- top_nav 영역 -->
-				<ul class="main_top row clear">
-					<li class="logo col-md-2"><a href="main.html"><img src="../common/logo_w.png" class="logo_img" alt="logo_w"></a></li>
-					<li class="top_tit col-md-8">admin_page</li>
-					<li class="toggle_box col-md-2">
-
-						<div class="nav_toggle fa fa-bars" id="tog"></div>
-						<!-- menu div 영역 -->
-						<div class="nav_box">
-							<ul class="menu">
-								<li><a href="main.html"><span class="fa fa-dot-circle-o"></span> HOME</a></li>
-								<li><a href="portfolio.html"><span class="fa fa-dot-circle-o"></span> PORTFOLIO</a></li>
-								<li><a href="about.html"><span class="fa fa-dot-circle-o"></span> ABOUT ME</a></li>
-								<li><a href="admin.html"><span class="fa fa-dot-circle-o"></span> admin page</a></li>
-							</ul>
-							<ul class="info">
-								<li>JEONG MIN WOO</li>
-								<li>O10.2591.0801</li>
-								<li>urr0801@gmail.com</li>
-							</ul>
-							<ul class="sns_icon">
-								<li class="fa fa-instagram"></li>
-								<li class="fa fa-facebook"></li>
-								<li><img src="../img/main/kakao.png"></li>
+				<div class="navbar navi">
+					<div class="container row">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navi">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>                        
+							</button>
+								<a href="main.html" class="logo">
+									<img src="../common/logo_w.png" alt="logo" class="img-responsive"/>
+								</a>
+						</div>
+						<div id="navi" class="collapse navbar-collapse navbar-right">
+							<ul class="nav navbar-nav">
+								<li><a href="newmain.html">MAIN</a></li>
+								<li><a href="portfolio.html">PORTFOLIO</a></li>
+								<li><a href="about.html">ABOUT ME</a></li>
+								<li><a href="admin.html">ADMIN</a></li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+										WEATHER APP<span class="caret"></span>
+									</a>
+									<div class="dropdown-menu about-cont">
+										<div class="rows">
+											<div>
+													<div class="weather_box clear">
+															<div class="daily">
+																<div>
+																	<img src="../img/icon/01d.png" class="img dl_icon">
+																	<div class="dl_date"></div>
+																	<div class="dl_area clear">
+																		<!-- <span></span> -->
+																		<div class="selects">
+																			<select id="area" class="w3-input"></select>
+																		</div>
+																	</div>
+																	<div class="dl_temp"></div>
+																	<div class="dl_desc"></div>
+																</div>
+																<ul class="weekly"></ul>
+															</div>
+														</div>
+											</div>
+										</div>
+									</div>
+								</li>
+															 
 							</ul>
 						</div>
-					</li>
-				</ul>
-			</div>
-		</div>
-
+					</div>
+				</div>
 
 		<!-- 페이지 관리 -->
 		<div class="section row clear" id="home">
@@ -84,7 +103,7 @@
 							<input type="text" class="link form-control" style="margin-top:5px;" placeholder="link">
 						</div>
 					</li>
-					<li class="col-md-3">
+					<li class="col-md-2">
 						<div>
 							<!--button class="btn btn-danger">삭제</button>
 <button-- class="btn btn-warning">수정</button-->

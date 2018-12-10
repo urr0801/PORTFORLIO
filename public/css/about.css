@@ -1,23 +1,22 @@
 .row{width: 1000px; margin: 0 auto;}
 
 h1{font-size: 2rem;}
-h2{font-size: 1.5rem;}
-h3{font-size: 1.25rem;}
+h2{font-size: 1.3rem;}
+h3{font-size: 1.1rem;}
 
-.ab_wrap{ width: 100%;}
-.top_bg{background-color: rgba(0,0,0,0.2);  width: 100%; position: fixed; z-index: 111111;}
+.ab_bg{width: 100%; height: 100%; min-height: 100%;}
 
-.ab_menu{display: inline-block;  color: #fff; font-size: 1.6rem; padding: 1.75rem 1rem;	float: right;}
-.ma-ri{margin-right:3rem;}
-
-.moves{background-color:rgba(0,0,0,1); color:#fff; padding: 0.2rem 0;}
+.navbar{background-color: rgba(0,0,0,0.1) !important;}
+.moves{background-color:rgba(0,0,0,0.9) !important; color:#fff; padding:0.5rem 0 0.5rem; z-index: 11111111;}
 
 .ab_slide_wrap {width:100%; height: 55rem; position:relative; margin:0 auto;overflow:hidden;}
 .slides {width:100%; position:relative;}
 .slide:nth-child(1) > img{transform: translateY(-5rem);}
 .slide:nth-child(2) > img{transform: translateY(-5rem);}
 .slide:nth-child(3) > img{transform: translateY(-20rem);}
-.ab_tit_box{position: absolute; top:23rem; left: 15rem; z-index: 11111;}
+
+.ab_tit_box{position: relative; height: 100%;}
+.ab_tit{position: absolute; top:23rem; left: 0; z-index: 11111;}
 .ab_tit h2{color:#fff; font-size: 8rem;}
 .ab_tit h4{color:#fff; font-size: 2rem;}
 
@@ -29,9 +28,9 @@ h3{font-size: 1.25rem;}
 
 #ab_slides .slide {width:100%; position:absolute; left:0; top:0;}
 
-.ab_banner01{margin: 5rem 0;}
-.banner01_box>li{margin: 0 0 5rem; height: 450px;}
-.banner01_box>li>div{height: 38rem; padding: 3rem; border: 2px solid #ccc; box-sizing: border-box; }
+.ab_banner01{margin-top: 5rem;}
+.banner01_box>li{height: 450px;}
+.banner01_box>li>div{height: 38rem; padding: 1.8rem; border: 2px solid #ccc; box-sizing: border-box; }
 .banner01_box>li>div>hr{width: 3rem; padding: 1px; background-color: #000040;}
 .edu_box > div, .exp_box > div, .pro_box > div{padding-bottom: 1rem;}
 .exp > span{text-align: center;}
@@ -40,7 +39,7 @@ h3{font-size: 1.25rem;}
 
 .ab_section02{background-image: url("../img/aboutme/startup-593329_192023.jpg");
 background-size: cover; background-repeat: no-repeat; background-position-y: -10rem;
-background-attachment:fixed; margin: 5rem 0 10rem;}
+background-attachment:fixed; margin-top:10rem;}
 .section02_box{padding-bottom: 3rem;}
 .skills_txt{width: 100%;}
 .skills_txt li{width: 23%; height: 20rem; float: left; font-size: 2rem; color: #fff; text-align: center;  display: table;
@@ -62,11 +61,11 @@ background-attachment:fixed; margin: 5rem 0 10rem;}
 .skill_me >p {width: 20%; border:1px solid #fff; margin: 0 auto;}
 .cont_me > p ,.ab_me > p{width: 20%; border:1px solid #111; margin: 0 auto;}
 
-.me_bg{width: 100%; background-color:#1b9891; padding: 3rem 0; overflow: hidden;}
+.me_bg{width: 100%; background-color:#1b9891; padding: 3rem 0; overflow: hidden; margin-top: 10rem;}
 .myimg, .mytext_box{ width: 50%; float: left;}
-.mytext_box{height:468px; display: table; background-color: rgba(255,255,255,0.5);}
+.mytext_box{height:313.33px; display: table; background-color: rgba(255,255,255,0.5);}
 .mytext{box-sizing: border-box; padding: 2rem; display: table-cell; vertical-align: middle;}
-.mytext > p{font-size: 1.5rem;}
+.mytext > p{font-size: 1.25rem;}
 .mytext > p >span{font-weight: bold;}
 .myimg > img {max-width: 100%; scale: 2;}
 

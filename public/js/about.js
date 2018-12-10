@@ -1,11 +1,9 @@
 $(window).scroll(function () {
 	var gap = $("html, body").scrollTop();
 	if (gap > 150) {
-		$(".top_bg").addClass("moves");
-		$(".main_top").css({"margin-top":"0.5rem"});
+		$(".navi").addClass("moves");
 	} else {
-		$(".top_bg").removeClass("moves");
-		$(".main_top").css({"margin-top":"4rem"});
+		$(".navi").removeClass("moves");
 	}
 });
 
