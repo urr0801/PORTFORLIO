@@ -20,6 +20,7 @@
 .dropdown-menu{-webkit-box-shadow:none;box-shadow:none; padding: 0; background-color: transparent;}
 
 .nav a{color:#fff; font-size: 1.2rem;}
+.nav li a button{background-color: transparent; border: 2px solid transparent;}
 .nav li a:hover{color:#f90; font-size: 1.4rem; background-color: transparent !important;}
 .open>a, .nav .open>a:focus, .nav .open>a:hover{background-color: transparent;}
 
@@ -30,20 +31,20 @@
 
 	
 	/* 날씨 */
-	.weather_box{width: 400px; height: 600px; background-color: rgba(0,0,0,0.9);padding:1rem; box-sizing: border-box; 
-		margin: 0 auto; text-align: center;}
+	.weather_box{width:100%; height: 100%; background-color: rgba(0,0,0,0.9); box-sizing: border-box; 
+		margin: 0 auto; text-align: center; padding: 1rem;}
 	
 	.daily{width:100%; height:50%; padding:2%; text-align:center; margin: 0 auto;}
 	.daily > div {text-align:center; }
-	#area{font-size: 2rem;}
+	#area{font-size: 1.7rem; padding: 0;}
 	
-	.dl_icon {width:30%; max-width:220px; margin-top: 1rem;}
+	.dl_icon {width:30%; max-width:220px; margin-top: 0;}
 	.dl_area {font-size:2rem; color:rgb(0, 78, 196); font-weight:bold; margin-top:2rem; margin: 0 auto; padding: 1rem 0;}
 	.dl_date {font-size:1.5rem; color:#ccc; padding-top: 1rem;}
 	.dl_temp {font-size:1.2rem; color:#fff;}
 	.dl_desc {font-size:1.5rem; color:#fff;}
 	
-	.weekly{width: 90%; height:260px; overflow:auto; text-align:center; float: right; margin-top: 3rem;}
+	.weekly{width: 90%; height:260px; overflow:auto; text-align:center; float: right; margin: 1.5rem 0;}
 	.weekly ul {float:left; width:80%; } 
 	.wk_icon {float:left; width:20%;}
 	.wk_area {font-size:1.25rem; color:#fff; font-weight:bold; }
@@ -53,16 +54,10 @@
 	.w3-input{padding: 0; background-color: transparent; color: #fff;
 	border: none;}
 	.selects > select{width: 20%; margin: 0 auto;}
-	
+
 	
 	.foot_bg{width: 100%; height: 150px; background-color: rgba(0,0,0,1);}
 	.footer{color:#ccc; font-size: 0.8rem; text-align: center; line-height: 150px;}
-
-	#modal_bg {position:absolute; width:100%; height:100%; background-color:rgba(0, 0, 0, 0.5); display:none; top:0; left:0;}
-	#modal_wrap {position:absolute; width:100%; height:100%; display:none; top:0; left:0;}
-	#modal_wrap > div {display:table-cell; text-align:center; vertical-align:middle;}
-	#modal_content {width:300px; height:200px; background:#f90; text-align:center; line-height:200px; border:1px solid #999; margin:0 auto; position:relative;}
-	#modal_btn {padding:6px; position:absolute; right:0; bottom:0;}
 
 	/***********모달창************/
 /* The Modal (background) */
@@ -83,27 +78,11 @@
 /* Modal Content/Box */
 .modal-content {
 	background-color: #fff;
-	margin: 25% auto; /* 15% from the top and centered */
-	padding: 20px;
-	width: 478px; /* Could be more or less, depending on screen size */        
-	height: 200px;
+	margin: 25% auto 0; /* 15% from the top and centered */
+	padding: 0;
+	width: 70%; /* Could be more or less, depending on screen size */        
+	height: 100%;
 	position: relative;                  
-}
-/* The Close Button */
-.close {
-	color: #fff;
-	float: right;
-	font-size: 28px;
-	font-weight: 100;
-	position: absolute;
-	bottom: 25px;
-	left: 35px;
-}
-.close:hover,
-.close:focus {
-	color: black;
-	text-decoration: none;
-	cursor: pointer;
 }
 
 /* @media screen and (max-width: 1280px) {}
@@ -143,22 +122,36 @@
 	.row{width: 80%;}
 	.main_bg{height: 100%;
 			background-position-y: 0;}
-	.main_row{width: 80%; margin: 0 auto;}
-
 	.logo{max-width: 45%;}
-	
 	.nav-toggle {display: block;}
-
-		
-	
 	.weather_box{width: 400px; height: 600px;}
 	#area{font-size: 1.5rem;}
-
 	.title{position: absolute; top:25rem; left:0; cursor: pointer;}
 	.title > h2{font-size: 5.5rem; color:#fff;}
 	.title > h3{font-size: 3rem; color:#fff;}
 	.title > h4{font-size: 1.5rem; color:#fff;}
 	
+	/* 날씨 */
+	.weather_box{width:100%; height: 100%;}
+	.daily{width: 100%;}
+	#area{width:25%; font-size: 1.5rem; padding: 0; color:#111;}
+	
+	.dl_icon {width:20%; width: 50%;}
+	.dl_area {font-size:2rem;}
+	.dl_date {font-size:1.5rem;}
+	.dl_temp {font-size:1.2rem;}
+	.dl_desc {font-size:1.5rem;}
+	
+	.weekly{width: 90%; height:260px; overflow:auto; text-align:center; float: right; margin: 1.5rem 0;}
+	.weekly ul {float:left; width:70%; } 
+	.wk_icon {float:left; width:20%;}
+	.wk_area {font-size:1.25rem;}
+	.wk_date {font-size:1.25rem;}
+	.wk_temp {font-size:1.5rem;}
+	.wk_desc {display: none;}
+	.w3-input{padding: 0; background-color: transparent; color: #fff;
+	border: none;}
+	.selects > select{width: 20%; margin: 0 auto;}
 }
 
 /* 
