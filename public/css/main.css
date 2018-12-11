@@ -20,7 +20,8 @@
 .dropdown-menu{-webkit-box-shadow:none;box-shadow:none; padding: 0; background-color: transparent;}
 
 .nav a{color:#fff; font-size: 1.2rem;}
-.nav li a button{background-color: transparent; border: 2px solid transparent;}
+.nav a:nth-child(5){padding-left:0; }
+.nav li a button{background-color: transparent; border: 2px solid transparent; padding: 0;}
 .nav li a:hover{color:#f90; font-size: 1.4rem; background-color: transparent !important;}
 .open>a, .nav .open>a:focus, .nav .open>a:hover{background-color: transparent;}
 

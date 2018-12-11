@@ -29,6 +29,7 @@ h3{font-size: 1.1rem;}
 #ab_slides .slide {width:100%; position:absolute; left:0; top:0;}
 
 .ab_banner01{margin-top: 5rem;}
+.col-md-4{padding-right: 0; padding-left: 0;}
 .banner01_box>li{height: 450px;}
 .banner01_box>li>div{height: 38rem; padding: 1.8rem; border: 2px solid #ccc; box-sizing: border-box; }
 .banner01_box>li>div>hr{width: 3rem; padding: 1px; background-color: #000040;}
@@ -41,6 +42,7 @@ h3{font-size: 1.1rem;}
 background-size: cover; background-repeat: no-repeat; background-position-y: -10rem;
 background-attachment:fixed; margin-top:10rem;}
 .section02_box{padding-bottom: 3rem;}
+.skills_txt768{display: none;}
 .skills_txt{width: 100%;}
 .skills_txt li{width: 23%; height: 20rem; float: left; font-size: 2rem; color: #fff; text-align: center;  display: table;
     margin-right: 2%; position: relative; background-color: rgba(255,255,255,0.2);}
@@ -57,12 +59,13 @@ background-attachment:fixed; margin-top:10rem;}
 .skill_2 {animation-duration:0.5s; animation-fill-mode:forwards;}
 
 .cont_me, .ab_me, .skill_me{padding: 5rem 0 2rem; font-size: 3rem;}
+.col-xs-12{padding-right: 0; padding-left: 0;}
 .skill_me{color: #fff;}
 .skill_me >p {width: 20%; border:1px solid #fff; margin: 0 auto;}
 .cont_me > p ,.ab_me > p{width: 20%; border:1px solid #111; margin: 0 auto;}
 
 .me_bg{width: 100%; background-color:#1b9891; padding: 3rem 0; overflow: hidden; margin-top: 10rem;}
-.myimg, .mytext_box{ width: 50%; float: left;}
+/* .myimg, .mytext_box{ width: 50%; float: left;} */
 .mytext_box{height:313.33px; display: table; background-color: rgba(255,255,255,0.5);}
 .mytext{box-sizing: border-box; padding: 2rem; display: table-cell; vertical-align: middle;}
 .mytext > p{font-size: 1.25rem;}
@@ -75,3 +78,34 @@ background-attachment:fixed; margin-top:10rem;}
 .contect input.name{margin-top: 2rem;}
 .contect input.memo{height: 12rem;}
 .contect button{margin: 3rem 1rem; float: right; width: 7rem;}
+
+
+@media screen and (max-width: 1280px) {}
+@media screen and (max-width: 789px) {
+    .slides{display: none;}
+    .ab_slide_wrap{background-image: url("../img/aboutme/lonely-road-in-forest-aerial-view-picjumbo-com.jpg");
+    background-size: cover; background-repeat: no-repeat; position: relative;}
+    .ab_tit_box{position: relative; height: 100%;}
+    .ab_tit{position: absolute; top:23rem; left: 0; z-index: 11111;}
+    .ab_tit h2{color:#fff; font-size: 6.5rem;}
+    .ab_tit h4{color:#fff; font-size: 1.5rem;}
+
+    .banner01_box>li{height: auto; margin-bottom: 1rem;}
+    .banner01_box>li>div{height: auto;}
+    
+    .ab_section02{background-image: url("../img/aboutme/startup-593329_192023.jpg");
+        background-size: cover; background-repeat: no-repeat; background-position:center;
+        background-attachment:unset;}
+
+    .skills_txt{display: none;}
+    .skills_txt768{display: block;}
+    .skill_7{width: 100%; color:#fff; margin-bottom: 2rem;}
+    .skill_7 span{font-size: 2rem; padding-bottom: 0.8rem;}
+
+    .col-xs-12{padding-right: 0; padding-left: 0;}
+    
+    .cont_me, .ab_me, .skill_me{padding: 5rem 0 2rem; font-size: 2rem;}
+    .cont_me P, .ab_me P, .skill_me P{width: 50%}
+
+}
+@media screen and (max-width: 480px) {}
