@@ -29,14 +29,12 @@ h3{font-size: 1.1rem;}
 #ab_slides .slide {width:100%; position:absolute; left:0; top:0;}
 
 .ab_banner01{margin-top: 5rem;}
-.col-md-4{padding-right: 0; padding-left: 0;}
+.col-md-4{padding-right: 15px; padding-left: 15px;}
 .banner01_box>li{height: 450px;}
 .banner01_box>li>div{height: 38rem; padding: 1.8rem; border: 2px solid #ccc; box-sizing: border-box; }
 .banner01_box>li>div>hr{width: 3rem; padding: 1px; background-color: #000040;}
 .edu_box > div, .exp_box > div, .pro_box > div{padding-bottom: 1rem;}
 .exp > span{text-align: center;}
-
-
 
 .ab_section02{background-image: url("../img/aboutme/startup-593329_192023.jpg");
 background-size: cover; background-repeat: no-repeat; background-position-y: -10rem;
@@ -63,10 +61,9 @@ background-attachment:fixed; margin-top:10rem;}
 .skill_me{color: #fff;}
 .skill_me >p {width: 20%; border:1px solid #fff; margin: 0 auto;}
 .cont_me > p ,.ab_me > p{width: 20%; border:1px solid #111; margin: 0 auto;}
-
+.myimg, .mytext_box{padding:0 1rem; box-sizing: border-box;}
 .me_bg{width: 100%; background-color:#1b9891; padding: 3rem 0; overflow: hidden; margin-top: 10rem;}
-/* .myimg, .mytext_box{ width: 50%; float: left;} */
-.mytext_box{height:313.33px; display: table; background-color: rgba(255,255,255,0.5);}
+.mytext_box{height: 414px; display: table; background-color: rgba(255,255,255,0.5);}
 .mytext{box-sizing: border-box; padding: 2rem; display: table-cell; vertical-align: middle;}
 .mytext > p{font-size: 1.25rem;}
 .mytext > p >span{font-weight: bold;}
@@ -96,7 +93,7 @@ background-attachment:fixed; margin-top:10rem;}
     .ab_section02{background-image: url("../img/aboutme/startup-593329_192023.jpg");
         background-size: cover; background-repeat: no-repeat; background-position:center;
         background-attachment:unset;}
-
+    .col-md-4{padding-right: 0; padding-left: 0;}
     .skills_txt{display: none;}
     .skills_txt768{display: block;}
     .skill_7{width: 100%; color:#fff; margin-bottom: 2rem;}

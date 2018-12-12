@@ -35,7 +35,7 @@ function homeAdd(data) {
 	var Explantion_2 = data.val().Explantion_2;
 	var link = data.val().link;
 	var html = '';
-	html += '<ul class="list clear row" id="' + id + '">';
+	html += '<ul class="list clear" id="' + id + '">';
 	html += '<li class="col-md-3">';
 	html += '<div>';
 	html += '<img src="' + src + '">';

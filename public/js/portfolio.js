@@ -37,7 +37,7 @@ function homeAdd(data) {
 	var html = '';
 	html += '<div class="site_bg page" id="'+id+'">';
 	html += '<div class="site_box row">';
-	html += '<div class="site_img"><a href="'+link+'"><img src="'+src+'" alt="site_img" class="img"></div></a>';
+	html += '<div class="site_img"><a href="'+link+'"><img src="'+src+'" alt="site_img" class="img"></a></div>';
 	html += '<ul class="site_txt">';
 	html += '<li><h3>project Name</h3></li>';
 	html += '<li><h2>'+adtitle+'</h2></li>';
