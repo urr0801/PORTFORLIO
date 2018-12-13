@@ -49,14 +49,14 @@ function homeAdd(data) {
 	html += '<li><p>'+Explantion_1+'</p></li>';
 	html += '<li><p>'+Explantion_2+'</p></li>';
 	html += '</ul>';
-	html += '<button class="but w3-button w3-round-xxlarge w3-white" onclick="goUrl(\''+link+'\');">go site</button>';
+	html += '<div class="go_site">click Picture</div>';
 	html += '</div>';
 	html += '</div>';
 	$("#port_wrap").append(html);
 	$(window).trigger("resize");
 	$(".site_img").eq(0).addClass("ani_img0");
 	$(".site_txt").eq(0).addClass("ani_txt0");
-	$(".but").eq(0).addClass("ani_but0");
+	$(".go_site").eq(0).addClass("ani_go_site0");
 	// img scale ani
 	$(".site_img").hover(function(){
 		$(this).find("img").css({"animation-name":"siteAni"});
@@ -111,7 +111,7 @@ function wheelFn(e) {
 		// page ani event
 		$(".site_img").eq(now).addClass("ani_img"+now);
 		$(".site_txt").eq(now).addClass("ani_txt"+now);
-		$(".but").eq(now).addClass("ani_but"+now);
+		$(".go_site").eq(now).addClass("ani_go_site"+now);
 	});
 }
 

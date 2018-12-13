@@ -14,12 +14,12 @@ background-size: cover; background-repeat: no-repeat;}
 .site_txt{width: 70%; max-width: 500px; position: absolute; top:40%; left: 53%; background-color: rgba(0,0,0,0.5); color: #fff; padding:2rem 0 2rem 8rem; }
 .site_txt > li > hr{width: 4rem;}
 
-.but{width: 8%; position: absolute; top:75%; left: 28%;}
+.go_site{width: 10%; position: absolute; top:70%; left: 28%; text-align: center; color:#fff; font-size: 2rem; border: 2px solid #fff;}
 
 /* 등장 애니메이션 */
 .ani_img0 {animation-name:ani_img0; animation-duration:1.5s; animation-fill-mode:forwards;}
 .ani_txt0 {animation-name:ani_txt0; animation-duration:1.5s; animation-fill-mode:forwards; animation-timing-function:ease-out;}
-.ani_but0 {animation-name:ani_but0; animation-duration:1.5s; animation-fill-mode:forwards;}
+.ani_go_site0 {animation-name:ani_go_site0; animation-duration:1.5s; animation-fill-mode:forwards;}
 @keyframes ani_img0 {
 	0% {opacity:0; transform:translateY(-30%);}
 	100% {opacity:1; transform:translateY(0);}
@@ -28,14 +28,14 @@ background-size: cover; background-repeat: no-repeat;}
 	0% {opacity: 0; left:63%;}
 	100% {opacity: 1; left: 53%;}
 }
-@keyframes ani_but0 {
+@keyframes ani_go_site0 {
 	0% {opacity:0; transform:translateX(-30%);}
 	100% {opacity:1; transform:translateX(0);}
 }
 
 .ani_img1 {animation-name:ani_img1; animation-duration:1.5s; animation-fill-mode:forwards;}
 .ani_txt1 {animation-name:ani_txt1; animation-duration:1.5s; animation-fill-mode:forwards; animation-timing-function:ease-out;}
-.ani_but1 {animation-name:ani_but1; animation-duration:1.5s; animation-fill-mode:forwards;}
+.ani_go_site1 {animation-name:ani_go_site1; animation-duration:1.5s; animation-fill-mode:forwards;}
 @keyframes ani_img1 {
 	0% {opacity:0; transform:translateX(-30%);}
 	100% {opacity:1; transform:translateX(0);}
@@ -44,14 +44,14 @@ background-size: cover; background-repeat: no-repeat;}
 	0% {opacity: 0; left: 63%;}
 	100% {opacity: 1; left: 53%;}
 }
-@keyframes ani_but1 {
+@keyframes ani_go_site1 {
 	0% {opacity:0; transform:translateY(-30%);}
 	100% {opacity:1; transform:translateY(0);}
 }
 
 .ani_img2 {animation-name:ani_img2; animation-duration:1.5s; animation-fill-mode:forwards;}
 .ani_txt2 {animation-name:ani_txt2; animation-duration:1.5s; animation-fill-mode:forwards; animation-timing-function:ease-out;}
-.ani_but2 {animation-name:ani_but2; animation-duration:1.5s; animation-fill-mode:forwards;}
+.ani_go_site2 {animation-name:ani_go_site2; animation-duration:1.5s; animation-fill-mode:forwards;}
 @keyframes ani_img2 {
 	0% {opacity:0; transform:translateY(30%);}
 	100% {opacity:1; transform:translateY(0);}
@@ -60,14 +60,14 @@ background-size: cover; background-repeat: no-repeat;}
 	0% {opacity: 0; top:20%;}
 	100% {opacity: 1; top: 40%;}
 }
-@keyframes ani_but2 {
+@keyframes ani_go_site2 {
 	0% {opacity:0; transform:translateX(30%);}
 	100% {opacity:1; transform:translateX(0);}
 }
 
 .ani_img3 {animation-name:ani_img3; animation-duration:1.5s; animation-fill-mode:forwards;}
 .ani_txt3 {animation-name:ani_txt3; animation-duration:1.5s; animation-fill-mode:forwards; animation-timing-function:ease-out;}
-.ani_but3 {animation-name:ani_but3; animation-duration:1.5s; animation-fill-mode:forwards;}
+.ani_go_site3 {animation-name:ani_go_site3; animation-duration:1.5s; animation-fill-mode:forwards;}
 @keyframes ani_img3 {
 	0% {opacity:0; transform:translateY(30%);}
 	100% {opacity:1; transform:translateY(0);}
@@ -76,14 +76,14 @@ background-size: cover; background-repeat: no-repeat;}
 	0% {opacity: 0; left: 63%;}
 	100% {opacity: 1; left: 53%;}
 }
-@keyframes ani_but3 {
+@keyframes ani_go_site3 {
 	0% {opacity:0; transform:translateX(-30%);}
 	100% {opacity:1; transform:translateX(0);}
 }
 
 .ani_img4 {animation-name:ani_img4; animation-duration:1.5s; animation-fill-mode:forwards;}
 .ani_txt4 {animation-name:ani_txt4; animation-duration:1.5s; animation-fill-mode:forwards; animation-timing-function:ease-out;}
-.ani_but4 {animation-name:ani_but4; animation-duration:1.5s; animation-fill-mode:forwards;}
+.ani_go_site4 {animation-name:ani_go_site4; animation-duration:1.5s; animation-fill-mode:forwards;}
 @keyframes ani_img4 {
 	0% {opacity:0; transform:translateX(-30%);}
 	100% {opacity:1; transform:translateX(0);}
@@ -92,7 +92,7 @@ background-size: cover; background-repeat: no-repeat;}
 	0% {opacity: 0; top: 50%;}
 	100% {opacity: 1; top: 40%;}
 }
-@keyframes ani_but4 {
+@keyframes ani_go_site4 {
 	0% {opacity:0; transform:translateY(30%);}
 	100% {opacity:1; transform:translateY(0);}
 }
@@ -117,7 +117,7 @@ background-size: cover; background-repeat: no-repeat;}
 	.site_box{padding-top: 10rem;}
 	.site_img{width: 100%; max-width: 100%; position: static; margin-bottom: 2rem;}
 	.site_txt{width: 100%; max-width: 100%; position: static; padding:1rem; }
-	.but{display: none;}
+	.go_site{display: none;}
 	h3{font-size: 1.5rem;}
 	h2{font-size: 2rem;}
 	p{font-size: 1rem;}
