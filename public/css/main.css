@@ -25,7 +25,7 @@
 .nav li a:hover{color:#f90; background-color: transparent !important;}
 .open>a, .nav .open>a:focus, .nav .open>a:hover{background-color: transparent;}
 
-.title{position: absolute; top:23rem; left:0; cursor: pointer;}
+.title{position: absolute; top:23rem; left:0;}
 .title > h2{font-size: 6.5rem; color:#fff;}
 .title > h3{font-size: 4rem; color:#fff;}
 .title > h4{font-size: 2rem; color:#fff;}
