@@ -77,6 +77,7 @@ function homeChg(data) {
 
 
 $("#home_save").on('click', function () {
+	// alert("권한이 없습니다.");
 	var img = $("#home_wr .tit_img").val();
 	var adtitle = $("#home_wr .adtitle").val();
 	var skills = $("#home_wr .skills").val();
@@ -105,6 +106,7 @@ $("#home_save").on('click', function () {
 });
 
 function homeUp(obj) {
+	// alert("권한이 없습니다.");
 	var ul = $(obj).parent().parent().parent();
 	var id = ul.attr("id");
 
@@ -142,6 +144,7 @@ function homeUp(obj) {
 }
 
 function homeDel(obj) {
+	// alert("권한이 없습니다.");
 	if (confirm("정말로 삭제하시겠습니까?")) {
 		//var id = obj.parentNode.parentNode.parentNode.id;
 		var id = $(obj).parent().parent().parent().attr("id");
