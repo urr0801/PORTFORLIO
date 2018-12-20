@@ -130,7 +130,7 @@ background-size: cover; background-repeat: no-repeat;}
 
 @media screen and (max-width:768px) {
 	.row{width: 80%;}
-	.site_bg{background-size: cover; background-repeat: no-repeat; background-position: center center;}
+	.site_bg{height: 60rem;background-size: cover; background-repeat: no-repeat; background-position: center center;}
 	.site_bg:nth-child(3){background-position-x:80%;}
 	.site_box{padding-top: 10rem;}
 	.site_img{width: 100%; max-width: 100%; position: static; margin-bottom: 2rem;}
