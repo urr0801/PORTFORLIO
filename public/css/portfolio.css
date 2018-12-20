@@ -9,12 +9,11 @@ html, body{height: 100%;}
 #port_wrap{width: 100%;}
 
 
-.site_bg{width: 100%; height: 78.75rem;background-image: url("../img/aboutme/startup-593329_192023.jpg");
+.site_bg{width: 100%; height: 78.75rem;background-image: url("../img/2018100814062400000012816.jpg");
 background-size: cover; background-repeat: no-repeat;}
 .site_bg:nth-child(2){background-image: url("../img/milk/bg/4MLC0036.jpg");}
-.site_bg:nth-child(3){background-image: url("../img/vent2.jpg");}
-.site_bg:nth-child(4){background-image: url("../img/vent1.jpg");}
-.site_bg:nth-child(5){background-image: url("../img/sky-828648.jpg");}
+.site_bg:nth-child(3){background-image: url("../img/vent1.jpg");}
+.site_bg:nth-child(4){background-image: url("../img/sky-828648.jpg");}
 
 .site_box{height: 100%; position: relative;}
 .site_img{width: 60%; max-width: 700px; position: absolute; top: 20%; left:10%;}

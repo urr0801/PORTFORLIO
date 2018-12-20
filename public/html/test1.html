@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <title>DAYTOUR</title>
+  <!--<link rel="stylesheet" href="../css/reset.css" />-->
+  <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/animate.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--[if lt IE 9]><script src="js/html5shiv.min.js"></script><![endif]-->
+  <style type="text/css">
+    /*mediaQuery*/
+    /*
+    media screen and (max-width:1439px){}
+    @media screen and (max-width:1279px){}
+    @media screen and (max-width:959px){}
+    @media screen and (max-width:767px){}
+    @media screen and (max-width:479px){}
+    */
+    /*font-family: 'Slabo 27px', serif;*/
+
+    html,body{height:100%;}
+    html{font-size:100%; }
+    body {font-family: 'Open Sans', sans-serif;}
+    h1,h2,h3,h4,p{font-weight:100;}
+    ul, li{margin-right:0; margin-left:0; list-style:none; padding-right:0; padding-left:0;}
+    
+    .bg{background-repeat:no-repeat;
+        background-size:cover;}
+    .container-fluid{padding-right:0; padding-left:0;}
+    .upnav{border-color:#fff;}
+    .upnav .nav{padding-right:1.2rem;}
+    .upnav .nav>li>a,.upnav .nav>li.w{padding:1rem 0.5rem; color:#fff; font-size:0.8rem;}
+    .navbar{margin-bottom:0;}
+    .header:after{content:""; display:block; padding-bottom:40rem;}
+    .header{background-image:url("../img/test1/vent1.jpg"); position:relative;}
+    .navbar-inverse{background-color:transparent; border-color:transparent;}
+    .topnav{border-top:1px solid #fff; border-radius:0;}
+    .nav>li>a, .nav>li.w{padding:1rem; color:#fff;}
+    .navbar-inverse .navbar-brand{color:#fff; font-size:1.25rem; padding-top:1rem;}
+    .navbar-brand{padding:0 0 0 1rem;}
+    .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand{margin-left:1rem;}
+    .navbar-inverse .navbar-nav>li>a{color:#fff;}
+    .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus,
+    .navbar-inverse .navbar-nav > .open > a:hover{color:#ccc; background-color:transparent;}
+    .dropdown-menu>li>a{color:#fff;}
+    .dropdown-menu{background-color:transparent; border:0; border-color:transparent; box-shadow:none; }
+    .dropdown-menu li{text-align:center;}
+
+    .header-img{width:50%; position:absolute; top:30%; left:20%;}
+                
+    .header .fillter{background-color:rgba(0,0,0,0.2); position:absolute;
+                         top:0; left:0;
+                         width:100%; height:100%;}
+    .header-img img{max-width:65%; display:block; padding:1rem 0;}
+    .header-img .txt-1 p{color:#fff; font-size:0.7rem; margin-bottom:0;}
+    .header-img .txt li:nth-child(2){padding-top:0.5rem;}
+    .header-img .txt li p{color:#fff; font-size:0.8rem;}
+    .header-img .txt li:nth-child(1){float:left; width:10%;}
+    .header-img .txt li:nth-child(1) .fa-play-circle-o{font-size:3.5rem; color:#fff; font-weight: 100;}
+    .header-img .txt li:nth-child(2){float:right; width:90%;}
+    .header-img .txt p span{display:block;}
+    
+   .section01{padding:5rem;}
+   .sect01-txt{text-align:center;}
+   .sect01-txt h3{padding-bottom:1rem;}
+   .sect01-txt p span{display:block;}
+   .sect01-txt img{max-width:25%; padding-top:1rem;}
+
+   .section02{padding:5rem;}
+   .sect02-txt{text-align:center; display:table; height:11.099375rem;}
+   .inner{display:table-cell; vertical-align:middle; width:90%; margin:auto;}
+   .sect02-txt .inner h2{margin-top:0;}
+   .sect02-txt .inner p{padding-bottom:0;}
+   .sect02-txt .inner p span{display:block;}
+   .sect02-img ul li{width:32%; float:left;}
+   .sect02-img ul li:nth-child(2){margin:0 2%;}
+   .sect02-img ul li img{max-width:100%;}
+
+   .banner-text{text-align:center; padding:1.5rem 0;}
+
+   .section03{background-image: url("../img/test1/vent3.jpg");
+               background-attachment: fixed;}
+   .sect03-txt{padding:5rem; text-align:center;}
+   .sect03-txt h2{color:#fff;}
+   .sect03-txt p{color:#fff;}
+   .sect03-txt a{width:15%; display:inline-block; border:1px solid #fff; color:#fff; padding:0.2rem;}
+
+   .section04{background-image: url("../img/test1/vent4.jpg");
+               background-attachment: fixed;}
+   .sect04-txt{padding:5rem; text-align:center;}
+   .sect04-txt h2{color:#fff;}
+   .sect04-txt p{color:#fff;}
+   .sect04-txt a{width:15%; display:inline-block; border:1px solid #fff; color:#fff; padding:0.2rem;}
+
+   .section05{background-image: url("../img/test1/vent5.jpg");
+               background-attachment: fixed;}
+   .sect05-txt{padding:5rem; text-align:center;}
+   .sect05-txt h2{color:#fff;}
+   .sect05-txt p{color:#fff;}
+   .sect05-txt a{width:15%; display:inline-block; border:1px solid #fff; color:#fff; padding:0.2rem;}
+
+   .sect06-img{padding:0;}
+   .sect06-txt .outer{display:table; height:28.42875rem;}
+   .sect06-txt .inner{display:table-cell; vertical-align:middle; padding:0 5rem; box-sizing:border-box;}
+   .sect06-txt .inner h3{margin:0 0 2rem;}
+   .sect06-txt .inner h4{font-size:0.8rem;}
+   .sect06-txt .inner p{margin-bottom:3rem;}
+   .sect06-txt .inner span{display:block; padding-bottom:0.4rem;}
+   .sect06-txt .inner a{width:25%; background-color:#292929; color:#fff; padding:0.5rem;}
+
+   .section07{padding:0; background-color:#909f5c;}
+   .sect07-txt{text-align:center; margin:0 auto; padding:5rem 0;}
+   .sect07-txt img{max-width:30%;}
+   .sect07-txt h4{color:#fff; padding:1rem 0 3rem;}
+   .sect07-txt .left-btn{width:15%; color:#fff; border:1px solid #fff; padding:0.5rem; margin-right:2rem; display:inline-block;}
+   .sect07-txt .right-btn{width:15%; background-color:#fff; border:1px solid #fff; color:#909f5c; padding:0.5rem; display:inline-block;}
+   .sect07-txt p{color:#fff; padding-top:3rem}
+
+   .footer{background-color:#292929;}
+   .footer .container{width:80%;}
+   .footer-main{padding:3rem 0 2rem; color:#fff;}
+   .fo-title h2{margin-top:0;}
+   .footer-main ul li{width:90%; font-size:0.6rem;}
+   .footer-main ul li span.gg{display:block; padding-bottom:0.3rem;}
+   .footer-main .boder-bot{padding-bottom:1rem; border-bottom:1px solid #ccc;}
+   .footer-main .ins li{width:32%; float:left;}
+   .footer-main .ins div{font-size:0.6rem;}
+   .footer-main .ins li:nth-child(2){margin:0 2%;}
+   .footer-main .ins img{max-width:100%;}
+   .footer-main .ins ul{padding-top:1rem;}
+   
+   .footer-bot{padding-bottom:1rem;}
+   .footer-bot .fo-le{text-align:left; font-size:0.8rem; color:#fff;}
+   .footer-bot .fo-ri{text-align:right; font-size:0.8rem;}
+   .footer-bot .fo-ri li{float:right;}
+   .footer-bot .fo-ri li .fa{padding:0 0.5rem; color:#fff;}
+
+   .footer-top-btn{text-align:center; padding-bottom:1rem;}
+   .footer-top-btn a{color:#fff; border:1px solid #fff; padding:0.5rem; width:15%;
+                   display:inline-block;}
+
+   .footer-main .go .ggg{padding-top:0.3rem;}
+    /*=======mediaQuery========*/
+    @media screen and (max-width:992px){
+      
+    }
+    @media screen and (max-width:767px){
+      html{font-size:87.5%;}
+     .upnav{display:none;}
+     .header-img .txt li:nth-child(1){float:none; width:100%;}
+     .header-img .txt li:nth-child(1) .fa-play-circle-o{font-size:3.5rem; color:#fff; font-weight: 100;}
+     .header-img .txt li:nth-child(2){float:none; width:90%;}
+    }
+    @media screen and (max-width:479px){
+      html{font-size:75%;}
+      
+    }
+    /*=======mediaQuery========*/
+
+  </style>
+</head>
+<body>
+
+  <div class="container-fluid header bg">
+    <div class="fillter"></div>
+    <nav class="navbar navbar-inverse upnav">
+      <div class="container-fluid">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Login </a></li>
+          <li class="w">|</li>
+          <li><a href="#">Register </a></li>
+          <li class="w">|</li>
+          <li><a href="#">Sitemap</a></li>
+          <li class="w">|</li>
+          <li><a href="#">CustomCenter</a></li>
+        </ul>
+      </div>
+    </nav>
+      <nav class="navbar navbar-inverse topnav">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand logo" href="#">DAYTOUR</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Tour</a></li>
+              <li><a href="#">Packages</a></li>
+              <li><a href="#">Page</a></li>
+              <li><a href="#">Contacts</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="header-img">
+        <div class="txt-1">
+          <p>ADVENTURE TRAVEL WITH HEART</p>
+        </div>
+        <img src="../img/test1/vent1.png" alt="hed-banner" />
+        <ul class="txt">
+          <li><span class="fa fa-play-circle-o"></span></li>
+          <li>
+            <p>
+              <span>Take a vacation on the wild side with Foundry </span>
+              <span>Adventure Tours and never look at life the same.</span>
+            </p>
+          </li>
+          
+        </ul>
+      </div>
+  </div>
+  <div class="section container-fluid">
+    <div class="section01 container">
+      <div class="sect01-txt">
+        <h3>SMASH YOUR COMFORT ZONE</h3>
+        <p>
+          <span>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem</span>
+          <span>aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</span>
+          <span>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores.</span>
+        </p>
+        <img src="../img/test1/signature.png" alt="sign" />
+      </div>
+    </div>
+    <div class="section02 container">
+      <div class="row">
+        <div class="col-md-6 col-sm-12 sect02-txt">
+          <div class="inner">
+            <h2>#FOUNDRYLIFE</h2>
+            <h4>FOLLOW US FOR UPDATES</h4>
+            <p>
+              <span>Nemo enim ipsam voluptatem quia voluptas sit aspernatur</span>
+              <span>aut odit aut fugit, sed quia consequuntur magni dolores.</span>
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12 sect02-img">
+          <ul>
+            <li><img src="../img/test1/instagram01.jpg" alt="ins" /></li>
+            <li><img src="../img/test1/instagram02.jpg" alt="ins" /></li>
+            <li><img src="../img/test1/instagram03.jpg" alt="ins" /></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container banner-text">
+      <p>POPULAR FOUNDRY TOURS</p>
+    </div>
+    <div class="section03 container-fluid bg">
+      <div class="sect03-txt">
+        <h2>TREK NEPAL</h2>
+        <p>A brief description of the tour.</p>
+        <a href="#">EXPLORE TOUR</a>
+      </div>
+    </div>
+    <div class="section04 container-fluid bg">
+      <div class="sect04-txt">
+        <h2>EXPLORE ANTELOPE CANYON</h2>
+        <p>A brief description of the tour..</p>
+        <a href="#">EXPLORE TOUR</a>
+      </div>
+    </div>
+    <div class="section05 container-fluid bg">
+      <div class="sect05-txt">
+        <h2>SCALE SIERRA NEVADA</h2>
+        <p>A brief description of the tour..</p>
+        <a href="#">EXPLORE TOUR</a>
+      </div>
+    </div>
+    <div class="section06 container-fluid">
+      <div class="row">
+        <div class="col-md-6 col-sm-12 sect06-img">
+          <img src="../img/test1/vent2.jpg" alt="vent2" class="img-responsive"/>
+        </div>
+        <div class="col-md-6 col-sm-12 sect06-txt">
+          <div class="outer">
+            <div class="inner">
+              <h3>
+                <span>BOOK YOUR NEXT</span>
+                <span>ADVENTURE TODAY.</span>
+              </h3>
+              <h4>
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</span>
+                <span>do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+              </h4>
+              <p>
+                <span>&bull; All Inclusive Packages</span>
+                <span>&bull; Multi-Night Stays</span>
+                <span>&bull; Equipment Provided</span>
+              </p>
+              <a href="#">BOOK A TOUR</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section07 container-fluid">
+      <div class="sect07-txt">
+        <img src="../img/test1/vent2.png" alt="vent2" />
+        <h4>EXCLUSIVE OFFERS, TRAVEL TIPS & MORE</h4>
+        <a href="#" class="left-btn">EMAIL ADDRESS</a>
+        <a href="#" class="right-btn">KEEP ME INFORMED</a>
+        <p>*Newsletters are sent bi-monthly</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer container-fluid">
+    <div class="container">
+      <div class="footer-main row">
+        <div class="col-md-3 col-sm-6 fo-title">
+          <h2>DAYTOUR</h2>
+        </div>
+        <ul class="col-md-3 col-sm-6">
+          <li class="boder-bot">RECENT POSTS</li>
+          <li>
+            <span>Hugging pugs is super trendy<span class="glyphicon glyphicon-arrow-right"></span></span>
+            <span class="gg">February 14, 2015</span>
+          </li>
+          <li>
+            <span>Hugging pugs is super trendy<span class="glyphicon glyphicon-arrow-right"></span></span>
+            <span class="gg">February 14, 2015</span>
+          </li>
+          <li>
+            <span>Hugging pugs is super trendy<span class="glyphicon glyphicon-arrow-right"></span></span>
+            <span class="gg">February 14, 2015</span>
+          </li>
+          <li>
+            <span>Hugging pugs is super trendy<span class="glyphicon glyphicon-arrow-right"></span></span>
+            <span class="gg">February 14, 2015</span>
+          </li>
+        </ul>
+        <ul class="col-md-3 col-sm-6 go">
+          <li class="boder-bot">LATEST UPDATES</li>
+          <li><span><i class="fa fa-twitter" aria-hidden="true"></i>
+              $10 across the board! All HTML items</span>
+              <span>&emsp; discounted for a strictly limited time.</span>
+          </li>
+          <li class="ggg;"><span><i class="fa fa-twitter" aria-hidden="true"></i>
+              Check out the fantastic new Insight</span>
+              <span>&emsp;</span>
+              <span>&emsp;#Bootstrap Theme from Medium Rare -</span>
+              <span>&emsp; demo at http://insight.mediumra.re  -</span>
+              <span>&emsp;Purchase now for just $49 per project</span>
+              <span>&emsp;at http://mmra.re/insight  @getbootstrap #bootstrap #themes #html</span>
+          </li>
+        </ul>
+        <div class="col-md-3 col-sm-6 ins">
+          <div class="boder-bot">INSTAGRAM</div>
+          <ul>
+            <li><img src="../img/test1/instagram01.jpg" alt="ins" /></li>
+            <li><img src="../img/test1/instagram02.jpg" alt="ins" /></li>
+            <li><img src="../img/test1/instagram03.jpg" alt="ins" /></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bot row">
+        <div class="col-md-6 col-sm-6">
+          <div class="fo-le">&copy; Copyright 2016 - Medium Rare</div>
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <ul class="fo-ri">
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-globe" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-top-btn">
+        <a href="#">top</a></div>
+    </div>
+  </div>
+
+  <!--javascript library file-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/wow.min.js"></script>
+  <script src="../js/html5shiv.min.js"></script>
+  <script src="../js/ie-checker-min.js"></script>
+  <script src="../js/jquery-3.3.1.min.js"></script>
+  <script src="../js/respond.min.js"></script>
+  <script type="text/javascript">new WOW().init();</script>
+  
+</body>
+</html>
