@@ -63,7 +63,7 @@ background-attachment:fixed; margin-top:10rem;}
 .cont_me > p ,.ab_me > p{width: 20%; border:1px solid #111; margin: 0 auto;}
 .myimg, .mytext_box{padding:0 1rem; box-sizing: border-box;}
 .me_bg{width: 100%; background-color:#1b9891; padding: 3rem 0; overflow: hidden; margin-top: 10rem;}
-.mytext_box{height: 414px; display: table; background-color: rgba(255,255,255,0.5);}
+.mytext_box{height: 27.25rem; display: table; background-color: rgba(255,255,255,0.5);}
 .mytext{box-sizing: border-box; padding: 2rem; display: table-cell; vertical-align: middle;}
 .mytext > p{font-size: 1.25rem;}
 .mytext > p >span{font-weight: bold;}
@@ -77,7 +77,7 @@ background-attachment:fixed; margin-top:10rem;}
 .contect button{margin: 3rem 1rem; float: right; width: 7rem;}
 
 
-@media screen and (max-width: 1280px) {}
+
 @media screen and (max-width: 789px) {
     .slides{display: none;}
     .ab_slide_wrap{background-image: url("../img/aboutme/lonely-road-in-forest-aerial-view-picjumbo-com.jpg");
