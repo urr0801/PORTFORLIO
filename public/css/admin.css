@@ -17,3 +17,17 @@ html, body{height: 100%;}
 #home .list > li:last-child {text-align:center; border-right:none;}
 #home .list img {height:180px; margin-bottom:8px; border:1px solid #ccc;}
 .form-control{margin-bottom: 0.3rem;}
+.btn-danger{margin-bottom: 0.2rem;}
+
+@media screen and (max-width: 1024px) {
+    .tit_img{width: 18rem;}
+    #home .list img {height:130px;}
+    .md_t{width: 15%;}
+    .md_m{width: 45%;}
+    .md_f{width: 10%;}
+
+}
+@media screen and (max-width: 768px) {
+    .tit_img{width: 18rem;}
+    #home .list img {height:130px;}
+}

@@ -43,7 +43,7 @@ function homeAdd(data) {
 	html += '<li><h2>'+adtitle+'</h2></li>';
 	html += '<li><hr /></li>';
 	html += '<li><p>skills: '+skills+'</p></li>';
-	html += '<li><p>Contribute:'+Contribute+'</p></li>';
+	html += '<li><p>Contribute: '+Contribute+'</p></li>';
 	html += '<li><p>Functions : '+Functions+'</p></li>';
 	html += '<li><p>Explantion</p></li>';
 	html += '<li><p>'+Explantion_1+'</p></li>';
