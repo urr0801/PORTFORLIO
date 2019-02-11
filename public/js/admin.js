@@ -76,85 +76,91 @@ function homeChg(data) {
 }
 
 
-$("#home_save").on('click', function () {
-	var img = $("#home_wr .tit_img").val();
-	var adtitle = $("#home_wr .adtitle").val();
-	var skills = $("#home_wr .skills").val();
-	var Contribute = $("#home_wr .Contribute").val();
-	var Functions = $("#home_wr .Functions").val();
-	var Explantion_1 = $("#home_wr .Explantion_1").val();
-	var Explantion_2= $("#home_wr .Explantion_2").val();
-	var link = $("#home_wr .link").val();
-	if (img == '' || adtitle == '' || skills == '' || Contribute == '' || Functions == '' || Explantion_1 == '' || link == '') {
-		alert("내용을 적어주세요.");
-	} else {
-		ref = db.ref("root/home");
+// $("#home_save").on('click', function () {
+// 	var img = $("#home_wr .tit_img").val();
+// 	var adtitle = $("#home_wr .adtitle").val();
+// 	var skills = $("#home_wr .skills").val();
+// 	var Contribute = $("#home_wr .Contribute").val();
+// 	var Functions = $("#home_wr .Functions").val();
+// 	var Explantion_1 = $("#home_wr .Explantion_1").val();
+// 	var Explantion_2= $("#home_wr .Explantion_2").val();
+// 	var link = $("#home_wr .link").val();
+// 	if (img == '' || adtitle == '' || skills == '' || Contribute == '' || Functions == '' || Explantion_1 == '' || link == '') {
+// 		alert("내용을 적어주세요.");
+// 	} else {
+// 		ref = db.ref("root/home");
 		
-		ref.push({
-			img: img,
-			adtitle: adtitle,
-			skills: skills,
-			Contribute: Contribute,
-			Functions: Functions,
-			Explantion_1: Explantion_1,
-			Explantion_2: Explantion_2,
-			link: link
-		}).key;
-		alert("등록되었습니다.");
-	}
-});
+// 		ref.push({
+// 			img: img,
+// 			adtitle: adtitle,
+// 			skills: skills,
+// 			Contribute: Contribute,
+// 			Functions: Functions,
+// 			Explantion_1: Explantion_1,
+// 			Explantion_2: Explantion_2,
+// 			link: link
+// 		}).key;
+// 		alert("등록되었습니다.");
+// 	}
+// });
+
+
+
+// function homeUp(obj) {
+// 	var ul = $(obj).parent().parent().parent();
+// 	var id = ul.attr("id");
+
+// 	var img = '';
+// 	if($(".tit_img",ul).val()) img = ($(".tit_img",ul).val());
+// 	var adtitle = '';
+// 	if($(".adtitle",ul).val()) adtitle = ($(".adtitle",ul).val());
+// 	var skills = "";
+// 	if($(".skills",ul).val()) skills = ($(".skills",ul).val());
+// 	var Contribute = "";
+// 	if($(".Contribute",ul).val()) Contribute = ($(".Contribute",ul).val());
+// 	var Functions = '';
+// 	if($(".Functions",ul).val()) Functions = ($(".Functions",ul).val());
+// 	var Explantion_1 = '';
+// 	if($(".Explantion_1",ul).val()) Explantion_1 = ($(".Explantion_1",ul).val());
+// 	var Explantion_2= '';
+// 	if($(".Explantion_2",ul).val()) Explantion_2 = ($(".Explantion_2",ul).val());
+// 	var link = '';
+// 	if($(".link",ul).val()) link = $(".link",ul).val();
+// 	if (img == '') {
+// 		alert("내용을 적어주세요.");
+// 	} else {
+// 		ref = db.ref("root/home/" + id);
+// 		ref.update({
+// 			img: img,
+// 			adtitle: adtitle,
+// 			skills: skills,
+// 			Contribute: Contribute,
+// 			Functions: Functions,
+// 			Explantion_1: Explantion_1,
+// 			Explantion_2: Explantion_2,
+// 			link: link
+// 		});
+// 	}
+// }
+
+// function homeDel(obj) {
+// 	if (confirm("정말로 삭제하시겠습니까?")) {
+// 		var id = obj.parentNode.parentNode.parentNode.id;
+// 		var id = $(obj).parent().parent().parent().attr("id");
+// 		if (id != "") {
+// 			db.ref("root/home/" + id).remove();
+// 		}
+// 	}
+// }
 
 $("#home_save").on('click', function () {
-	// alert("등록 권한이 없습니다.");
+	alert("등록 권한이 없습니다.");
 });
 
 function homeUp(obj) {
-	// alert("수정 권한이 없습니다.");
-	var ul = $(obj).parent().parent().parent();
-	var id = ul.attr("id");
-
-	var img = '';
-	if($(".tit_img",ul).val()) img = ($(".tit_img",ul).val());
-	var adtitle = '';
-	if($(".adtitle",ul).val()) adtitle = ($(".adtitle",ul).val());
-	var skills = "";
-	if($(".skills",ul).val()) skills = ($(".skills",ul).val());
-	var Contribute = "";
-	if($(".Contribute",ul).val()) Contribute = ($(".Contribute",ul).val());
-	var Functions = '';
-	if($(".Functions",ul).val()) Functions = ($(".Functions",ul).val());
-	var Explantion_1 = '';
-	if($(".Explantion_1",ul).val()) Explantion_1 = ($(".Explantion_1",ul).val());
-	var Explantion_2= '';
-	if($(".Explantion_2",ul).val()) Explantion_2 = ($(".Explantion_2",ul).val());
-	var link = '';
-	if($(".link",ul).val()) link = $(".link",ul).val();
-	if (img == '') {
-		alert("내용을 적어주세요.");
-	} else {
-		ref = db.ref("root/home/" + id);
-		ref.update({
-			img: img,
-			adtitle: adtitle,
-			skills: skills,
-			Contribute: Contribute,
-			Functions: Functions,
-			Explantion_1: Explantion_1,
-			Explantion_2: Explantion_2,
-			link: link
-		});
-	}
+	alert("수정 권한이 없습니다.");
 }
 
 function homeDel(obj) {
-	// alert("삭제 권한이 없습니다.");
-	if (confirm("정말로 삭제하시겠습니까?")) {
-		var id = obj.parentNode.parentNode.parentNode.id;
-		var id = $(obj).parent().parent().parent().attr("id");
-		if (id != "") {
-			db.ref("root/home/" + id).remove();
-		}
-	}
+	alert("삭제 권한이 없습니다.");
 }
-
-

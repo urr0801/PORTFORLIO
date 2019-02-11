@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>test-main page</title>
+    <title>capy</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
      crossorigin="anonymous">
      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -27,8 +27,15 @@
     .search_icon{float: right; padding: 1rem; color: #ccc; background-color: #888; border-radius: 5px; margin-left: 0.5rem;}
     .search{width: 30%; float: right;}
     /* section */
-    .tag_name{text-align:center; margin-top: 5rem;}
-    .tag_s_name{text-align:center; margin-top: 1rem;}
+    .tag_name{text-align:center; margin: 5rem auto 1rem; width:35%; display: table;}
+    .tag_name img, .tag_name h1{display: table-cell; vertical-align: middle; text-align: center; }
+    .tag_name div{float: left;}
+    .tag_name div:nth-child(1){width: 15%;}
+    .tag_name div:nth-child(2){width: 80%; margin-left: 4%;}
+    .tag_name div img{max-width: 100%;}
+    .tag_list, .tag_intro{width: 50%; margin: 0 auto; padding: 3px 0;}
+    .tag_list li{display: inline-block; padding: 0 1rem;}
+    .tag_list li p{display: inline-block;}
     .r_tag{text-align:center; margin-top: 5rem; color: #777;}
     .r_tag > li{display: inline-block;}
     .product{width: 100%; margin: auto;}
@@ -74,6 +81,8 @@
         .logo img{max-width: 100%; margin-top:3px;}
         .search{width: 45%;}
         .r_tag{margin: 2rem 0;}
+        .tag_list{width: 55%;}
+        .tag_intro{width: 70%;}
         html, body{height: 100%;}
         .section{height: 80%;}
         .product{height: 70%;}
@@ -88,6 +97,11 @@
         .logo img{max-width: 100%; margin-top:3px;}
         .search{width: 45%;}
         .r_tag{margin-top: 2rem;}
+        .tag_name{width: 50%}
+        .tag_name div:nth-child(1){width: 20%;}
+        .tag_name div:nth-child(2){width: 60%; margin-left: 4%;}
+        .tag_list{width: 70%;}
+        .tag_intro{width: 70%;}
         html, body{height: 100%;}
         .section{height: 100%;}
         .product{height: 100%;}
@@ -115,8 +129,14 @@
         .section{height: 100%;}
         .product{height: 100%;}
         .r_tag{margin-top: 3rem; margin-bottom: 1rem;}
+        .tag_name{width: 50%}
+        .tag_list li p{display:block;}
+        .tag_name div:nth-child(1){width: 23%;}
+        .tag_name div:nth-child(2){width: 60%; margin-left: 4%;}
+        .tag_list{width: 35%;}
+        .tag_intro{width: 100%; text-align: center;}
         .pro_list{height: 100%;}
-        .pro_list > .imgs{width: 90%; height: 100%; overflow: hidden; border-radius: 5px; position: relative; margin: 0.6%;}
+        .pro_list > .imgs{width: 90%; height: 60%; overflow: hidden; border-radius: 5px; position: relative; margin: 0.6%;}
         .imgs > img{width: 100%; position: absolute; top:50%; left: 50%; transform: translate(-50%,-50%);}
         .pro_list > .imgs{width: 98%}
         .more {overflow: hidden;}
@@ -124,6 +144,7 @@
         .foot_logo > img{max-width: 100%; height: auto !important;}
         .foot_ri{width: 100%; text-align: center;}
     }
+
     @media all and (max-width: 360px) {
         .row{width: 95%;}
         .logo{width: 100%; padding-bottom: 10px; text-align: center;}
@@ -132,7 +153,10 @@
         .section{height: 100%;}
         .product{height: 100%;}
         .r_tag{margin-top: 3rem; margin-bottom: 1rem;}
-        .tag_name{margin-top: 1.5rem;}
+        .tag_name{margin-top: 1.5rem; width: 80%;}
+        .tag_intro{padding: 0.7rem 0;}
+        .tag_intro p{font-size: 1.2rem;}
+        .tag_list{width: 65%;}
         .pro_list{height: 100%;}
         .pro_list > .imgs{width: 90%; height: 60%; overflow: hidden; border-radius: 5px; position: relative; margin: 0.6%;}
         .imgs > img{width: 100%; position: absolute; top:50%; left: 50%; transform: translate(-50%,-50%);}
@@ -151,15 +175,36 @@
     
         <div class="top">
             <div class="row top_box">
-                <div class="logo clear"><a href="../html/main.html"><img src="../common/logo_b.png" alt="logo_img"></a></div>
+                <div class="logo"><a href="../html/main.html"><img src="../common/logo_b.png" alt="logo_img"></a></div>
                 <div class="search_icon"><a href="../html/search.html"><span class="fa fa-search"></span></a></div>
                 <div class="search"><input type="text" class="adtitle form-control" placeholder="Search"></div>
             </div>
         </div>
         <div class="section row clear">
             <div class="product_top">
-                <div class="tag_name"><h2>#댕댕이</h2></div>
-                <div class="tag_s_name"><h4>게시물 1,342,674</h4></div>
+                <div class="tag_name clear">
+                    <div><img src="../img/54ff983e9e129.png" alt="태그_이미지"></div>
+                    <div><h1>platform_9</h1> </div>
+               </div>
+               <div class="tag_list">
+                   <ul>
+                       <li>
+                           <p>posts</p>
+                           <p>22,042</p>
+                       </li>
+                       <li>
+                           <p>follwers</p>
+                           <p>5,342</p>
+                       </li>
+                       <li>
+                           <p>followings</p>
+                           <p>3,212</p>
+                       </li>
+                   </ul>
+               </div>
+               <div class="tag_intro">
+                   <p>귀여운 강아지 일상, 공유, 맛집, 강아지, 애견일기 공유하는 곳</p>
+               </div>
                 <ul class="r_tag">
                     <li class="r_tag_name">관련태그 : </li>
                     <li>#강아지</li>
@@ -182,25 +227,25 @@
                             <span class="fa fa-clone clone"></span>
                         </li> 
                         <li class="imgs">
-                                <a href="../html/sub.html"><img src="../img/d1.jpg" alt="img" class="img"></a>
+                                <a href="../html/sub.html"><img src="../img/s1.jpg" alt="img" class="img"></a>
                                 <span class="fa fa-heart heart"> 132</span>
                                 <span class="fa fa-comment comment"> 32</span>
                                 <span class="fa fa-clone clone"></span>
                             </li> 
                         <li class="imgs">
-                                <a href="../html/sub.html"><img src="../img/d2.jpg" alt="img" class="img"></a>
+                                <a href="../html/sub.html"><img src="../img/s2.jpg" alt="img" class="img"></a>
                             <span class="fa fa-heart heart"> 132</span>
                             <span class="fa fa-comment comment"> 32</span>
                             <span class="fa fa-clone clone"></span>
                         </li> 
                         <li class="imgs">
-                                <a href="../html/sub.html"><img src="../img/d3.jpg" alt="img" class="img"></a>
+                                <a href="../html/sub.html"><img src="../img/s3.jpg" alt="img" class="img"></a>
                                 <span class="fa fa-heart heart"> 132</span>
                                 <span class="fa fa-comment comment"> 32</span>
                                 <span class="fa fa-clone clone"></span>
                             </li> 
                             <li class="imgs">
-                                    <a href="../html/sub.html"><img src="../img/d4.jpg" alt="img" class="img"></a>
+                                    <a href="../html/sub.html"><img src="../img/s4.jpg" alt="img" class="img"></a>
                                     <span class="fa fa-heart heart"> 132</span>
                                     <span class="fa fa-comment comment"> 32</span>
                                     <span class="fa fa-clone clone"></span>

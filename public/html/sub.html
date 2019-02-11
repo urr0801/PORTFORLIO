@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>test-sub page</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+     crossorigin="anonymous">
+     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/sub.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <style type="text/css">
+    html, body{height: 100%;}
+
+.row {width: 60%; margin: 0 auto;}
+.table {display: table;}
+.table_c{display: table-cell; vertical-align: middle;}
+
+/* banner */
+.top_banner{width: 60%;padding: 30px;  margin: 2rem auto 0; text-align: center; border: 1px solid #ccc;}
+
+.side_banner{width: 100%; position: relative; padding-top: 10r;}
+.le_banner{position: fixed; width: 15rem; height: 75%; text-align: center; border: 1px solid #ccc; margin: 1rem;}
+.ri_banner{position: fixed; width: 15rem; height: 75%; text-align: center; border: 1px solid #ccc; right: 0; margin: 1rem;}
+
+/* top */
+.top{width: 100%; border-bottom: 1px solid #ccc; padding: 2rem 0;}
+.logo{width: 20%;float: left;}
+.logo img{max-width: 90%; margin-top: 5px;}
+.search_icon{float: right; padding: 1rem; color: #ccc; background-color: #888; border-radius: 5px; margin-left: 0.5rem;}
+.search{width: 30%; float: right;}
+
+/* section */
+.section{width: 100%; height: 100%;}
+.section_warp{height: 100%;}
+
+.sec_top{width:70%; margin: auto; padding: 3rem 0 2rem;}
+.top_img, .top_txt {float: left;}
+.top_btn {float: right;}
+.top_img{width: 4rem;}
+.top_img img{max-width: 100%;}
+.top_txt{width: 80%; padding:0 1rem; }
+.top_txt p:nth-child(1){font-size: 1.5rem; font-weight: bold; margin-bottom: 0.3rem;}
+.top_txt p:nth-child(2){font-size: 1.2rem;}
+.top_btn{width: 10%;}
+.top_btn .btn{padding: 0.2rem 0.5rem; font-size: 1rem;}
+
+.sec_mid{width: 100%; border-bottom: 1px solid #ccc; padding-bottom: 2rem;}
+.senter_box{position: relative; width: 70%; height: 100%; margin: 0 auto;}
+.senter_box > div {position: absolute;}
+.senter_img{left: 50%; transform: translateX(-50%); top:0; border-radius: 1em; overflow: hidden;}
+.abc{opacity: 0;}
+.che_le{top:50%; left: 0; transform: translateY(-50%); font-size: 5rem;}
+.che_ri{top:50%; right:0; transform: translateY(-50%); font-size: 5rem;}
+
+.dot_box{text-align: center; color: rgba(0,0,0,0.7); font-size: 2rem;}
+.icon_box{width: 70%; margin: 0 auto; padding-top: 0.5rem;}
+.icon_le{float: left; padding: 0 0.3rem;}
+.icon_ri{float:right;}
+.icon_ri .btn{padding: 0.2rem 0.5rem;}
+
+.sec_bot{width: 80%; margin: 0 auto;}
+.con_txt{width: 100%; padding: 1rem;}
+.tag_txt{padding: 2rem 1rem;}
+.tag_txt p{display: inline-block;}
+.comment_top{padding-bottom: 0.5rem;}
+.con_txt{padding: 3rem;}
+.con_le{float: left;}
+.con_ri{float: right;}
+.comment_box{border: 1px solid #ccc; border-radius: 4px; padding: 0.5rem;}
+.com_img, .com_id_txt {float: left;}
+.com_img{width: 3rem;}
+.com_img img{max-width: 100%;}
+.com_id_txt{width: 80%; padding:0 1rem; }
+.comment_txt{padding: 1rem 4rem;}
+.big_tag{padding: 2rem 1rem;}
+.big_tag p{display: inline-block; padding-top: 0.5rem;}
+
+/* footer */
+.footer{width: 100%; border-top:1px solid #ccc; padding: 3rem 0; background-color: rgba(0,0,0,0.8);}
+    .foot_logo{width: 20%; float: left; padding-top: 12px;}
+    .foot_logo > img{max-width: 90%;}
+    .foot_ri{width: 70%; float: right;}
+    .foot_ri p{color: #eee; font-size: 0.8rem;}
+
+/* modal */
+.modal-content{background-color:rgba(0,0,0,0.7);}
+.modal-header, .modal-footer{border: 0;}
+.modal-header{color:#fff; text-align: center;}
+.modal-header .close{color:#fff;}
+.url{margin: 0 auto;}
+.modal-body{text-align: center;}
+.modal-body ul li{display: inline-block; padding: 0.2rem;}
+.btn_url{width: 100px; border-radius: 5px; background-color: #888; color: #fff; text-align: center; padding: 1rem; margin: 1rem auto 0;}
+
+@media all and (min-width: 1025px){
+        .row{width: 60%}
+        .logo{width: 30%;}
+        .logo img{max-width: 100%; margin-top:3px;}
+        .search{width: 45%;}
+        
+        .foot_logo{margin-left: 14rem;}
+        .foot_ri{text-align: center; width: 65%;}
+        .foot_ri p{font-size: 1.6rem; padding-bottom: 6px;}
+    }
+
+    @media all and (min-width: 961px) and (max-width: 1024px) {
+        .logo{width: 30%;}
+        .logo img{max-width: 100%; margin-top:3px;}
+        .search{width: 45%;}
+        .foot_logo > img{max-width: 100%; height: auto !important;}
+        .foot_ri{width: 75%; text-align: center;}
+    }
+
+    @media all and (min-width: 769px) and (max-width: 960px) {
+        .logo{width: 35%;}
+        .logo img{max-width: 100%; margin-top:3px;}
+        .search{width: 45%;}
+        .foot_logo > img{max-width: 100%; height: auto !important;}
+        .foot_ri{width: 75%; text-align: center;}
+        .foot_ri p{font-size: 1.25rem; padding-bottom: 0.3rem;}
+        
+    }
+
+    @media all and (min-width: 769px) and (max-width: 960px) {
+        .logo{width: 35%;}
+        .logo img{max-width: 100%; margin-top:3px;}
+        .search{width: 45%;}
+       
+    }
+
+    @media all and (max-width: 768px) {
+        .logo{width: 35%;}
+        .logo img{max-width: 100%; margin-top: 1rem;}
+        .search{width: 45%;}
+        
+        .foot_logo{display: none;}
+        .foot_logo > img{max-width: 100%; height: auto !important;}
+        .foot_ri{width: 100%; text-align: center;}
+    }
+
+    @media all and (max-width: 360px) {
+        .row{width: 95%;}
+        .logo{width: 100%; padding-bottom: 10px; text-align: center;}
+        .logo img{max-width: 40%; transform: translateX(80%);}
+        .search{width: 85%;}
+        .section{height: 100%;}
+        .sec_top{width: 95%;}
+        .sec_bot{width: 95%;}
+        .con_txt{padding: 0 3rem;}
+        .che_le, .che_ri{display: none;}
+        .icon_box{width: 95%;}
+        .product{height: 100%;}
+        .r_tag{margin-top: 3rem; margin-bottom: 1rem;}
+        .tag_name{margin-top: 1.5rem;}
+        .pro_list{height: 100%;}
+        .pro_list > .imgs{width: 90%; height: 60%; overflow: hidden; border-radius: 5px; position: relative; margin: 0.6%;}
+        .imgs > img{width: 100%; position: absolute; top:50%; left: 50%; transform: translate(-50%,-50%);}
+        .pro_list > .imgs{width: 98%}
+        .more {overflow: hidden;}
+        .foot_logo{display: none;}
+        .foot_logo > img{max-width: 100%; height: auto !important;}
+        .foot_ri{width: 100%; text-align: center;}
+
+        /* banner */
+        .side_banner{width: 100%; position: relative; padding-top: 10r;}
+        .le_banner, .ri_banner{display: none;}
+
+        /* modal */
+        .modal-content{background-color:rgba(0,0,0,0.7);}
+        .modal-header, .modal-footer{border: 0;}
+        .modal-header{color:#fff; text-align: center;}
+        .modal-header .close{color:#fff;}
+        .url{margin: 0 auto;}
+        .modal-body{text-align: center;}
+        .modal-body ul li{display: inline-block; padding: 0.2rem; width: 24%;}
+        .modal-body ul li img{max-width: 100%;}
+        .btn_url{width: 100px; border-radius: 5px; background-color: #888; color: #fff; text-align: center; padding: 1rem; margin: 1rem auto 0;}
+    }
+
+    </style>
+    <style type="text/javascript">
+    
+    </style>
+
+</head>
+<body>
+   <div class="top_banner">광고영역</div>
+   
+    <div class="top">
+        <div class="row top_box">
+            <div class="logo"><a href="../html/main.html"><img src="../common/logo_b.png" alt="logo_img"></a></div>
+            <div class="search_icon"><a href="../html/search.html"><span class="fa fa-search"></span></a></div>
+            <div class="search"><input type="text" class="adtitle form-control" placeholder="Search"></div>
+        </div>
+    </div>
+    <div class="side_banner">
+        <div class="le_banner table"><p class="table_c">광고영역</p></div>
+        <div class="ri_banner table"><p class="table_c">광고영역</p></div>
+    </div>
+    <div class="section clear">
+        <div class="section_warp row clear" >
+            <div class="sec_top clear">
+                <div class="top_img"><img src="../img/54ff983e9e129.png" alt="profile_img"></div>
+                <div class="top_txt">
+                    <p>Platform_9</p>
+                    <p>2019년 01월 26일 11:42:21 &#07; 곰 댕댕이</p>
+                </div>
+                <div class="top_btn"><button type="button" class="btn">위치</button></div>
+            </div>
+            <div class="sec_mid clear">
+                   <div class="senter_warp"> 
+                <div class="senter_box">
+                        <img src="../img/54ff983e9e129.jpg" class="abc">
+                    <div class="senter_img"><img src="../img/54ff983e9e129.jpg" alt="곰_시바견"></div>
+                    <div class="che_le"><span class="fa fa-chevron-left"></span></div>
+                    <div class="che_ri"><span class="fa fa-chevron-right"></span></div>
+                </div>
+                <div class="dot_box">
+                    <span class="fa fa-ellipsis-h"></span>
+                </div>
+                <ul class="icon_box clear">
+                   <li class="icon_le fa fa-heart"></li> 
+                   <li class="icon_le"> 152</li> 
+                   <li class="icon_le fa fa-comment-o"></li> 
+                   <li class="icon_le"> 78</li> 
+                   <li class="icon_ri"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                        공유하기
+                      </button></li> 
+                </ul>
+             </div>
+            </div>
+        </div>
+    </div>
+    <div class="sec_bot clear">
+        <div class="con_txt">
+            <p>지가 이뿐지 아는 개</p>
+        </div>
+        <div class="tag_txt">
+            <p> #강아지</p>
+            <p> #댕댕이</p>
+            <p> #인형같은_개</p>
+            <p> #이쁜</p>
+        </div>
+        <ul class="comment_top clear">
+            <li class="con_le"><span class="fa fa-comment-o"></span></li>
+            <li class="con_le">댓글</li>
+            <li class="con_ri">댓글 모두보기</li>
+        </ul>
+        <div class="comment_box clear">
+            <div class="com_img"><img src="../img/54ff983e9e129.png" alt="profile_img"></div>
+            <div class="com_id_txt">
+                <p>Platform_9</p>
+                <p>2019년 01월 26일 11:42:21 &#07; 곰 댕댕이</p>
+            </div>
+            <div class="comment_txt clear"> 귀여워요! </div>
+        </div>
+        <div class="big_tag">
+            <div>관련 태그</div>
+            <p> #강아지</p>
+            <p> #강아지</p>
+            <p> #강아지</p>
+            <p> #강아지</p>
+        </div>
+    </div>
+    
+        <div class="footer clear">
+            <div class="footer_box row">
+                <div class="foot_logo"><img src="../common/logo_g.png" alt="logo_img"></div>
+                <div class="foot_ri">
+                    <p>A.서울특별시 강남구 역삼동 언주로535 세마스포츠마케팅코르빌딩 8층</p>
+                    <p>T.070.7853.1644 | F.0504.164.6209</p>
+                    <p>Copyright &copy;PLATFORM9. All right reserver.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- modal -->
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h3 class="modal-title">Shear</h3>
+                    </div>
+                    
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <ul>
+                            <li><a href="https://www.facebook.com/" target="_balnk"><img src="../img/icon/facebook_w.png"></a></li>
+                            <li><a href="https://www.instagram.com/" target="_balnk"><img src="../img/icon/instar.png"></a></li>
+                            <li><a href="https://www.naver.com/" target="_balnk"><img src="../img/icon/mail.png"></a></li>
+                            <li><a href="https://www.pinterest.co.kr/" target="_balnk"><img src="../img/icon/pinterest.png"></a></li>
+                            
+                        </ul>
+                        <ul>
+                            <li><a href="https://www.tumblr.com/" target="_balnk"><img src="../img/icon/tumblr.png"></a></li>
+                            <li><a href="https://www.twitter.com/" target="_balnk"><img src="../img/icon/twitter.png"></a></li>
+                            <li><a href="https://www.linkedin.com" target="_balnk"><img src="../img/icon/Linkedin.png"></a></li>
+                            <li><a href="https://www.youtube.com" target="_balnk"><img src="../img/icon/youtube.png"></a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                    <input type="text" class="adtitle form-control" placeholder="url 주소">
+                    <div class="btn_url">url 복사하기</div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
+        <script src="../js/share.js"></script>
+</body>
+</html>

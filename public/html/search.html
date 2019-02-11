@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>test-search page</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+     crossorigin="anonymous">
+     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/reset.css">
+
+    <style type="text/css">
+    .row {width: 60%; margin: 0 auto;}
+    .table {display: table;}
+    .table_c{display: table-cell; vertical-align: middle;}
+    /* top */
+    .top{width: 100%; border-bottom: 1px solid #ccc; padding: 2rem 0;}
+    .logo{width: 20%;float: left;}
+    .logo img{max-width: 90%; margin-top: 5px;}
+    .search_box{padding: 5rem 0; }
+    .search_icon{float: left; padding: 1rem; color: #ccc; background-color: #888; border-radius: 5px; margin-left: 0.5rem;}
+    .search{width: 80%; float: left; margin-left: 6.5rem;}
+
+    /* section */
+    .section{border-top: 1px solid #ccc; padding-top: 5rem;}
+    .tag_name{text-align:center; margin-top: 5rem;}
+    .tag_s_name{text-align:center; margin-top: 1rem;}
+    .r_tag{text-align:center; margin-top: 5rem; color: #777;}
+    .r_tag > li{display: inline-block;}
+    .pro_list > li{width: 25%; float: left; margin: 0.75rem 0;}
+    .pro_list > li > .pro_imgs{width: 14rem; height: 14rem; overflow: hidden; border-radius: 5px; position: relative; margin: 0.6% auto; border-radius: 7rem;}
+    .pro_imgs > a > img{max-width: 100%; position: absolute; top:50%; left: 50%; transform: translate(-50%,-50%);}
+    .pro_txt{text-align: center;}
+    .pro_txt > a > h4{font-weight: bold; padding: 0.75rem 0;}
+    .pro_imgs:hover{cursor: pointer;}
+
+    .more{font-size: 5rem; text-align: center; margin: 3rem 0;}
+    
+    /* footer */
+    .footer{width: 100%; border-top:1px solid #ccc; padding: 3rem 0; background-color: rgba(0,0,0,0.8);}
+    .foot_logo{width: 20%; float: left; padding-top: 12px;}
+    .foot_logo > img{max-width: 90%;}
+    .foot_ri{width: 70%; float: right;}
+    .foot_ri p{color: #eee; font-size: 0.8rem;}
+    
+
+    @media all and (min-width: 1025px){
+        .row{width: 60%}
+        .logo{width: 30%;}
+        .logo img{max-width: 100%; margin-top:3px;}
+        .search{width: 45%;}
+        
+        .foot_logo{margin-left: 14rem;}
+        .foot_ri{text-align: center; width: 65%;}
+        .foot_ri p{font-size: 1.6rem; padding-bottom: 6px;}
+    }
+
+    @media all and (min-width: 961px) and (max-width: 1024px) {
+        .logo{width: 30%;}
+        .logo img{max-width: 100%; margin-top:3px;}
+        .search{width: 45%;}
+        .foot_logo > img{max-width: 100%; height: auto !important;}
+        .foot_ri{width: 75%; text-align: center;}
+    }
+
+    @media all and (min-width: 769px) and (max-width: 960px) {
+        .logo{width: 35%;}
+        .logo img{max-width: 100%; margin-top:3px;}
+        .search{width: 45%;}
+        .foot_logo > img{max-width: 100%; height: auto !important;}
+        .foot_ri{width: 75%; text-align: center;}
+        .foot_ri p{font-size: 1.25rem; padding-bottom: 0.3rem;}
+        
+    }
+
+    @media all and (min-width: 769px) and (max-width: 960px) {
+        .logo{width: 35%;}
+        .logo img{max-width: 100%; margin-top:3px;}
+        .search{width: 45%;}
+       
+    }
+
+    @media all and (max-width: 768px) {
+        .row{width: 95%;}
+        .logo{width: 35%;}
+        .logo img{max-width: 100%; margin-top: 1rem;}
+        .search{width: 90%; margin-left: 0;}
+        
+        .foot_logo{display: none;}
+        .foot_logo > img{max-width: 100%; height: auto !important;}
+        .foot_ri{width: 100%; text-align: center;}
+    }
+
+    @media all and (max-width: 360px) {
+        .row{width: 95%;}
+        .logo{width: 100%; padding-bottom: 10px; text-align: center;}
+        .logo img{max-width: 40%; transform: translateX(80%);}
+        .search{width: 85%;}
+        .search_box{padding: 2rem 0;}
+        .product_top{ padding-top:0.2rem;}
+        .section{height: 100%;}
+        .product{height: 100%;}
+        .r_tag{margin-top: 1rem; margin-bottom: 1rem;}
+        .section{padding-top: 2rem;}
+        .tag_name{margin-top: 1.5rem; width: 80%;}
+        .tag_list{width: 65%;}
+        .pro_list{height: 100%;}
+        .pro_list > .imgs{width: 90%; height: 60%; overflow: hidden; border-radius: 5px; position: relative; margin: 0.6%;}
+        .imgs > img{width: 100%; position: absolute; top:50%; left: 50%; transform: translate(-50%,-50%);}
+        .product {width: 80% !important;}
+        .pro_list > li{width: 95%; display: table;}
+        .pro_txt{display: table-cell; vertical-align: top; margin-left: 2rem;}
+        .pro_list > li > div{display: inline-block;}
+        .pro_imgs{width: 6rem !important; height: 6rem !important;}
+        .more {overflow: hidden;}
+        .foot_logo{display: none;}
+        .foot_logo > img{max-width: 100%; height: auto !important;}
+        .foot_ri{width: 100%; text-align: center;}
+    }
+    
+    
+    </style>
+    <style type="text/javascript">
+    
+    </style>
+
+</head>
+<body>
+   
+    <div class="wrap">
+        <div class="top">
+            <div class="row top_box">
+                <div class="logo"><a href="../html/main.html"><img src="../common/logo_b.png" alt="logo_img"></a></div>
+            </div>
+        </div>
+        
+            
+            <div class="search_box row clear">
+                <div class="search"><input type="text" class="adtitle form-control" placeholder="Search"></div>
+                <div class="search_icon"><span class="fa fa-search"></span></div>
+
+            
+            <div class="product_top clear">
+                <ul class="r_tag">
+                    <li class="r_tag_name">관련태그 : </li>
+                    <li>#강아지</li>
+                    <li>#인형같은</li>
+                    <li>#이쁜</li>
+                    <li>#시바견</li>
+                    <li>#귀여운</li>
+                    <li>#인형같은</li>
+                    <li>#이쁜</li>
+                    <li>#시바견</li>
+                    <li>#귀여운</li>
+                </ul>
+            </div>
+        </div>
+            <div class="section clear">
+            <div class="product row clear">
+                <ul class="pro_list clear">
+                        <li>
+                           <div class="pro_imgs">
+                             <a href="../html/sub.html"><img src="../img/54ff983e9e129.jpg" alt="img" class="img"></a>
+                          </div>
+                          <div class="pro_txt clear">
+                            <a href="../html/tag_main.html"><h4>platform_9</h4></a>
+                            <p>전체 게시물 : 13,614</p>
+                          </div>
+                        </li>  
+                        <li>
+                            <div class="pro_imgs">
+                              <a href="../html/sub.html"><img src="../img/d1.jpg" alt="img" class="img"></a>
+                           </div>
+                           <div class="pro_txt clear">
+                             <a href="../html/tag_main.html"><h4>platform_9</h4></a>
+                             <p>전체 게시물 : 21,314</p>
+                           </div>
+                         </li>  
+                        <li>
+                            <div class="pro_imgs">
+                              <a href="../html/sub.html"><img src="../img/d2.jpg" alt="img" class="img"></a>
+                           </div>
+                           <div class="pro_txt clear">
+                             <a href="../html/tag_main.html"><h4>platform_9</h4></a>
+                             <p>전체 게시물 : 13,614</p>
+                           </div>
+                         </li>  
+                        <li>
+                            <div class="pro_imgs">
+                              <a href="../html/sub.html"><img src="../img/d3.jpg" alt="img" class="img"></a>
+                           </div>
+                           <div class="pro_txt clear">
+                             <a href="../html/tag_main.html"><h4>platform_9</h4></a>
+                             <p>전체 게시물 : 13,614</p>
+                           </div>
+                         </li>  
+                        <li>
+                            <div class="pro_imgs">
+                              <a href="../html/sub.html"><img src="../img/d4.jpg" alt="img" class="img"></a>
+                           </div>
+                           <div class="pro_txt clear">
+                             <a href="../html/tag_main.html"><h4>platform_9</h4></a>
+                             <p>전체 게시물 : 13,614</p>
+                           </div>
+                         </li>  
+                        <li>
+                            <div class="pro_imgs">
+                              <a href="../html/sub.html"><img src="../img/d5.jpg" alt="img" class="img"></a>
+                           </div>
+                           <div class="pro_txt clear">
+                             <a href="../html/tag_main.html"><h4>platform_9</h4></a>
+                             <p>전체 게시물 : 13,614</p>
+                           </div>
+                         </li>  
+                        <li>
+                            <div class="pro_imgs">
+                              <a href="../html/sub.html"><img src="../img/d6.jpg" alt="img" class="img"></a>
+                           </div>
+                           <div class="pro_txt clear">
+                             <a href="../html/tag_main.html"><h4>platform_9</h4></a>
+                             <p>전체 게시물 : 13,614</p>
+                           </div>
+                         </li>  
+                        <li>
+                            <div class="pro_imgs">
+                              <a href="../html/sub.html"><img src="../img/d7.jpg" alt="img" class="img"></a>
+                           </div>
+                           <div class="pro_txt clear">
+                             <a href="../html/tag_main.html"><h4>platform_9</h4></a>
+                             <p>전체 게시물 : 13,614</p>
+                           </div>
+                         </li>  
+                       
+                </ul>
+            
+            </div>
+            <div class="more"><span class="fa fa-chevron-circle-down"></span></div>
+        </div>
+        <div class="footer clear">
+            <div class="footer_box row">
+                <div class="foot_logo"><img src="../common/logo_g.png" alt="logo_img"></div>
+                <div class="foot_ri">
+                    <p>A.서울특별시 강남구 역삼동 언주로535 세마스포츠마케팅코르빌딩 8층</p>
+                    <p>T.070.7853.1644 | F.0504.164.6209</p>
+                    <p>Copyright &copy;PLATFORM9. All right reserver.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
